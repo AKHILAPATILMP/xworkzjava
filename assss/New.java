@@ -14,4 +14,4 @@ System.out.println("elements"+index);
 
 }
 }
-//arr2=arr1.clone(); to copy the content of arr1
+//arr2=arr1.clone(); to copy the content of arr1  	  	 	
