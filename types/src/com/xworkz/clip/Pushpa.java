@@ -1,6 +1,6 @@
 package com.xworkz.clip;
 
-public class Pushpa {
+ class Pushpa {
         void useClip (Clip[]clips){
             for (Clip clip : clips) {
                 clip.hold();
