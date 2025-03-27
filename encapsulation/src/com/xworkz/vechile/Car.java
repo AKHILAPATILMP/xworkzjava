@@ -3,14 +3,11 @@ package com.xworkz.vechile;
 public class Car {
     private String brand;
     private int speed;
-
-    // Constructor
     public Car(String brand, int speed) {
         this.brand = brand;
         this.speed = speed;
     }
 
-    // Getter method to access private data
     public String getBrand() {
         return brand;
     }
@@ -19,7 +16,6 @@ public class Car {
         return speed;
     }
 
-    // Setter method to modify private data
     public void setSpeed(int speed) {
         if (speed > 0) {
             this.speed = speed;
