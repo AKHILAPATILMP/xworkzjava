@@ -1,26 +1,16 @@
 package com.xworkz.associate;
 
 public class Button {
+        private String color;
+        private boolean isPressed;
 
-        private String material;
-        private String type;
-
-        public Button(String material, String type) {
-            this.material = material;
-            this.type = type;
+        public Button(String color, boolean isPressed) {
+            this.color = color;
+            this.isPressed = isPressed;
         }
 
-        public String getMaterial() {
-            return material;
-        }
-
-        public void setMaterial(String material) {
-            this.material = material;
-        }
-
-        public void displayInfo() {
-            System.out.println("Button Material: " + material + ", Type: " + type);
+        public void displayButtonDetails() {
+            System.out.println("Button Color: " + this.color);
+            System.out.println("Is Button Pressed: " + this.isPressed);
         }
     }
-
-

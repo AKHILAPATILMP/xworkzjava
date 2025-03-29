@@ -2,25 +2,24 @@ package com.xworkz.associate;
 
 public class Lamp {
 
-        private String warranty;
-        private final String brand;
+        private String lampName;
+        private int noOfLamp;
+        private Warranty warranty;
 
-        public Lamp(String warranty, String brand) {
-            this.warranty = warranty;
-            this.brand = brand;
+        public Lamp(String lampName,Warranty warranty){
+            System.out.println("running non-static method Lamp");
+            this.lampName=lampName;
+            this.warranty=warranty;
         }
-
-        public String getWarranty() {
-            return warranty;
+        public int getNoOfLamp(){
+            return this.noOfLamp;
         }
-
-        public void setWarranty(String warranty) {
-            this.warranty = warranty;
+        public void setLampName(int noOfLamp){
+            this.noOfLamp=noOfLamp;
         }
-
-        public void displayInfo() {
-            System.out.println("Lamp Warranty: " + warranty + ", Brand: " + brand);
+        public void LampDis(){
+            System.out.println("Lamp name:"+this.lampName);
+            System.out.println("No of Lamp:"+this.noOfLamp);
+            this.warranty.WarDis();
         }
     }
-
-

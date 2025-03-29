@@ -2,25 +2,19 @@ package com.xworkz.associate;
 
 public class Port {
 
-        private String portType;
-        private final int speed;
+        private String name="Toca";
+        private final int numberOfPorts;
+        private PortType portType;
 
-        public Port(String portType, int speed) {
-            this.portType = portType;
-            this.speed = speed;
+        public Port(String name, int numberOfPorts,PortType portType) {
+            this.name = name;
+            this.numberOfPorts = numberOfPorts;
+            this.portType=portType;
         }
 
-        public String getPortType() {
-            return portType;
-        }
-
-        public void setPortType(String portType) {
-            this.portType = portType;
-        }
-
-        public void displayInfo() {
-            System.out.println("Port Type: " + portType + ", Speed: " + speed + " Gbps");
+        public void displayPortDetails() {
+            System.out.println("Port Name: " + this.name);
+            System.out.println("Number of Ports: " + this.numberOfPorts);
+            portType.displayPortTypeDetails();
         }
     }
-
-

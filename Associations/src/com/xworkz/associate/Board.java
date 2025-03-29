@@ -1,25 +1,22 @@
 package com.xworkz.associate;
 
 public class Board {
+        private String type;
+        private int noOfBoard;
+        private Capacitor capacitor;
 
-        private String capacitor;
-        private String material;
+        public Board(String type,int noOfBoard,Capacitor capacitor){
+            this.type=type;
+            this.noOfBoard=noOfBoard;
+            this.capacitor=capacitor;
 
-        public Board(String capacitor, String material) {
-            this.capacitor = capacitor;
-            this.material = material;
         }
-
-        public String getCapacitor() {
-            return capacitor;
-        }
-
-        public void setCapacitor(String capacitor) {
-            this.capacitor = capacitor;
-        }
-
-        public void displayInfo() {
-            System.out.println("Board Capacitor: " + capacitor + ", Material: " + material);
+        public void BoardDis(){
+            System.out.println("No og Board:"+this.noOfBoard);
+            System.out.println("Type of board"+this.type);
+            System.out.println("Capacitor:"+this.capacitor);
+            capacitor.setPrice(5000);
+            this.capacitor.CapDis();
         }
     }
 

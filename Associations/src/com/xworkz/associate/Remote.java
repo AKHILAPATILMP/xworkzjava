@@ -2,25 +2,23 @@ package com.xworkz.associate;
 
 
     public class Remote {
-        private String battery;
-        private String brand;
 
-        public Remote(String battery, String brand) {
-            this.battery = battery;
-            this.brand = brand;
-        }
+            private String company="Sonic";
+            private String color="black";
+            private Battery battery;
 
-        public String getBattery() {
-            return battery;
-        }
+            public Remote(String company, String color,Battery battery){
+                this.company=company;
+                this.color=color;
+                this.battery=battery;
 
-        public void setBattery(String battery) {
-            this.battery = battery;
+            }
+            public void RemoteDis(){
+                System.out.println("Company:"+this.company);
+                System.out.println("Color:"+this.color);
+                System.out.println(this.battery);
+                battery.Batdisplay();
+            }
         }
-
-        public void displayInfo() {
-            System.out.println("Remote Battery: " + battery + ", Brand: " + brand);
-        }
-    }
 
 

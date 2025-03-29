@@ -5,22 +5,19 @@ public class Panel {
         private String panelType;
         private final int resolution;
 
-        public Panel(String panelType, int resolution) {
-            this.panelType = panelType;
+        public Panel(int resolution) {
+            System.out.println("Running non-static method Panel");
             this.resolution = resolution;
-        }
-
-        public String getPanelType() {
-            return panelType;
+            this.panelType = "LCD"; // Default value
+            System.out.println("Resolution: " + this.resolution);
+            System.out.println("Panel Type: " + this.panelType);
         }
 
         public void setPanelType(String panelType) {
             this.panelType = panelType;
         }
 
-        public void displayInfo() {
-            System.out.println("Panel Type: " + panelType + ", Resolution: " + resolution + "p");
+        public String getPanelType() {
+            return this.panelType;
         }
     }
-
-

@@ -2,25 +2,19 @@ package com.xworkz.associate;
 
 public class Wire {
 
-        private String quality;
-        private int length;
+        private String type;
+        private double length;
+        private Quality quality;
 
-        public Wire(String quality, int length) {
-            this.quality = quality;
+        public Wire(String type, double length,Quality quality) {
+            this.type = type;
             this.length = length;
+            this.quality= quality;
         }
 
-        public String getQuality() {
-            return quality;
-        }
-
-        public void setQuality(String quality) {
-            this.quality = quality;
-        }
-
-        public void displayInfo() {
-            System.out.println("Wire Quality: " + quality + ", Length: " + length + " meters");
+        public void displayWireDetails() {
+            System.out.println("Wire Type: " + this.type);
+            System.out.println("Wire Length: " + this.length + " meters");
+            this.quality.displayQualityDetails();
         }
     }
-
-
