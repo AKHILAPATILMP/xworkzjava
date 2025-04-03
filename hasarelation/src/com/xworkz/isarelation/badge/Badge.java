@@ -6,23 +6,23 @@ public class Badge {
         }
 
         public void displayInfo() {
-            System.out.println("Badge: Displaying badge details...");
+            System.out.println("Badge: Displaying badge details");
         }
 
         public void authorizeAccess() {
-            System.out.println("Badge: Authorizing access...");
+            System.out.println("Badge: Authorizing access");
         }
 
         public void identifyPerson() {
-            System.out.println("Badge: Identifying the person...");
+            System.out.println("Badge: Identifying the person");
         }
 
         public void verifyAuthenticity() {
-            System.out.println("Badge: Verifying authenticity...");
+            System.out.println("Badge: Verifying authenticity");
         }
 
         public void wearBadge() {
-            System.out.println("Badge: Wearing the badge...");
+            System.out.println("Badge: Wearing the badge");
         }
     }
 
