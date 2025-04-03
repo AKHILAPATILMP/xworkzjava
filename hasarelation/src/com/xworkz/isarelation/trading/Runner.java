@@ -1,4 +1,4 @@
-package com.xworkz.isarelation.Trading;
+package com.xworkz.isarelation.trading;
 
 public class Runner {
         public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.xworkz.isarelation.Trading;
+package com.xworkz.isarelation.trading;
     public class StockTrading extends Trading {
         public StockTrading() {
             super();
