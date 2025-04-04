@@ -1,29 +1,25 @@
 package com.xworkz.isarelation.bottle;
-
 public class Bottle {
 
-        public Bottle() {
-            System.out.println("Bottle constructor is running");
-        }
-
-        public void fill() {
-            System.out.println("Bottle is being filled");
-        }
-
-        public void pour() {
-            System.out.println("Bottle is pouring liquid");
-        }
-
-        public void openCap() {
-            System.out.println("Bottle cap is opened");
-        }
-
-        public void closeCap() {
-            System.out.println("Bottle cap is closed");
-        }
-
-        public void clean() {
-            System.out.println("Bottle is being cleaned");
-        }
+    public Bottle() {
+        System.out.println("Bottle constructor is running - parent class");
     }
+
+    public void open() {
+        System.out.println("Opening the bottle - parent class");
+    }
+
+    public void close() {
+        System.out.println("Closing the bottle - parent class");
+    }
+
+    public void fill() {
+        System.out.println("Filling the bottle - parent class");
+    }
+
+    public void empty() {
+        System.out.println("Emptying the bottle - parent class");
+    }
+}
+
 

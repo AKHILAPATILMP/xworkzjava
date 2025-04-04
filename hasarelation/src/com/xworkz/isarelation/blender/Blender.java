@@ -1,28 +1,24 @@
 package com.xworkz.isarelation.blender;
 
 public class Blender {
-        public Blender() {
-            System.out.println("Blender constructor is running");
-        }
 
-        public void powerOn() {
-            System.out.println("Blender is turning on");
-        }
-
-        public void powerOff() {
-            System.out.println("Blender is turning off");
-        }
-
-        public void blend() {
-            System.out.println("Blender is blending ingredients");
-        }
-
-        public void setSpeed() {
-            System.out.println("Blender speed is set");
-        }
-
-        public void stopBlending() {
-            System.out.println("Blender has stopped blending");
-        }
+    public Blender() {
+        System.out.println("Blender constructor is running - parent class");
     }
 
+    public void start() {
+        System.out.println("Starting the manual blender - parent class");
+    }
+
+    public void stop() {
+        System.out.println("Stopping the manual blender - parent class");
+    }
+
+    public void setSpeed(int speed) {
+        System.out.println("Setting speed to " + speed + " - parent class");
+    }
+
+    public void mixIngredients() {
+        System.out.println("Mixing ingredients manually - parent");
+    }
+}

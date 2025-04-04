@@ -1,27 +1,26 @@
 package com.xworkz.isarelation.bulb;
-
 public class Runner {
-        public static void main(String[] args) {
-            System.out.println("\nCreating an instance of SmartBulb using Bulb reference");
-            Bulb bulbRef = new SmartBulb();
-            bulbRef.turnOn();
-            bulbRef.turnOff();
-            bulbRef.glow();
-            bulbRef.dim();
-            bulbRef.flicker();
+    public static void main(String[] args) {
 
-            System.out.println("\nCreating an instance of SmartBulb using subclass reference");
-            SmartBulb smartBulb = new SmartBulb();
-            smartBulb.turnOn();
-            smartBulb.turnOff();
-            smartBulb.glow();
-            smartBulb.dim();
-            smartBulb.flicker();
-            smartBulb.changeColor();
-            smartBulb.connectToWiFi();
-            smartBulb.voiceControl();
-            smartBulb.scheduleTimer();
-            smartBulb.adjustBrightness();
-        }
+        System.out.println("\nCreating an instance of Bulb");
+        Bulb bulb = new Bulb();
+        bulb.turnOn();
+        bulb.turnOff();
+        bulb.glow();
+
+        System.out.println("\nCreating an instance of LEDLight using Bulb reference");
+        Bulb bulbRef = new LEDLight();
+        bulbRef.turnOn();
+        bulbRef.turnOff();
+        bulbRef.glow();
+
+        System.out.println("\nCreating an instance of LEDLight using subclass reference");
+        LEDLight ledLight = new LEDLight();
+        ledLight.turnOn();
+        ledLight.turnOff();
+        ledLight.glow();
+        ledLight.adjustBrightness();
     }
+}
+
 

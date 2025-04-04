@@ -1,24 +1,32 @@
 package com.xworkz.isarelation.bicycle;
+
     public class SmartBicycle extends Bicycle {
+
         public SmartBicycle() {
             super();
-            System.out.println("SmartBicycle constructor is running");
+            System.out.println("SmartBicycle constructor is running - subclass");
         }
 
-        public void gpsNavigation() {
-            System.out.println("SmartBicycle is using GPS navigation");
+        @Override
+        public void pedal() {
+            System.out.println("Pedaling with electronic assistance - subclass");
         }
 
-        public void electricAssist() {
-            System.out.println("SmartBicycle is providing electric pedal assist");
+        @Override
+        public void applyBrakes() {
+            System.out.println("Applying automatic braking system - subclass");
         }
 
-        public void autoGearShift() {
-            System.out.println("SmartBicycle is shifting gears automatically");
+        @Override
+        public void changeGear() {
+            System.out.println("Changing gears automatically - subclass");
         }
 
-        public void fitnessTracking() {
-            System.out.println("SmartBicycle is tracking fitness metrics");
+        @Override
+        public void ringBell() {
+            System.out.println("Ringing digital bell with sound variations - subclass");
         }
     }
+
+
 

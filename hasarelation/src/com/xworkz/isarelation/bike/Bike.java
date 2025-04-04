@@ -1,24 +1,24 @@
 package com.xworkz.isarelation.bike;
 
 public class Bike {
-        public Bike() {
-            System.out.println("Bike constructor is running");
-        }
 
-        public void start() {
-            System.out.println("Bike is starting");
-        }
-
-        public void accelerate() {
-            System.out.println("Bike is accelerating");
-        }
-
-        public void brake() {
-            System.out.println("Bike is applying brakes");
-        }
-
-        public void stop() {
-            System.out.println("Bike is stopping");
-        }
+    public Bike() {
+        System.out.println("Bike constructor is running - parent class");
     }
 
+    public void start() {
+        System.out.println("Starting the bike - parent class");
+    }
+
+    public void accelerate() {
+        System.out.println("Accelerating the bike - parent class");
+    }
+
+    public void applyBrakes() {
+        System.out.println("Applying brakes - parent class");
+    }
+
+    public void fuelCapacity() {
+        System.out.println("Checking fuel capacity - parent class");
+    }
+}
