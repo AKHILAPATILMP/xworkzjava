@@ -1,35 +1,27 @@
 package com.xworkz.isarelation.airtraffic;
 
 public class Runner {
-        public static void main(String[] args) {
-            System.out.println("Creating an instance of AirTraffic");
-            AirTraffic airTraffic = new AirTraffic();
-            airTraffic.monitorFlights();
-            airTraffic.controlTakeoff();
-            airTraffic.controlLanding();
-            airTraffic.communicateWithPilots();
-            airTraffic.manageAirRoutes();
+    public static void main(String[] args) {
 
-            System.out.println("\nCreating an instance of CommercialAirTraffic using AirTraffic reference");
-            AirTraffic airTrafficRef = new CommercialAirTraffic();
-            airTrafficRef.monitorFlights();
-            airTrafficRef.controlTakeoff();
-            airTrafficRef.controlLanding();
-            airTrafficRef.communicateWithPilots();
-            airTrafficRef.manageAirRoutes();
+        System.out.println("\nCreating an instance of AirTraffic");
+        AirTraffic traffic = new AirTraffic();
+        traffic.monitorAirspace();
+        traffic.manageFlightPaths();
+        traffic.handleCommunication();
+        traffic.ensureSafety();
 
-            System.out.println("\nCreating an instance of CommercialAirTraffic using subclass reference");
-            CommercialAirTraffic commercialTraffic = new CommercialAirTraffic();
-            commercialTraffic.monitorFlights();
-            commercialTraffic.controlTakeoff();
-            commercialTraffic.controlLanding();
-            commercialTraffic.communicateWithPilots();
-            commercialTraffic.manageAirRoutes();
-            commercialTraffic.scheduleFlights();
-            commercialTraffic.handlePassengerRequests();
-            commercialTraffic.manageBaggage();
-            commercialTraffic.coordinateWithAirlines();
-            commercialTraffic.issueWeatherAlerts();
-        }
+        System.out.println("\nCreating an instance of AirTrafficControl using AirTraffic reference");
+        AirTraffic traffic1 = new AirTrafficControl();
+        traffic1.monitorAirspace();
+        traffic1.manageFlightPaths();
+        traffic1.handleCommunication();
+        traffic1.ensureSafety();
+
+        System.out.println("\nCreating an instance of AirTrafficControl using subclass reference");
+        AirTrafficControl control = new AirTrafficControl();
+        control.monitorAirspace();
+        control.manageFlightPaths();
+        control.handleCommunication();
+        control.ensureSafety();
     }
-
+}

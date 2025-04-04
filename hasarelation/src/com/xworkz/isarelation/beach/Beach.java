@@ -1,30 +1,25 @@
 package com.xworkz.isarelation.beach;
 
-public class Beach
-{        public Beach() {
-            System.out.println("Beach constructor is running");
-        }
+public class Beach {
 
-        public void relax() {
-            System.out.println("Beach: People are relaxing on the beach...");
-        }
-
-        public void swim() {
-            System.out.println("Beach: People are swimming in the sea...");
-        }
-
-        public void playVolleyball() {
-            System.out.println("Beach: Playing beach volleyball...");
-        }
-
-        public void sunbathe() {
-            System.out.println("Beach: Sunbathing under the sun...");
-        }
-
-        public void watchSunset() {
-            System.out.println("Beach: Watching the beautiful sunset...");
-        }
+    public Beach() {
+        System.out.println("Beach constructor is running - parent class");
     }
 
+    public void enjoySunset() {
+        System.out.println("Enjoying the sunset at the beach - parent class");
+    }
 
+    public void swim() {
+        System.out.println("Swimming in the sea - parent class");
+    }
+
+    public void buildSandCastle() {
+        System.out.println("Building a sandcastle - parent class");
+    }
+
+    public void collectShells() {
+        System.out.println("Collecting shells from the shore - parent class");
+    }
+}
 

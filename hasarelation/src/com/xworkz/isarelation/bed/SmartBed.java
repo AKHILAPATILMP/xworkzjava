@@ -1,25 +1,28 @@
 package com.xworkz.isarelation.bed;
+public class SmartBed extends Bed {
 
-    public class SmartBed extends Bed {
-        public SmartBed() {
-            super();
-            System.out.println("SmartBed constructor is running");
-        }
-
-        public void massage() {
-            System.out.println("Bed is providing a massage");
-        }
-
-        public void temperatureControl() {
-            System.out.println("Bed is adjusting temperature settings");
-        }
-
-        public void voiceControl() {
-            System.out.println("Bed is responding to voice commands");
-        }
-
-        public void autoAdjust() {
-            System.out.println("Bed is automatically adjusting to sleeping posture");
-        }
+    public SmartBed() {
+        super();
+        System.out.println("SmartBed constructor is running - subclass");
     }
 
+    @Override
+    public void sleep() {
+        System.out.println("SmartBed auto-adjusts comfort while sleeping - subclass");
+    }
+
+    @Override
+    public void adjustPillow() {
+        System.out.println("SmartBed automatically adjusts the pillow height - subclass");
+    }
+
+    @Override
+    public void makeBed() {
+        System.out.println("SmartBed self-makes the bed - subclass");
+    }
+
+    @Override
+    public void cleanBed() {
+        System.out.println("SmartBed has auto-cleaning function - subclass");
+    }
+}

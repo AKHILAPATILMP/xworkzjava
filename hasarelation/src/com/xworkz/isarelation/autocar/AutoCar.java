@@ -1,29 +1,24 @@
 package com.xworkz.isarelation.autocar;
 
-    public class AutoCar {
-        public AutoCar() {
-            System.out.println("AutoCar constructor is running");
-        }
+public class AutoCar {
 
-        public void start() {
-            System.out.println("Car is starting");
-        }
-
-        public void accelerate() {
-            System.out.println("Car is accelerating");
-        }
-
-        public void brake() {
-            System.out.println("Car is applying brakes");
-        }
-
-        public void honk() {
-            System.out.println("Car horn is sounding");
-        }
-
-        public void stop() {
-            System.out.println("Car is stopping");
-        }
+    public AutoCar() {
+        System.out.println("AutoCar constructor is running - parent class");
     }
 
+    public void startEngine() {
+        System.out.println("Starting engine - parent class");
+    }
 
+    public void stopEngine() {
+        System.out.println("Stopping engine - parent class");
+    }
+
+    public void accelerate() {
+        System.out.println("Accelerating the car - parent class");
+    }
+
+    public void brake() {
+        System.out.println("Applying brake - parent class");
+    }
+}

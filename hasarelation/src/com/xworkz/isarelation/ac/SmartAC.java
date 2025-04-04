@@ -2,27 +2,28 @@ package com.xworkz.isarelation.ac;
     public class SmartAC extends AC {
         public SmartAC() {
             super();
-            System.out.println("SmartAC constructor is running");
+            System.out.println("AC constructor is running subclass");
         }
 
-        public void connectToWiFi() {
-            System.out.println("SmartAC is connecting to WiFi");
+        @Override
+        public void turnOn() {
+            System.out.println("SmartAC is turned on with smart features subclass");
         }
 
-        public void controlWithApp() {
-            System.out.println("SmartAC is being controlled via mobile app");
+        @Override
+        public void turnOff() {
+            System.out.println("SmartAC is turned off subclass");
         }
 
-        public void voiceControl() {
-            System.out.println("SmartAC is responding to voice commands");
+        @Override
+        public void setTemperature() {
+            System.out.println("SmartAC temperature is set using smart sensors subclass");
         }
 
-        public void energySavingMode() {
-            System.out.println("SmartAC is in energy-saving mode");
+        @Override
+        public void enableCooling() {
+            System.out.println("SmartAC is in advanced cooling mode subclass");
         }
 
-        public void autoAdjustTemperature() {
-            System.out.println("SmartAC is automatically adjusting the temperature based on the room conditions");
-        }
     }
 
