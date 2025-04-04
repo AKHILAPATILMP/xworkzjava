@@ -1,29 +1,29 @@
 package com.xworkz.isarelation.jet;
 
-    public class FighterJet extends Jet {
-        public FighterJet() {
-            super();
-            System.out.println("FighterJet constructor is running");
-        }
+public class FighterJet extends Jet {
 
-        public void engageTarget() {
-            System.out.println("FighterJet: Engaging enemy target...");
-        }
-
-        public void launchMissiles() {
-            System.out.println("FighterJet: Launching missiles...");
-        }
-
-        public void activateStealthMode() {
-            System.out.println("FighterJet: Activating stealth mode...");
-        }
-
-        public void performAerobatics() {
-            System.out.println("FighterJet: Performing aerobatic maneuvers...");
-        }
-
-        public void deployCountermeasures() {
-            System.out.println("FighterJet: Deploying countermeasures...");
-        }
+    public FighterJet() {
+        super();
+        System.out.println("FighterJet constructor is running - subclass");
     }
 
+    @Override
+    public void startEngine() {
+        System.out.println("FighterJet engine started with afterburner - subclass");
+    }
+
+    @Override
+    public void takeOff() {
+        System.out.println("FighterJet is taking off vertically - subclass");
+    }
+
+    @Override
+    public void fly() {
+        System.out.println("FighterJet is flying at supersonic speed - subclass");
+    }
+
+    @Override
+    public void land() {
+        System.out.println("FighterJet is landing with precision - subclass");
+    }
+}

@@ -1,28 +1,31 @@
 package com.xworkz.isarelation.market;
-    public class SuperMarket extends Market {
-        public SuperMarket() {
-            super();
-            System.out.println("SuperMarket constructor is running");
-        }
 
-        public void offerLoyaltyPoints() {
-            System.out.println("SuperMarket: Providing loyalty points to customers...");
-        }
+public class SuperMarket extends Market {
 
-        public void onlineDelivery() {
-            System.out.println("SuperMarket: Offering home delivery services...");
-        }
-
-        public void selfCheckout() {
-            System.out.println("SuperMarket: Enabling self-checkout systems...");
-        }
-
-        public void bulkBuyingOffers() {
-            System.out.println("SuperMarket: Giving discounts on bulk purchases...");
-        }
-
-        public void membershipBenefits() {
-            System.out.println("SuperMarket: Exclusive benefits for members...");
-        }
+    public SuperMarket() {
+        super();
+        System.out.println("SuperMarket constructor is running - subclass");
     }
+
+    @Override
+    public void openMarket() {
+        System.out.println("SuperMarket opens with digital billing - subclass");
+    }
+
+    @Override
+    public void closeMarket() {
+        System.out.println("SuperMarket is closed with automatic doors - subclass");
+    }
+
+    @Override
+    public void sellGoods() {
+        System.out.println("Selling groceries and electronics in SuperMarket - subclass");
+    }
+
+    @Override
+    public void cleanMarket() {
+        System.out.println("SuperMarket is cleaned using robots - subclass");
+    }
+}
+
 

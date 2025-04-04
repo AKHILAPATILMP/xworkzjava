@@ -1,28 +1,24 @@
 package com.xworkz.isarelation.glass;
 
 public class Glass {
-        public Glass() {
-            System.out.println("Glass constructor is running");
-        }
 
-        public void reflect() {
-            System.out.println("Glass: Reflecting light...");
-        }
-
-        public void refract() {
-            System.out.println("Glass: Bending light rays...");
-        }
-
-        public void transparent() {
-            System.out.println("Glass: Allowing visibility through...");
-        }
-
-        public void fragile() {
-            System.out.println("Glass: Can break easily...");
-        }
-
-        public void insulate() {
-            System.out.println("Glass: Providing thermal and sound insulation...");
-        }
+    public Glass() {
+        System.out.println("Glass constructor is running - parent class");
     }
 
+    public void fill() {
+        System.out.println("Filling water in the glass - parent class");
+    }
+
+    public void drink() {
+        System.out.println("Drinking from the glass - parent class");
+    }
+
+    public void clean() {
+        System.out.println("Cleaning the glass - parent class");
+    }
+
+    public void displayMaterial() {
+        System.out.println("Glass is made of transparent material - parent class");
+    }
+}

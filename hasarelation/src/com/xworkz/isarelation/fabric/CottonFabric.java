@@ -1,28 +1,32 @@
 package com.xworkz.isarelation.fabric;
-    public class CottonFabric extends Fabric {
-        public CottonFabric() {
-            super();
-            System.out.println("CottonFabric constructor is running");
-        }
 
-        public void softTexture() {
-            System.out.println("CottonFabric: Providing soft texture...");
-        }
+public class CottonFabric extends Fabric {
 
-        public void breathable() {
-            System.out.println("CottonFabric: Allowing air circulation...");
-        }
-
-        public void ecoFriendly() {
-            System.out.println("CottonFabric: Being environmentally friendly...");
-        }
-
-        public void wrinkleEasily() {
-            System.out.println("CottonFabric: Wrinkling easily...");
-        }
-
-        public void durable() {
-            System.out.println("CottonFabric: Lasting a long time...");
-        }
+    public CottonFabric() {
+        super();
+        System.out.println("CottonFabric constructor is running - subclass");
     }
+
+    @Override
+    public void weave() {
+        System.out.println("Weaving cotton threads into soft fabric - subclass");
+    }
+
+    @Override
+    public void dye() {
+        System.out.println("Dyeing cotton fabric with eco-friendly colors - subclass");
+    }
+
+    @Override
+    public void fold() {
+        System.out.println("Folding cotton fabric carefully - subclass");
+    }
+
+    @Override
+    public void pack() {
+        System.out.println("Packing cotton fabric in breathable covers - subclass");
+    }
+}
+
+
 

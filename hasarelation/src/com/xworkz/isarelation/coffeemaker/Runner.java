@@ -1,27 +1,29 @@
 package com.xworkz.isarelation.coffeemaker;
 
 public class Runner {
-        public static void main(String[] args) {
-            System.out.println("\nCreating an instance of SmartCoffeemaker using Coffeemaker reference");
-            Coffeemaker coffeemakerRef = new SmartCoffeemaker();
-            coffeemakerRef.powerOn();
-            coffeemakerRef.brewCoffee();
-            coffeemakerRef.setTimer();
-            coffeemakerRef.stopBrewing();
-            coffeemakerRef.powerOff();
+    public static void main(String[] args) {
 
-            System.out.println("\nCreating an instance of SmartCoffeemaker using subclass reference");
-            SmartCoffeemaker smartCoffeemaker = new SmartCoffeemaker();
-            smartCoffeemaker.powerOn();
-            smartCoffeemaker.brewCoffee();
-            smartCoffeemaker.setTimer();
-            smartCoffeemaker.stopBrewing();
-            smartCoffeemaker.powerOff();
-            smartCoffeemaker.connectToWiFi();
-            smartCoffeemaker.voiceControl();
-            smartCoffeemaker.autoBrewMode();
-            smartCoffeemaker.touchControl();
-            smartCoffeemaker.energySavingMode();
-        }
+        System.out.println("\nCreating an instance of CoffeeMaker");
+        CoffeeMaker maker = new CoffeeMaker();
+        maker.addWater();
+        maker.addCoffeePowder();
+        maker.brewCoffee();
+        maker.pourCoffee();
+
+        System.out.println("\nCreating an instance of SmartCoffeeMaker using CoffeeMaker reference");
+        CoffeeMaker smartRef = new SmartCoffeeMaker();
+        smartRef.addWater();
+        smartRef.addCoffeePowder();
+        smartRef.brewCoffee();
+        smartRef.pourCoffee();
+
+        System.out.println("\nCreating an instance of SmartCoffeeMaker using subclass reference");
+        SmartCoffeeMaker smart = new SmartCoffeeMaker();
+        smart.addWater();
+        smart.addCoffeePowder();
+        smart.brewCoffee();
+        smart.pourCoffee();
     }
+}
+
 

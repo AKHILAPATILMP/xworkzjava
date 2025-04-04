@@ -1,27 +1,26 @@
 package com.xworkz.isarelation.flute;
-
 public class Runner {
-        public static void main(String[] args) {
-            System.out.println("\nCreating an instance of ElectricFlute using Flute reference");
-            Flute fluteRef = new Flutecolor();
-            fluteRef.play();
-            fluteRef.tune();
-            fluteRef.blowAir();
-            fluteRef.adjustPitch();
-            fluteRef.cleanFlute();
+    public static void main(String[] args) {
 
-            System.out.println("\nCreating an instance of ElectricFlute using subclass reference");
-            Flutecolor electricFlute = new Flutecolor();
-            electricFlute.play();
-            electricFlute.tune();
-            electricFlute.blowAir();
-            electricFlute.adjustPitch();
-            electricFlute.cleanFlute();
-            electricFlute.connectToAmplifier();
-            electricFlute.enableReverbEffect();
-            electricFlute.changeToneSettings();
-            electricFlute.recordPerformance();
-            electricFlute.enableBluetooth();
-        }
+        System.out.println("\nCreating an instance of Flute");
+        Flute flute = new Flute();
+        flute.play();
+        flute.clean();
+        flute.tune();
+        flute.store();
+
+        System.out.println("\nCreating an instance of BambooFlute using Flute reference");
+        Flute fluteRef = new BambooFlute();
+        fluteRef.play();
+        fluteRef.clean();
+        fluteRef.tune();
+        fluteRef.store();
+
+        System.out.println("\nCreating an instance of BambooFlute using subclass reference");
+        BambooFlute bambooFlute = new BambooFlute();
+        bambooFlute.play();
+        bambooFlute.clean();
+        bambooFlute.tune();
+        bambooFlute.store();
     }
-
+}

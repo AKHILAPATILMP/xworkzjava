@@ -1,29 +1,29 @@
 package com.xworkz.isarelation.helmet;
+public class SmartHelmet extends Helmet {
 
-    public class SmartHelmet extends Helmet {
-        public SmartHelmet() {
-            super();
-            System.out.println("SmartHelmet constructor is running");
-        }
-
-        public void bluetoothConnectivity() {
-            System.out.println("SmartHelmet: Connecting via Bluetooth...");
-        }
-
-        public void gpsNavigation() {
-            System.out.println("SmartHelmet: Providing GPS navigation...");
-        }
-
-        public void voiceControl() {
-            System.out.println("SmartHelmet: Enabling voice commands...");
-        }
-
-        public void emergencyAlert() {
-            System.out.println("SmartHelmet: Sending emergency alerts in case of an accident...");
-        }
-
-        public void rearViewCamera() {
-            System.out.println("SmartHelmet: Displaying rear-view camera feed...");
-        }
+    public SmartHelmet() {
+        super();
+        System.out.println("SmartHelmet constructor is running - subclass");
     }
+
+    @Override
+    public void wear() {
+        System.out.println("Wearing a smart helmet with sensors - subclass");
+    }
+
+    @Override
+    public void remove() {
+        System.out.println("Removing the smart helmet - subclass");
+    }
+
+    @Override
+    public void adjustStrap() {
+        System.out.println("Adjusting smart strap with auto-lock - subclass");
+    }
+
+    @Override
+    public void protectHead() {
+        System.out.println("Smart helmet provides enhanced head protection - subclass");
+    }
+}
 

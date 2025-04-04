@@ -1,28 +1,24 @@
 package com.xworkz.isarelation.market;
 
-    public class Market {
-        public Market() {
-            System.out.println("Market constructor is running");
-        }
+public class Market {
 
-        public void sellProducts() {
-            System.out.println("Market: Selling various products...");
-        }
-
-        public void provideDiscounts() {
-            System.out.println("Market: Offering seasonal discounts...");
-        }
-
-        public void manageInventory() {
-            System.out.println("Market: Managing stock and supplies...");
-        }
-
-        public void serveCustomers() {
-            System.out.println("Market: Assisting customers with purchases...");
-        }
-
-        public void acceptPayments() {
-            System.out.println("Market: Accepting different payment methods...");
-        }
+    public Market() {
+        System.out.println("Market constructor is running - parent class");
     }
 
+    public void openMarket() {
+        System.out.println("Market is open - parent class");
+    }
+
+    public void closeMarket() {
+        System.out.println("Market is closed - parent class");
+    }
+
+    public void sellGoods() {
+        System.out.println("Selling goods in the market - parent class");
+    }
+
+    public void cleanMarket() {
+        System.out.println("Cleaning the market - parent class");
+    }
+}

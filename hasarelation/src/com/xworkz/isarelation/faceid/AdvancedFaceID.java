@@ -1,30 +1,29 @@
 package com.xworkz.isarelation.faceid;
 
-    public class AdvancedFaceID extends FaceID {
-        public AdvancedFaceID() {
-            super();
-            System.out.println("AdvancedFaceID constructor is running");
-        }
+public class AdvancedFaceID extends FaceID {
 
-        public void detectLiveness() {
-            System.out.println("AdvancedFaceID: Detecting if the face is real or a spoof...");
-        }
-
-        public void recognizeMultipleUsers() {
-            System.out.println("AdvancedFaceID: Supporting multiple user face recognition...");
-        }
-
-        public void adaptToLightingConditions() {
-            System.out.println("AdvancedFaceID: Adapting to different lighting conditions...");
-        }
-
-        public void encryptFaceData() {
-            System.out.println("AdvancedFaceID: Encrypting face data for enhanced security...");
-        }
-
-        public void integrateWithApps() {
-            System.out.println("AdvancedFaceID: Integrating with third-party applications...");
-        }
+    public AdvancedFaceID() {
+        super();
+        System.out.println("AdvancedFaceID constructor is running - subclass");
     }
 
+    @Override
+    public void detectFace() {
+        System.out.println("Detecting face using depth sensors and infrared - subclass");
+    }
 
+    @Override
+    public void authenticate() {
+        System.out.println("Authenticating with advanced AI-based facial recognition - subclass");
+    }
+
+    @Override
+    public void lockDevice() {
+        System.out.println("Device locked securely using FaceID - subclass");
+    }
+
+    @Override
+    public void unlockDevice() {
+        System.out.println("Device unlocked with secure FaceID - subclass");
+    }
+}

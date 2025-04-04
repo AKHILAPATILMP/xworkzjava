@@ -1,29 +1,28 @@
 package com.xworkz.isarelation.guitar;
+public class ElectricGuitar extends Guitar {
 
-    public class ElectricGuitar extends Guitar {
-        public ElectricGuitar() {
-            super();
-            System.out.println("ElectricGuitar constructor is running");
-        }
-
-        public void connectToAmplifier() {
-            System.out.println("Electric Guitar is connected to an amplifier");
-        }
-
-        public void enableDistortion() {
-            System.out.println("Electric Guitar is using distortion effect");
-        }
-
-        public void useWhammyBar() {
-            System.out.println("Electric Guitar is using the whammy bar");
-        }
-
-        public void activatePickupSelector() {
-            System.out.println("Electric Guitar pickup selector is activated");
-        }
-
-        public void adjustToneKnob() {
-            System.out.println("Electric Guitar tone knob is adjusted");
-        }
+    public ElectricGuitar() {
+        super();
+        System.out.println("ElectricGuitar constructor is running - subclass");
     }
 
+    @Override
+    public void play() {
+        System.out.println("Playing an electric guitar with amplifier - subclass");
+    }
+
+    @Override
+    public void tune() {
+        System.out.println("Auto-tuning electric guitar - subclass");
+    }
+
+    @Override
+    public void clean() {
+        System.out.println("Cleaning electric guitar with care - subclass");
+    }
+
+    @Override
+    public void displayType() {
+        System.out.println("This is a modern electric guitar - subclass");
+    }
+}

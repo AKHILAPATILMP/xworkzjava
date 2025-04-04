@@ -1,28 +1,25 @@
 package com.xworkz.isarelation.fan;
-
 public class Fan {
-        public Fan() {
-            System.out.println("Fan constructor is running");
-        }
 
-        public void turnOn() {
-            System.out.println("Fan is turned on");
-        }
-
-        public void turnOff() {
-            System.out.println("Fan is turned off");
-        }
-
-        public void adjustSpeed() {
-            System.out.println("Fan speed is being adjusted");
-        }
-
-        public void oscillate() {
-            System.out.println("Fan is oscillating");
-        }
-
-        public void stopOscillation() {
-            System.out.println("Fan has stopped oscillating");
-        }
+    public Fan() {
+        System.out.println("Fan constructor is running - parent class");
     }
+
+    public void turnOn() {
+        System.out.println("Fan is turned on - parent class");
+    }
+
+    public void turnOff() {
+        System.out.println("Fan is turned off - parent class");
+    }
+
+    public void setSpeed() {
+        System.out.println("Fan speed is set - parent class");
+    }
+
+    public void rotate() {
+        System.out.println("Fan is rotating - parent class");
+    }
+}
+
 

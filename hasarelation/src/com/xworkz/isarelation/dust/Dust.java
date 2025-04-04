@@ -1,28 +1,24 @@
 package com.xworkz.isarelation.dust;
 
 public class Dust {
-        public Dust() {
-            System.out.println("Dust constructor is running");
-        }
 
-        public void settle() {
-            System.out.println("Dust: Settling on surfaces...");
-        }
-
-        public void spread() {
-            System.out.println("Dust: Spreading through the air...");
-        }
-
-        public void accumulate() {
-            System.out.println("Dust: Accumulating over time...");
-        }
-
-        public void causeAllergy() {
-            System.out.println("Dust: Causing allergies and irritation...");
-        }
-
-        public void absorbMoisture() {
-            System.out.println("Dust: Absorbing moisture from the air...");
-        }
+    public Dust() {
+        System.out.println("Dust constructor is running - parent class");
     }
 
+    public void spread() {
+        System.out.println("Dust is spreading in the air - parent class");
+    }
+
+    public void settle() {
+        System.out.println("Dust is settling on surfaces - parent class");
+    }
+
+    public void clean() {
+        System.out.println("Dust is being cleaned - parent class");
+    }
+
+    public void examine() {
+        System.out.println("Examining the type of dust - parent class");
+    }
+}

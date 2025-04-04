@@ -1,28 +1,31 @@
 package com.xworkz.isarelation.lock;
-    public class SmartLock extends Lock {
-        public SmartLock() {
-            super();
-            System.out.println("SmartLock constructor is running");
-        }
 
-        public void fingerprintUnlock() {
-            System.out.println("SmartLock is unlocked using a fingerprint");
-        }
+public class SmartLock extends Lock {
 
-        public void passwordUnlock() {
-            System.out.println("SmartLock is unlocked using a password");
-        }
-
-        public void remoteControl() {
-            System.out.println("SmartLock is controlled remotely via an app");
-        }
-
-        public void autoLock() {
-            System.out.println("SmartLock is auto-locking after a set duration");
-        }
-
-        public void connectToWiFi() {
-            System.out.println("SmartLock is connecting to WiFi for remote access");
-        }
+    public SmartLock() {
+        super();
+        System.out.println("SmartLock constructor is running - subclass");
     }
+
+    @Override
+    public void lock() {
+        System.out.println("SmartLock is locking via mobile app - subclass");
+    }
+
+    @Override
+    public void unlock() {
+        System.out.println("SmartLock is unlocking using fingerprint - subclass");
+    }
+
+    @Override
+    public void checkStatus() {
+        System.out.println("SmartLock status checked through app - subclass");
+    }
+
+    @Override
+    public void resetLock() {
+        System.out.println("SmartLock is reset to factory settings - subclass");
+    }
+}
+
 

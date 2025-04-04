@@ -1,29 +1,27 @@
 package com.xworkz.isarelation.fence;
 
 public class Fence {
-        public Fence() {
-            System.out.println("Fence constructor is running");
-        }
 
-        public void enclose() {
-            System.out.println("Fence: Enclosing the area...");
-        }
-
-        public void protect() {
-            System.out.println("Fence: Providing protection...");
-        }
-
-        public void defineBoundary() {
-            System.out.println("Fence: Defining property boundary...");
-        }
-
-        public void resistWeather() {
-            System.out.println("Fence: Resisting weather conditions...");
-        }
-
-        public void durable() {
-            System.out.println("Fence: Designed to last long...");
-        }
+    public Fence() {
+        System.out.println("Fence constructor is running - parent class");
     }
+
+    public void build() {
+        System.out.println("Building a regular fence - parent class");
+    }
+
+    public void openGate() {
+        System.out.println("Opening the gate in the fence - parent class");
+    }
+
+    public void closeGate() {
+        System.out.println("Closing the gate in the fence - parent class");
+    }
+
+    public void checkSecurity() {
+        System.out.println("Checking fence for security - parent class");
+    }
+}
+
 
 

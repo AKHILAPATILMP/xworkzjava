@@ -1,29 +1,33 @@
 package com.xworkz.isarelation.chatbot;
-    public class AIChatBot extends ChatBot {
-        public AIChatBot() {
-            super();
-            System.out.println("AIChatBot constructor is running");
-        }
 
-        public void useNaturalLanguageProcessing() {
-            System.out.println("AIChatBot: Understanding and processing user input...");
-        }
 
-        public void providePersonalizedResponses() {
-            System.out.println("AIChatBot: Providing personalized recommendations...");
-        }
+public class AIChatBot extends ChatBot {
 
-        public void supportMultipleLanguages() {
-            System.out.println("AIChatBot: Supporting conversations in multiple languages...");
-        }
-
-        public void integrateWithAPIs() {
-            System.out.println("AIChatBot: Integrating with external APIs for advanced features...");
-        }
-
-        public void learnFromConversations() {
-            System.out.println("AIChatBot: Learning and improving from past interactions...");
-        }
+    public AIChatBot() {
+        super();
+        System.out.println("AIChatBot constructor is running - subclass");
     }
+
+    @Override
+    public void greetUser() {
+        System.out.println("Hi there! I’m your smart assistant. How can I assist you? - subclass");
+    }
+
+    @Override
+    public void answerQuery() {
+        System.out.println("Using AI to provide accurate responses - subclass");
+    }
+
+    @Override
+    public void logInteraction() {
+        System.out.println("Saving interaction with advanced metadata - subclass");
+    }
+
+    @Override
+    public void endChat() {
+        System.out.println("Session ended. Hope to talk to you soon! - subclass");
+    }
+}
+
 
 

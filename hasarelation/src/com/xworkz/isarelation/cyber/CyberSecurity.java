@@ -1,30 +1,29 @@
 package com.xworkz.isarelation.cyber;
 
-    public class CyberSecurity extends Cyber {
-        public CyberSecurity() {
-            super();
-            System.out.println("CyberSecurity constructor is running");
-        }
+public class CyberSecurity extends Cyber {
 
-        public void firewallProtection() {
-            System.out.println("CyberSecurity: Implementing firewall protection...");
-        }
-
-        public void penetrationTesting() {
-            System.out.println("CyberSecurity: Conducting penetration testing...");
-        }
-
-        public void malwareDetection() {
-            System.out.println("CyberSecurity: Detecting malware threats...");
-        }
-
-        public void accessControl() {
-            System.out.println("CyberSecurity: Managing access control...");
-        }
-
-        public void systemAuditing() {
-            System.out.println("CyberSecurity: Performing security audits...");
-        }
+    public CyberSecurity() {
+        super();
+        System.out.println("CyberSecurity constructor is running - subclass");
     }
 
+    @Override
+    public void monitorActivity() {
+        System.out.println("Monitoring suspicious logins - subclass");
+    }
 
+    @Override
+    public void detectThreats() {
+        System.out.println("Detecting malware and intrusions - subclass");
+    }
+
+    @Override
+    public void analyzeData() {
+        System.out.println("Analyzing encrypted traffic - subclass");
+    }
+
+    @Override
+    public void reportIncident() {
+        System.out.println("Reporting breach to security team - subclass");
+    }
+}

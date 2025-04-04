@@ -1,29 +1,27 @@
 package com.xworkz.isarelation.cream;
 
 public class Cream {
-        public Cream() {
-            System.out.println("Cream constructor is running");
-        }
 
-        public void apply() {
-            System.out.println("Cream: Applying the cream...");
-        }
-
-        public void moisturize() {
-            System.out.println("Cream: Moisturizing the skin...");
-        }
-
-        public void protect() {
-            System.out.println("Cream: Protecting the skin...");
-        }
-
-        public void fragrance() {
-            System.out.println("Cream: Adding a pleasant fragrance...");
-        }
-
-        public void absorb() {
-            System.out.println("Cream: Absorbing into the skin...");
-        }
+    public Cream() {
+        System.out.println("Cream constructor is running - parent class");
     }
+
+    public void apply() {
+        System.out.println("Applying general cream - parent class");
+    }
+
+    public void getIngredients() {
+        System.out.println("Getting ingredients of the cream - parent class");
+    }
+
+    public void checkExpiry() {
+        System.out.println("Checking expiry date - parent class");
+    }
+
+    public void remove() {
+        System.out.println("Removing cream - parent class");
+    }
+}
+
 
 

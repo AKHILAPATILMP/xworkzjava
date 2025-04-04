@@ -1,35 +1,27 @@
 package com.xworkz.isarelation.cells;
 
 public class Runner {
-        public static void main(String[] args) {
-            System.out.println("Creating an instance of Cell");
-            Cell cell = new Cell();
-            cell.divide();
-            cell.grow();
-            cell.generateEnergy();
-            cell.communicate();
-            cell.repair();
+    public static void main(String[] args) {
 
-            System.out.println("\nCreating an instance of StemCell using Cell reference");
-            Cell cellRef = new StemCell();
-            cellRef.divide();
-            cellRef.grow();
-            cellRef.generateEnergy();
-            cellRef.communicate();
-            cellRef.repair();
+        System.out.println("\nCreating an instance of Cell");
+        Cell cell = new Cell();
+        cell.provideEnergy();
+        cell.checkCharge();
+        cell.storeEnergy();
+        cell.dispose();
 
-            System.out.println("\nCreating an instance of StemCell using subclass reference");
-            StemCell stemCell = new StemCell();
-            stemCell.divide();
-            stemCell.grow();
-            stemCell.generateEnergy();
-            stemCell.communicate();
-            stemCell.repair();
-            stemCell.differentiate();
-            stemCell.regenerate();
-            stemCell.selfRenew();
-            stemCell.adapt();
-            stemCell.multiplyRapidly();
-        }
+        System.out.println("\nCreating an instance of BatteryCell using Cell reference");
+        Cell cellRef = new BatteryCell();
+        cellRef.provideEnergy();
+        cellRef.checkCharge();
+        cellRef.storeEnergy();
+        cellRef.dispose();
+
+        System.out.println("\nCreating an instance of BatteryCell using subclass reference");
+        BatteryCell batteryCell = new BatteryCell();
+        batteryCell.provideEnergy();
+        batteryCell.checkCharge();
+        batteryCell.storeEnergy();
+        batteryCell.dispose();
     }
-
+}

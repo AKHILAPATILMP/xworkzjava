@@ -1,28 +1,29 @@
 package com.xworkz.isarelation.laptop;
 
 public class Runner {
+    public static void main(String[] args) {
 
-        public static void main(String[] args) {
-            System.out.println("\nCreating an instance of SmartLaptop using Laptop reference");
-            Laptop laptopRef = new SmartLaptop();
-            laptopRef.powerOn();
-            laptopRef.runApplication();
-            laptopRef.connectToWiFi();
-            laptopRef.chargeBattery();
-            laptopRef.powerOff();
+        System.out.println("\nCreating an instance of Laptop");
+        Laptop laptop = new Laptop();
+        laptop.powerOn();
+        laptop.powerOff();
+        laptop.runApplication();
+        laptop.connectToWiFi();
 
-            System.out.println("\nCreating an instance of SmartLaptop using subclass reference");
-            SmartLaptop smartLaptop = new SmartLaptop();
-            smartLaptop.powerOn();
-            smartLaptop.runApplication();
-            smartLaptop.connectToWiFi();
-            smartLaptop.chargeBattery();
-            smartLaptop.powerOff();
-            smartLaptop.voiceAssistant();
-            smartLaptop.fingerprintUnlock();
-            smartLaptop.touchscreenMode();
-            smartLaptop.faceRecognition();
-            smartLaptop.fastCharging();
-        }
+        System.out.println("\nCreating an instance of GamingLaptop using Laptop reference");
+        Laptop laptopRef = new GamingLaptop();
+        laptopRef.powerOn();
+        laptopRef.powerOff();
+        laptopRef.runApplication();
+        laptopRef.connectToWiFi();
+
+        System.out.println("\nCreating an instance of GamingLaptop using subclass reference");
+        GamingLaptop gamingLaptop = new GamingLaptop();
+        gamingLaptop.powerOn();
+        gamingLaptop.powerOff();
+        gamingLaptop.runApplication();
+        gamingLaptop.connectToWiFi();
     }
+}
+
 

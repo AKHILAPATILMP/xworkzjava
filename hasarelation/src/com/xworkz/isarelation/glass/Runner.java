@@ -1,35 +1,29 @@
 package com.xworkz.isarelation.glass;
 
 public class Runner {
-        public static void main(String[] args) {
-            System.out.println("Creating an instance of Glass");
-            Glass glass = new Glass();
-            glass.reflect();
-            glass.refract();
-            glass.transparent();
-            glass.fragile();
-            glass.insulate();
+    public static void main(String[] args) {
 
-            System.out.println("\nCreating an instance of TemperedGlass using Glass reference");
-            Glass glassRef = new TemperedGlass();
-            glassRef.reflect();
-            glassRef.refract();
-            glassRef.transparent();
-            glassRef.fragile();
-            glassRef.insulate();
+        System.out.println("\nCreating an instance of Glass");
+        Glass glass = new Glass();
+        glass.fill();
+        glass.drink();
+        glass.clean();
+        glass.displayMaterial();
 
-            System.out.println("\nCreating an instance of TemperedGlass using subclass reference");
-            TemperedGlass temperedGlass = new TemperedGlass();
-            temperedGlass.reflect();
-            temperedGlass.refract();
-            temperedGlass.transparent();
-            temperedGlass.fragile();
-            temperedGlass.insulate();
-            temperedGlass.strengthen();
-            temperedGlass.heatResistant();
-            temperedGlass.shatterSafely();
-            temperedGlass.scratchResistant();
-            temperedGlass.durable();
-        }
+        System.out.println("\nCreating an instance of SmartGlass using Glass reference");
+        Glass glassRef = new SmartGlass();
+        glassRef.fill();
+        glassRef.drink();
+        glassRef.clean();
+        glassRef.displayMaterial();
+
+        System.out.println("\nCreating an instance of SmartGlass using subclass reference");
+        SmartGlass smartGlass = new SmartGlass();
+        smartGlass.fill();
+        smartGlass.drink();
+        smartGlass.clean();
+        smartGlass.displayMaterial();
     }
+}
+
 

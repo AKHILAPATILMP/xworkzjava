@@ -1,28 +1,25 @@
 package com.xworkz.isarelation.helmet;
 
 public class Helmet {
-        public Helmet() {
-            System.out.println("Helmet constructor is running");
-        }
 
-        public void protectHead() {
-            System.out.println("Helmet: Protecting the head...");
-        }
-
-        public void absorbImpact() {
-            System.out.println("Helmet: Absorbing impact in case of an accident...");
-        }
-
-        public void provideComfort() {
-            System.out.println("Helmet: Providing comfort for the rider...");
-        }
-
-        public void reduceNoise() {
-            System.out.println("Helmet: Reducing wind and traffic noise...");
-        }
-
-        public void ensureVisibility() {
-            System.out.println("Helmet: Ensuring clear visibility...");
-        }
+    public Helmet() {
+        System.out.println("Helmet constructor is running - parent class");
     }
+
+    public void wear() {
+        System.out.println("Wearing a regular helmet - parent class");
+    }
+
+    public void remove() {
+        System.out.println("Removing the helmet - parent class");
+    }
+
+    public void adjustStrap() {
+        System.out.println("Adjusting helmet strap - parent class");
+    }
+
+    public void protectHead() {
+        System.out.println("Helmet provides head protection - parent class");
+    }
+}
 

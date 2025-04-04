@@ -1,33 +1,26 @@
 package com.xworkz.isarelation.lens;
 public class Runner {
     public static void main(String[] args) {
-        System.out.println("Creating an instance of Lens");
+
+        System.out.println("\nCreating an instance of Lens");
         Lens lens = new Lens();
         lens.focus();
-        lens.magnify();
-        lens.filterLight();
-        lens.correctDistortion();
-        lens.captureImage();
+        lens.capture();
+        lens.adjustAperture();
+        lens.cleanLens();
 
-        System.out.println("\nCreating an instance of CameraLens using Lens reference");
-        Lens lensRef = new CameraLens();
+        System.out.println("\nCreating an instance of ZoomLens using Lens reference");
+        Lens lensRef = new ZoomLens();
         lensRef.focus();
-        lensRef.magnify();
-        lensRef.filterLight();
-        lensRef.correctDistortion();
-        lensRef.captureImage();
+        lensRef.capture();
+        lensRef.adjustAperture();
+        lensRef.cleanLens();
 
-        System.out.println("\nCreating an instance of CameraLens using subclass reference");
-        CameraLens cameraLens = new CameraLens();
-        cameraLens.focus();
-        cameraLens.magnify();
-        cameraLens.filterLight();
-        cameraLens.correctDistortion();
-        cameraLens.captureImage();
-        cameraLens.zoom();
-        cameraLens.adjustAperture();
-        cameraLens.stabilizeImage();
-        cameraLens.autofocus();
-        cameraLens.changeFocalLength();
+        System.out.println("\nCreating an instance of ZoomLens using subclass reference");
+        ZoomLens zoomLens = new ZoomLens();
+        zoomLens.focus();
+        zoomLens.capture();
+        zoomLens.adjustAperture();
+        zoomLens.cleanLens();
     }
 }
