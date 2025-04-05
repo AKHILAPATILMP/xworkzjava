@@ -1,28 +1,30 @@
 package com.xworkz.isarelation.train;
-    public class BulletTrain extends Train {
-        public BulletTrain() {
-            super();
-            System.out.println("BulletTrain constructor is running");
-        }
 
-        public void highSpeed() {
-            System.out.println("BulletTrain: Running at ultra-high speed...");
-        }
+public class BulletTrain extends Train {
 
-        public void aerodynamicDesign() {
-            System.out.println("BulletTrain: Designed for minimal air resistance...");
-        }
-
-        public void advancedBraking() {
-            System.out.println("BulletTrain: Using advanced braking system...");
-        }
-
-        public void automatedControl() {
-            System.out.println("BulletTrain: Controlled by an automated system...");
-        }
-
-        public void luxurySeats() {
-            System.out.println("BulletTrain: Providing luxury seating...");
-        }
+    public BulletTrain() {
+        super();
+        System.out.println("BulletTrain constructor is running - subclass");
     }
+
+    @Override
+    public void start() {
+        System.out.println("BulletTrain is starting at high speed - subclass");
+    }
+
+    @Override
+    public void stop() {
+        System.out.println("BulletTrain is stopping using magnetic brakes - subclass");
+    }
+
+    @Override
+    public void accelerate() {
+        System.out.println("BulletTrain is accelerating rapidly - subclass");
+    }
+
+    @Override
+    public void soundHorn() {
+        System.out.println("BulletTrain horn is modern and less noisy - subclass");
+    }
+}
 

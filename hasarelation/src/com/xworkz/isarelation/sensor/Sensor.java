@@ -2,28 +2,24 @@ package com.xworkz.isarelation.sensor;
 
 public class Sensor {
 
-        public Sensor() {
-            System.out.println("Sensor constructor is running");
-        }
-
-        public void detect() {
-            System.out.println("Sensor: Detecting environmental changes...");
-        }
-
-        public void calibrate() {
-            System.out.println("Sensor: Calibrating sensor...");
-        }
-
-        public void sendData() {
-            System.out.println("Sensor: Sending data to system...");
-        }
-
-        public void analyzeData() {
-            System.out.println("Sensor: Analyzing collected data...");
-        }
-
-        public void alert() {
-            System.out.println("Sensor: Triggering an alert if needed...");
-        }
+    public Sensor() {
+        System.out.println("Sensor constructor is running - parent class");
     }
+
+    public void detect() {
+        System.out.println("Sensor is detecting activity - parent class");
+    }
+
+    public void calibrate() {
+        System.out.println("Calibrating sensor - parent class");
+    }
+
+    public void reset() {
+        System.out.println("Sensor has been reset - parent class");
+    }
+
+    public void displayStatus() {
+        System.out.println("Displaying sensor status - parent class");
+    }
+}
 

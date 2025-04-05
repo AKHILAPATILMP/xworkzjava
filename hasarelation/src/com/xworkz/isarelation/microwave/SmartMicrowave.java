@@ -1,28 +1,31 @@
 package com.xworkz.isarelation.microwave;
-    public class SmartMicrowave extends Microwave {
-        public SmartMicrowave() {
-            super();
-            System.out.println("SmartMicrowave constructor is running");
-        }
 
-        public void connectToWiFi() {
-            System.out.println("SmartMicrowave is connecting to WiFi");
-        }
+public class SmartMicrowave extends Microwave {
 
-        public void voiceControl() {
-            System.out.println("SmartMicrowave is responding to voice commands");
-        }
-
-        public void autoCookMode() {
-            System.out.println("SmartMicrowave is in auto-cook mode");
-        }
-
-        public void touchControl() {
-            System.out.println("SmartMicrowave is using touch controls");
-        }
-
-        public void energySavingMode() {
-            System.out.println("SmartMicrowave is in energy-saving mode");
-        }
+    public SmartMicrowave() {
+        super();
+        System.out.println("SmartMicrowave constructor is running - subclass");
     }
+
+    @Override
+    public void start() {
+        System.out.println("SmartMicrowave is starting with smart controls - subclass");
+    }
+
+    @Override
+    public void stop() {
+        System.out.println("SmartMicrowave is stopping with auto shutdown - subclass");
+    }
+
+    @Override
+    public void setTimer() {
+        System.out.println("Setting timer via touchscreen - subclass");
+    }
+
+    @Override
+    public void displayStatus() {
+        System.out.println("SmartMicrowave status shown on LED screen - subclass");
+    }
+}
+
 

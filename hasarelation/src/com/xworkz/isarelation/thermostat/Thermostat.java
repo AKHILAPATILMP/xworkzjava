@@ -1,28 +1,23 @@
 package com.xworkz.isarelation.thermostat;
-
 public class Thermostat {
-        public Thermostat() {
-            System.out.println("Thermostat constructor is running");
-        }
 
-        public void turnOn() {
-            System.out.println("Thermostat is turned on");
-        }
-
-        public void turnOff() {
-            System.out.println("Thermostat is turned off");
-        }
-
-        public void setTemperature(int temperature) {
-            System.out.println("Thermostat temperature set to " + temperature + "°C");
-        }
-
-        public void displayTemperature() {
-            System.out.println("Displaying current temperature");
-        }
-
-        public void energySavingMode() {
-            System.out.println("Thermostat is in energy-saving mode");
-        }
+    public Thermostat() {
+        System.out.println("Thermostat constructor is running - parent class");
     }
 
+    public void turnOn() {
+        System.out.println("Turning on the thermostat - parent class");
+    }
+
+    public void turnOff() {
+        System.out.println("Turning off the thermostat - parent class");
+    }
+
+    public void setTemperature() {
+        System.out.println("Setting temperature manually - parent class");
+    }
+
+    public void showStatus() {
+        System.out.println("Displaying thermostat status - parent class");
+    }
+}

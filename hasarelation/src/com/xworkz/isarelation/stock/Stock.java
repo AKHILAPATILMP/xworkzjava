@@ -1,28 +1,25 @@
 package com.xworkz.isarelation.stock;
-
 public class Stock {
-        public Stock() {
-            System.out.println("Stock constructor is running");
-        }
 
-        public void buy() {
-            System.out.println("Stock: Buying shares...");
-        }
-
-        public void sell() {
-            System.out.println("Stock: Selling shares...");
-        }
-
-        public void trackMarket() {
-            System.out.println("Stock: Tracking stock market fluctuations...");
-        }
-
-        public void calculateReturns() {
-            System.out.println("Stock: Calculating investment returns...");
-        }
-
-        public void analyzeTrends() {
-            System.out.println("Stock: Analyzing stock trends...");
-        }
+    public Stock() {
+        System.out.println("Stock constructor is running - parent class");
     }
+
+    public void checkAvailability() {
+        System.out.println("Checking stock availability - parent class");
+    }
+
+    public void updateStock() {
+        System.out.println("Updating stock in the system - parent class");
+    }
+
+    public void displayStock() {
+        System.out.println("Displaying current stock details - parent class");
+    }
+
+    public void removeStock() {
+        System.out.println("Removing item from stock - parent class");
+    }
+}
+
 

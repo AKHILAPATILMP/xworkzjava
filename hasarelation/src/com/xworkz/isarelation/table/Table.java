@@ -1,25 +1,23 @@
 package com.xworkz.isarelation.table;
-
 public class Table {
 
-        public Table() {
-            System.out.println("Table constructor is running");
-        }
-
-        public void placeObjects() {
-            System.out.println("Objects are placed on the table");
-        }
-
-        public void adjustHeight() {
-            System.out.println("Table height is being adjusted");
-        }
-
-        public void fold() {
-            System.out.println("Table is folding");
-        }
-
-        public void move() {
-            System.out.println("Table is being moved");
-        }
+    public Table() {
+        System.out.println("Table constructor is running - parent class");
     }
 
+    public void supportItems() {
+        System.out.println("Table supports items - parent class");
+    }
+
+    public void provideSurface() {
+        System.out.println("Table provides a flat surface - parent class");
+    }
+
+    public void fold() {
+        System.out.println("Table is foldable - parent class");
+    }
+
+    public void clean() {
+        System.out.println("Table is being cleaned - parent class");
+    }
+}

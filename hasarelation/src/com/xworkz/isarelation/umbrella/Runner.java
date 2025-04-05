@@ -1,27 +1,26 @@
 package com.xworkz.isarelation.umbrella;
-
 public class Runner {
-        public static void main(String[] args) {
-            System.out.println("\nCreating an instance of SmartUmbrella using Umbrella reference");
-            Umbrella umbrellaRef = new SmartUmbrella();
-            umbrellaRef.open();
-            umbrellaRef.close();
-            umbrellaRef.protectFromRain();
-            umbrellaRef.protectFromSun();
-            umbrellaRef.fold();
+    public static void main(String[] args) {
 
-            System.out.println("\nCreating an instance of SmartUmbrella using subclass reference");
-            SmartUmbrella smartUmbrella = new SmartUmbrella();
-            smartUmbrella.open();
-            smartUmbrella.close();
-            smartUmbrella.protectFromRain();
-            smartUmbrella.protectFromSun();
-            smartUmbrella.fold();
-            smartUmbrella.autoOpen();
-            smartUmbrella.autoClose();
-            smartUmbrella.weatherAlert();
-            smartUmbrella.solarCharging();
-            smartUmbrella.LEDLight();
-        }
+        System.out.println("\nCreating an instance of Umbrella");
+        Umbrella umbrella = new Umbrella();
+        umbrella.open();
+        umbrella.close();
+        umbrella.provideShade();
+        umbrella.carry();
+
+        System.out.println("\nCreating an instance of FoldingUmbrella using Umbrella reference");
+        Umbrella ref = new FoldingUmbrella();
+        ref.open();
+        ref.close();
+        ref.provideShade();
+        ref.carry();
+
+        System.out.println("\nCreating an instance of FoldingUmbrella using subclass reference");
+        FoldingUmbrella foldUmbrella = new FoldingUmbrella();
+        foldUmbrella.open();
+        foldUmbrella.close();
+        foldUmbrella.provideShade();
+        foldUmbrella.carry();
     }
-
+}

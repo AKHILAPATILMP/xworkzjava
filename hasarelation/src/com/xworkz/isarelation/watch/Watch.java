@@ -1,28 +1,26 @@
 package com.xworkz.isarelation.watch;
 
 public class Watch {
-        public Watch() {
-            System.out.println("Watch constructor is running");
-        }
 
-        public void showTime() {
-            System.out.println("Displaying the time");
-        }
-
-        public void showDate() {
-            System.out.println("Displaying the date");
-        }
-
-        public void setAlarm() {
-            System.out.println("Setting an alarm");
-        }
-
-        public void stopwatch() {
-            System.out.println("Using the stopwatch feature");
-        }
-
-        public void timer() {
-            System.out.println("Setting a timer");
-        }
+    public Watch() {
+        System.out.println("Watch constructor is running - parent class");
     }
+
+    public void showTime() {
+        System.out.println("Showing time - parent class");
+    }
+
+    public void setAlarm() {
+        System.out.println("Setting alarm - parent class");
+    }
+
+    public void stopWatch() {
+        System.out.println("Using stopwatch - parent class");
+    }
+
+    public void displayDate() {
+        System.out.println("Displaying date - parent class");
+    }
+}
+
 

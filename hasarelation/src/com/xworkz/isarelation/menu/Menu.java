@@ -1,27 +1,24 @@
 package com.xworkz.isarelation.menu;
-    public class Menu {
-        public Menu() {
-            System.out.println("Menu constructor is running");
-        }
+public class Menu {
 
-        public void displayItems() {
-            System.out.println("Menu: Displaying all available items...");
-        }
-
-        public void selectItem() {
-            System.out.println("Menu: Selecting an item...");
-        }
-
-        public void addCustomization() {
-            System.out.println("Menu: Adding customization to an item...");
-        }
-
-        public void checkAvailability() {
-            System.out.println("Menu: Checking item availability...");
-        }
-
-        public void showPrice() {
-            System.out.println("Menu: Showing item price...");
-        }
+    public Menu() {
+        System.out.println("Menu constructor is running - parent class");
     }
+
+    public void showItems() {
+        System.out.println("Showing menu items - parent class");
+    }
+
+    public void selectItem() {
+        System.out.println("Selecting item from menu - parent class");
+    }
+
+    public void removeItem() {
+        System.out.println("Removing item from menu - parent class");
+    }
+
+    public void displayMenuInfo() {
+        System.out.println("Displaying menu information - parent class");
+    }
+}
 

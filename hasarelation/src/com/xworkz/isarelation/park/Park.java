@@ -1,28 +1,24 @@
 package com.xworkz.isarelation.park;
 
 public class Park {
-        public Park() {
-            System.out.println("Park constructor is running");
-        }
 
-        public void provideWalkingTrack() {
-            System.out.println("Park provides a walking track");
-        }
-
-        public void offerGreenery() {
-            System.out.println("Park has lush green trees and grass");
-        }
-
-        public void provideBenches() {
-            System.out.println("Park provides benches for visitors to relax");
-        }
-
-        public void supportOutdoorGames() {
-            System.out.println("Park supports outdoor games and sports");
-        }
-
-        public void ensureCleanliness() {
-            System.out.println("Park ensures cleanliness and hygiene");
-        }
+    public Park() {
+        System.out.println("Park constructor is running - parent class");
     }
 
+    public void open() {
+        System.out.println("Park is open for visitors - parent class");
+    }
+
+    public void close() {
+        System.out.println("Park is closed now - parent class");
+    }
+
+    public void maintain() {
+        System.out.println("Park is being maintained - parent class");
+    }
+
+    public void provideSeating() {
+        System.out.println("Providing benches for seating - parent class");
+    }
+}

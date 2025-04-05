@@ -1,28 +1,25 @@
 package com.xworkz.isarelation.vacuumCleaner;
-
 public class VacuumCleaner {
-        public VacuumCleaner() {
-            System.out.println("VacuumCleaner constructor is running");
-        }
 
-        public void turnOn() {
-            System.out.println("Vacuum Cleaner is turned on");
-        }
-
-        public void turnOff() {
-            System.out.println("Vacuum Cleaner is turned off");
-        }
-
-        public void startSuction() {
-            System.out.println("Vacuum Cleaner is sucking in dust and debris");
-        }
-
-        public void stopSuction() {
-            System.out.println("Vacuum Cleaner has stopped suction");
-        }
-
-        public void emptyDustbin() {
-            System.out.println("Emptying the vacuum cleaner's dustbin");
-        }
+    public VacuumCleaner() {
+        System.out.println("VacuumCleaner constructor is running - parent class");
     }
+
+    public void start() {
+        System.out.println("VacuumCleaner started - parent class");
+    }
+
+    public void stop() {
+        System.out.println("VacuumCleaner stopped - parent class");
+    }
+
+    public void cleanFloor() {
+        System.out.println("Cleaning the floor - parent class");
+    }
+
+    public void emptyDustBag() {
+        System.out.println("Emptying the dust bag - parent class");
+    }
+}
+
 

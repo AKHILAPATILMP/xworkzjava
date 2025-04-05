@@ -1,28 +1,24 @@
 package com.xworkz.isarelation.violin;
 
 public class Violin {
-        public Violin() {
-            System.out.println("Violin constructor is running");
-        }
 
-        public void play() {
-            System.out.println("Violin is being played");
-        }
-
-        public void tune() {
-            System.out.println("Tuning the violin for better sound");
-        }
-
-        public void useBow() {
-            System.out.println("Using the bow to play the violin");
-        }
-
-        public void pluckStrings() {
-            System.out.println("Plucking the violin strings to produce sound");
-        }
-
-        public void adjustVolume() {
-            System.out.println("Adjusting the violin volume");
-        }
+    public Violin() {
+        System.out.println("Violin constructor is running - parent class");
     }
 
+    public void play() {
+        System.out.println("Playing a classical melody on the violin - parent class");
+    }
+
+    public void tune() {
+        System.out.println("Tuning the violin - parent class");
+    }
+
+    public void stop() {
+        System.out.println("Stopping the violin performance - parent class");
+    }
+
+    public void maintain() {
+        System.out.println("Maintaining the violin regularly - parent class");
+    }
+}

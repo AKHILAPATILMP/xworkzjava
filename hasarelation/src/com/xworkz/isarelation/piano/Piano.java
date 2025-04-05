@@ -2,28 +2,24 @@ package com.xworkz.isarelation.piano;
 
 public class Piano {
 
-        public Piano() {
-            System.out.println("Piano constructor is running");
-        }
-
-        public void play() {
-            System.out.println("Piano is being played");
-        }
-
-        public void tune() {
-            System.out.println("Tuning the piano");
-        }
-
-        public void pressKeys() {
-            System.out.println("Pressing piano keys to produce sound");
-        }
-
-        public void sustainPedal() {
-            System.out.println("Using the sustain pedal for extended sound");
-        }
-
-        public void adjustVolume() {
-            System.out.println("Adjusting the piano volume");
-        }
+    public Piano() {
+        System.out.println("Piano constructor is running - parent class");
     }
+
+    public void play() {
+        System.out.println("Playing piano - parent class");
+    }
+
+    public void stop() {
+        System.out.println("Stopping piano - parent class");
+    }
+
+    public void tune() {
+        System.out.println("Tuning the piano - parent class");
+    }
+
+    public void showKeys() {
+        System.out.println("Displaying standard piano keys - parent class");
+    }
+}
 

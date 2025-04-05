@@ -1,28 +1,24 @@
 package com.xworkz.isarelation.umbrella;
-
 public class Umbrella {
-        public Umbrella() {
-            System.out.println("Umbrella constructor is running");
-        }
 
-        public void open() {
-            System.out.println("Umbrella is opening");
-        }
-
-        public void close() {
-            System.out.println("Umbrella is closing");
-        }
-
-        public void protectFromRain() {
-            System.out.println("Umbrella is protecting from rain");
-        }
-
-        public void protectFromSun() {
-            System.out.println("Umbrella is protecting from sunlight");
-        }
-
-        public void fold() {
-            System.out.println("Umbrella is folding");
-        }
+    public Umbrella() {
+        System.out.println("Umbrella constructor is running - parent class");
     }
+
+    public void open() {
+        System.out.println("Opening the umbrella - parent class");
+    }
+
+    public void close() {
+        System.out.println("Closing the umbrella - parent class");
+    }
+
+    public void provideShade() {
+        System.out.println("Providing shade from sun or rain - parent class");
+    }
+
+    public void carry() {
+        System.out.println("Carrying the umbrella - parent class");
+    }
+}
 

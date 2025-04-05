@@ -1,35 +1,27 @@
 package com.xworkz.isarelation.stock;
 
 public class Runner {
-        public static void main(String[] args) {
-            System.out.println("Creating an instance of Stock");
-            Stock stock = new Stock();
-            stock.buy();
-            stock.sell();
-            stock.trackMarket();
-            stock.calculateReturns();
-            stock.analyzeTrends();
+    public static void main(String[] args) {
 
-            System.out.println("\nCreating an instance of EquityStock using Stock reference");
-            Stock stockRef = new EquityStock();
-            stockRef.buy();
-            stockRef.sell();
-            stockRef.trackMarket();
-            stockRef.calculateReturns();
-            stockRef.analyzeTrends();
+        System.out.println("\nCreating an instance of Stock");
+        Stock stock = new Stock();
+        stock.checkAvailability();
+        stock.updateStock();
+        stock.displayStock();
+        stock.removeStock();
 
-            System.out.println("\nCreating an instance of EquityStock using subclass reference");
-            EquityStock equityStock = new EquityStock();
-            equityStock.buy();
-            equityStock.sell();
-            equityStock.trackMarket();
-            equityStock.calculateReturns();
-            equityStock.analyzeTrends();
-            equityStock.dividendPayout();
-            equityStock.shortSelling();
-            equityStock.marginTrading();
-            equityStock.IPOInvestment();
-            equityStock.portfolioDiversification();
-        }
+        System.out.println("\nCreating an instance of OnlineStock using Stock reference");
+        Stock stockRef = new OnlineStock();
+        stockRef.checkAvailability();
+        stockRef.updateStock();
+        stockRef.displayStock();
+        stockRef.removeStock();
+
+        System.out.println("\nCreating an instance of OnlineStock using subclass reference");
+        OnlineStock onlineStock = new OnlineStock();
+        onlineStock.checkAvailability();
+        onlineStock.updateStock();
+        onlineStock.displayStock();
+        onlineStock.removeStock();
     }
-
+}

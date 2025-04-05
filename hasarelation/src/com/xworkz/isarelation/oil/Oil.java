@@ -1,26 +1,24 @@
 package com.xworkz.isarelation.oil;
-
 public class Oil {
+
     public Oil() {
-        System.out.println("no argument const oil is running");
+        System.out.println("Oil constructor is running - parent class");
     }
 
-    public void Slip() {
-        System.out.println("slip is running");
-    }
-    public void lubricate() {
-        System.out.println("Lubricate method is running");
+    public void extract() {
+        System.out.println("Extracting oil from seeds - parent class");
     }
 
-    public void purify() {
-        System.out.println("Purify method is running");
+    public void refine() {
+        System.out.println("Refining the oil - parent class");
     }
 
-    public void burn() {
-        System.out.println("Burn method is running");
+    public void store() {
+        System.out.println("Storing oil in barrels - parent class");
     }
 
-    public void clean() {
-        System.out.println("Clean method is running");
+    public void label() {
+        System.out.println("Labeling the oil container - parent class");
     }
 }
+

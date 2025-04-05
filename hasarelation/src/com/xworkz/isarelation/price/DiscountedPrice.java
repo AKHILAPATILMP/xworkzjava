@@ -1,28 +1,29 @@
 package com.xworkz.isarelation.price;
-    public class DiscountedPrice extends Price {
-        public DiscountedPrice() {
-            super();
-            System.out.println("DiscountedPrice constructor is running");
-        }
 
-        public void applyDiscount() {
-            System.out.println("DiscountedPrice: Applying discount on the product...");
-        }
+public class DiscountedPrice extends Price {
 
-        public void showSavings() {
-            System.out.println("DiscountedPrice: Showing how much money is saved...");
-        }
-
-        public void calculateLoyaltyDiscount() {
-            System.out.println("DiscountedPrice: Calculating loyalty program discount...");
-        }
-
-        public void seasonalDiscount() {
-            System.out.println("DiscountedPrice: Offering seasonal discounts...");
-        }
-
-        public void clearanceSale() {
-            System.out.println("DiscountedPrice: Applying clearance sale prices...");
-        }
+    public DiscountedPrice() {
+        super();
+        System.out.println("DiscountedPrice constructor is running - subclass");
     }
 
+    @Override
+    public void showOriginalPrice() {
+        System.out.println("Original price shown before discount - subclass");
+    }
+
+    @Override
+    public void calculateTax() {
+        System.out.println("Calculating tax after discount applied - subclass");
+    }
+
+    @Override
+    public void displayFinalPrice() {
+        System.out.println("Final price includes discount and tax - subclass");
+    }
+
+    @Override
+    public void priceTag() {
+        System.out.println("Showing discounted price tag - subclass");
+    }
+}

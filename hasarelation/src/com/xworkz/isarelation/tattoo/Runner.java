@@ -1,35 +1,28 @@
 package com.xworkz.isarelation.tattoo;
-
 public class Runner {
-        public static void main(String[] args) {
-            System.out.println("Creating an instance of Tattoo");
-            Tattoo tattoo = new Tattoo();
-            tattoo.design();
-            tattoo.ink();
-            tattoo.shade();
-            tattoo.remove();
-            tattoo.heal();
+    public static void main(String[] args) {
 
-            System.out.println("\nCreating an instance of PermanentTattoo using Tattoo reference");
-            Tattoo tattooRef = new PermanentTattoo();
-            tattooRef.design();
-            tattooRef.ink();
-            tattooRef.shade();
-            tattooRef.remove();
-            tattooRef.heal();
+        System.out.println("\nCreating an instance of Tattoo");
+        Tattoo tattoo = new Tattoo();
+        tattoo.design();
+        tattoo.apply();
+        tattoo.remove();
+        tattoo.display();
 
-            System.out.println("\nCreating an instance of PermanentTattoo using subclass reference");
-            PermanentTattoo permanentTattoo = new PermanentTattoo();
-            permanentTattoo.design();
-            permanentTattoo.ink();
-            permanentTattoo.shade();
-            permanentTattoo.remove();
-            permanentTattoo.heal();
-            permanentTattoo.useNeedleGun();
-            permanentTattoo.addColor();
-            permanentTattoo.maintainTattoo();
-            permanentTattoo.enhanceDetail();
-            permanentTattoo.longLasting();
-        }
+        System.out.println("\nCreating an instance of ColorTattoo using Tattoo reference");
+        Tattoo tattooRef = new ColorTattoo();
+        tattooRef.design();
+        tattooRef.apply();
+        tattooRef.remove();
+        tattooRef.display();
+
+        System.out.println("\nCreating an instance of ColorTattoo using subclass reference");
+        ColorTattoo colorTattoo = new ColorTattoo();
+        colorTattoo.design();
+        colorTattoo.apply();
+        colorTattoo.remove();
+        colorTattoo.display();
     }
+}
+
 

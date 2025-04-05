@@ -1,29 +1,23 @@
 package com.xworkz.isarelation.skateboard;
-
 public class Skateboard {
 
-        public Skateboard() {
-            System.out.println("Skateboard constructor is running");
-        }
-
-        public void ride() {
-            System.out.println("Riding the skateboard");
-        }
-
-        public void turn() {
-            System.out.println("Turning the skateboard");
-        }
-
-        public void stop() {
-            System.out.println("Stopping the skateboard");
-        }
-
-        public void ollie() {
-            System.out.println("Performing an ollie on the skateboard");
-        }
-
-        public void kickflip() {
-            System.out.println("Performing a kickflip on the skateboard");
-        }
+    public Skateboard() {
+        System.out.println("Skateboard constructor is running - parent class");
     }
 
+    public void ride() {
+        System.out.println("Riding the skateboard - parent class");
+    }
+
+    public void brake() {
+        System.out.println("Applying manual brake - parent class");
+    }
+
+    public void performTrick() {
+        System.out.println("Performing an ollie trick - parent class");
+    }
+
+    public void stop() {
+        System.out.println("Skateboard has stopped - parent class");
+    }
+}

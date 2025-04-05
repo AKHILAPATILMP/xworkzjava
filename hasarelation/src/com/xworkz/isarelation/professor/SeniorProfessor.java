@@ -1,29 +1,28 @@
 package com.xworkz.isarelation.professor;
+public class SeniorProfessor extends Professor {
 
-    public class SeniorProfessor extends Professor {
-        public SeniorProfessor() {
-            super();
-            System.out.println("SeniorProfessor constructor is running");
-        }
-
-        public void publishResearchPaper() {
-            System.out.println("SeniorProfessor is publishing a research paper");
-        }
-
-        public void mentorJuniorFaculty() {
-            System.out.println("SeniorProfessor is mentoring junior faculty members");
-        }
-
-        public void headDepartment() {
-            System.out.println("SeniorProfessor is heading the department");
-        }
-
-        public void approveCurriculum() {
-            System.out.println("SeniorProfessor is approving the academic curriculum");
-        }
-
-        public void conductSeminar() {
-            System.out.println("SeniorProfessor is conducting an international seminar");
-        }
+    public SeniorProfessor() {
+        super();
+        System.out.println("SeniorProfessor constructor is running - subclass");
     }
 
+    @Override
+    public void teach() {
+        System.out.println("SeniorProfessor is teaching advanced subjects - subclass");
+    }
+
+    @Override
+    public void conductExam() {
+        System.out.println("SeniorProfessor is conducting viva exams - subclass");
+    }
+
+    @Override
+    public void evaluatePapers() {
+        System.out.println("SeniorProfessor is reviewing research papers - subclass");
+    }
+
+    @Override
+    public void guideResearch() {
+        System.out.println("SeniorProfessor is mentoring PhD students - subclass");
+    }
+}

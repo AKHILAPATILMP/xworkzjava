@@ -1,29 +1,28 @@
 package com.xworkz.isarelation.watch;
+public class SmartWatch extends Watch {
 
-    public class SmartWatch extends Watch {
-        public SmartWatch() {
-            super();
-            System.out.println("SmartWatch constructor is running");
-        }
-
-        public void connectToWiFi() {
-            System.out.println("SmartWatch is connecting to WiFi");
-        }
-
-        public void trackHeartRate() {
-            System.out.println("SmartWatch is tracking heart rate");
-        }
-
-        public void receiveCalls() {
-            System.out.println("SmartWatch is receiving calls");
-        }
-
-        public void playMusic() {
-            System.out.println("SmartWatch is playing music");
-        }
-
-        public void trackFitness() {
-            System.out.println("SmartWatch is tracking fitness activity");
-        }
+    public SmartWatch() {
+        super();
+        System.out.println("SmartWatch constructor is running - subclass");
     }
 
+    @Override
+    public void showTime() {
+        System.out.println("SmartWatch showing time with digital display - subclass");
+    }
+
+    @Override
+    public void setAlarm() {
+        System.out.println("SmartWatch setting vibration alarm - subclass");
+    }
+
+    @Override
+    public void stopWatch() {
+        System.out.println("SmartWatch stopwatch with lap timing - subclass");
+    }
+
+    @Override
+    public void displayDate() {
+        System.out.println("SmartWatch displaying full calendar - subclass");
+    }
+}

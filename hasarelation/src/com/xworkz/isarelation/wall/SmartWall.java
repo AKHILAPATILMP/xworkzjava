@@ -1,29 +1,29 @@
 package com.xworkz.isarelation.wall;
 
-    public class SmartWall extends Wall {
-        public SmartWall() {
-            super();
-            System.out.println("SmartWall constructor is running");
-        }
+public class SmartWall extends Wall {
 
-        public void changeColor() {
-            System.out.println("SmartWall is changing color based on preference");
-        }
-
-        public void soundproofing() {
-            System.out.println("SmartWall is reducing noise levels");
-        }
-
-        public void temperatureControl() {
-            System.out.println("SmartWall is regulating temperature");
-        }
-
-        public void digitalDisplay() {
-            System.out.println("SmartWall is displaying digital images and information");
-        }
-
-        public void energyAbsorption() {
-            System.out.println("SmartWall is absorbing and utilizing solar energy");
-        }
+    public SmartWall() {
+        super();
+        System.out.println("SmartWall constructor is running - subclass");
     }
 
+    @Override
+    public void build() {
+        System.out.println("Building a smart wall with sensors - subclass");
+    }
+
+    @Override
+    public void paint() {
+        System.out.println("Smart wall changes color automatically - subclass");
+    }
+
+    @Override
+    public void demolish() {
+        System.out.println("Smart wall self-disassembles - subclass");
+    }
+
+    @Override
+    public void maintain() {
+        System.out.println("Smart wall sends maintenance alerts - subclass");
+    }
+}

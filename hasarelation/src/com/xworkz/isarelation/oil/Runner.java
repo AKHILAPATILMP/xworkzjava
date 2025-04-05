@@ -2,35 +2,26 @@ package com.xworkz.isarelation.oil;
 
 public class Runner {
     public static void main(String[] args) {
-        System.out.println("Creating an instance of Oil ");
+
+        System.out.println("\nCreating an instance of Oil");
         Oil oil = new Oil();
-        oil.Slip();
-        oil.lubricate();
-        oil.purify();
-        oil.burn();
-        oil.clean();
+        oil.extract();
+        oil.refine();
+        oil.store();
+        oil.label();
 
-        System.out.println("\nCreating an instance of CastorOil");
-        Oil oilRef = new CastorOil();
-        oilRef.Slip();
-        oilRef.lubricate();
-        oilRef.purify();
-        oilRef.burn();
-        oilRef.clean();
+        System.out.println("\nCreating an instance of CookingOil using Oil reference");
+        Oil oilRef = new CookingOil();
+        oilRef.extract();
+        oilRef.refine();
+        oilRef.store();
+        oilRef.label();
 
-        System.out.println("\nCreating an instance of CastorOil using subclass reference");
-        CastorOil castorOil = new CastorOil();
-        castorOil.Slip();
-        castorOil.lubricate();
-        castorOil.purify();
-        castorOil.burn();
-        castorOil.clean();
-        castorOil.heal();
-        castorOil.nourish();
-        castorOil.soften();
-        castorOil.shine();
-        castorOil.protect();
+        System.out.println("\nCreating an instance of CookingOil using subclass reference");
+        CookingOil cookingOil = new CookingOil();
+        cookingOil.extract();
+        cookingOil.refine();
+        cookingOil.store();
+        cookingOil.label();
     }
-    }
-
-
+}

@@ -1,35 +1,27 @@
 package com.xworkz.isarelation.price;
 
 public class Runner {
-        public static void main(String[] args) {
-            System.out.println("Creating an instance of Price");
-            Price price = new Price();
-            price.setBasePrice();
-            price.applyTax();
-            price.displayFinalPrice();
-            price.comparePrices();
-            price.updatePrice();
+    public static void main(String[] args) {
 
-            System.out.println("\nCreating an instance of DiscountedPrice using Price reference");
-            Price priceRef = new DiscountedPrice();
-            priceRef.setBasePrice();
-            priceRef.applyTax();
-            priceRef.displayFinalPrice();
-            priceRef.comparePrices();
-            priceRef.updatePrice();
+        System.out.println("\nCreating an instance of Price");
+        Price price = new Price();
+        price.showOriginalPrice();
+        price.calculateTax();
+        price.displayFinalPrice();
+        price.priceTag();
 
-            System.out.println("\nCreating an instance of DiscountedPrice using subclass reference");
-            DiscountedPrice discountedPrice = new DiscountedPrice();
-            discountedPrice.setBasePrice();
-            discountedPrice.applyTax();
-            discountedPrice.displayFinalPrice();
-            discountedPrice.comparePrices();
-            discountedPrice.updatePrice();
-            discountedPrice.applyDiscount();
-            discountedPrice.showSavings();
-            discountedPrice.calculateLoyaltyDiscount();
-            discountedPrice.seasonalDiscount();
-            discountedPrice.clearanceSale();
-        }
+        System.out.println("\nCreating an instance of DiscountedPrice using Price reference");
+        Price priceRef = new DiscountedPrice();
+        priceRef.showOriginalPrice();
+        priceRef.calculateTax();
+        priceRef.displayFinalPrice();
+        priceRef.priceTag();
+
+        System.out.println("\nCreating an instance of DiscountedPrice using subclass reference");
+        DiscountedPrice discountedPrice = new DiscountedPrice();
+        discountedPrice.showOriginalPrice();
+        discountedPrice.calculateTax();
+        discountedPrice.displayFinalPrice();
+        discountedPrice.priceTag();
     }
-
+}

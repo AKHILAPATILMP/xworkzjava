@@ -1,27 +1,28 @@
 package com.xworkz.isarelation.thermostat;
-
 public class Runner {
-        public static void main(String[] args) {
-            System.out.println("\nCreating an instance of SmartThermostat using Thermostat reference");
-            Thermostat thermostatRef = new SmartThermostat();
-            thermostatRef.turnOn();
-            thermostatRef.turnOff();
-            thermostatRef.setTemperature(22);
-            thermostatRef.displayTemperature();
-            thermostatRef.energySavingMode();
+    public static void main(String[] args) {
 
-            System.out.println("\nCreating an instance of SmartThermostat using subclass reference");
-            SmartThermostat smartThermostat = new SmartThermostat();
-            smartThermostat.turnOn();
-            smartThermostat.turnOff();
-            smartThermostat.setTemperature(24);
-            smartThermostat.displayTemperature();
-            smartThermostat.energySavingMode();
-            smartThermostat.connectToWiFi();
-            smartThermostat.remoteControl();
-            smartThermostat.voiceControl();
-            smartThermostat.autoAdjust();
-            smartThermostat.scheduleTemperature(20, "10:00 PM");
-        }
+        System.out.println("\nCreating an instance of Thermostat");
+        Thermostat thermostat = new Thermostat();
+        thermostat.turnOn();
+        thermostat.turnOff();
+        thermostat.setTemperature();
+        thermostat.showStatus();
+
+        System.out.println("\nCreating an instance of SmartThermostat using Thermostat reference");
+        Thermostat smartRef = new SmartThermostat();
+        smartRef.turnOn();
+        smartRef.turnOff();
+        smartRef.setTemperature();
+        smartRef.showStatus();
+
+        System.out.println("\nCreating an instance of SmartThermostat using subclass reference");
+        SmartThermostat smartThermo = new SmartThermostat();
+        smartThermo.turnOn();
+        smartThermo.turnOff();
+        smartThermo.setTemperature();
+        smartThermo.showStatus();
     }
+}
+
 

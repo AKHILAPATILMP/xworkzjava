@@ -1,29 +1,30 @@
 package com.xworkz.isarelation.piano;
-
 public class ElectricPiano extends Piano {
+
     public ElectricPiano() {
         super();
-        System.out.println("ElectricPiano constructor is running");
+        System.out.println("ElectricPiano constructor is running - subclass");
     }
 
-    public void connectToSpeaker() {
-        System.out.println("Electric Piano is connected to a speaker");
+    @Override
+    public void play() {
+        System.out.println("Playing electric piano with digital sound - subclass");
     }
 
-    public void enableSynthMode() {
-        System.out.println("Electric Piano is in synth mode");
+    @Override
+    public void stop() {
+        System.out.println("Stopping electric piano - subclass");
     }
 
-    public void changeInstrumentSound() {
-        System.out.println("Electric Piano is changing instrument sound");
+    @Override
+    public void tune() {
+        System.out.println("Auto-tuning electric piano - subclass");
     }
 
-    public void recordPerformance() {
-        System.out.println("Electric Piano is recording the performance");
-    }
-
-    public void enableBluetooth() {
-        System.out.println("Electric Piano is connected via Bluetooth");
+    @Override
+    public void showKeys() {
+        System.out.println("Displaying backlit keys on electric piano - subclass");
     }
 }
+
 

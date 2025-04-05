@@ -1,36 +1,27 @@
 package com.xworkz.isarelation.media;
 
 public class Runner {
+    public static void main(String[] args) {
 
-        public static void main(String[] args) {
-            System.out.println("Creating an instance of Media");
-            Media media = new Media();
-            media.broadcast();
-            media.publish();
-            media.entertain();
-            media.educate();
-            media.inform();
+        System.out.println("\nCreating an instance of Media");
+        Media media = new Media();
+        media.playContent();
+        media.pauseContent();
+        media.stopContent();
+        media.displayInfo();
 
-            System.out.println("\nCreating an instance of SocialMedia using Media reference");
-            Media mediaRef = new SocialMedia();
-            mediaRef.broadcast();
-            mediaRef.publish();
-            mediaRef.entertain();
-            mediaRef.educate();
-            mediaRef.inform();
+        System.out.println("\nCreating an instance of DigitalMedia using Media reference");
+        Media mediaRef = new DigitalMedia();
+        mediaRef.playContent();
+        mediaRef.pauseContent();
+        mediaRef.stopContent();
+        mediaRef.displayInfo();
 
-            System.out.println("\nCreating an instance of SocialMedia using subclass reference");
-            SocialMedia socialMedia = new SocialMedia();
-            socialMedia.broadcast();
-            socialMedia.publish();
-            socialMedia.entertain();
-            socialMedia.educate();
-            socialMedia.inform();
-            socialMedia.connectPeople();
-            socialMedia.sharePosts();
-            socialMedia.goLive();
-            socialMedia.likeAndComment();
-            socialMedia.monetizeContent();
-        }
+        System.out.println("\nCreating an instance of DigitalMedia using subclass reference");
+        DigitalMedia digitalMedia = new DigitalMedia();
+        digitalMedia.playContent();
+        digitalMedia.pauseContent();
+        digitalMedia.stopContent();
+        digitalMedia.displayInfo();
     }
-
+}

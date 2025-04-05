@@ -1,28 +1,23 @@
 package com.xworkz.isarelation.mirror;
-
 public class Mirror {
-        public Mirror() {
-            System.out.println("Mirror constructor is running");
-        }
 
-        public void reflect() {
-            System.out.println("Mirror is reflecting light");
-        }
-
-        public void showImage() {
-            System.out.println("Mirror is showing an image");
-        }
-
-        public void clean() {
-            System.out.println("Cleaning the mirror");
-        }
-
-        public void magnify() {
-            System.out.println("Mirror is magnifying the image");
-        }
-
-        public void decorate() {
-            System.out.println("Mirror is used for decoration");
-        }
+    public Mirror() {
+        System.out.println("Mirror constructor is running - parent class");
     }
 
+    public void reflect() {
+        System.out.println("Mirror is reflecting - parent class");
+    }
+
+    public void clean() {
+        System.out.println("Cleaning the mirror - parent class");
+    }
+
+    public void hang() {
+        System.out.println("Mirror is hung on the wall - parent class");
+    }
+
+    public void displayType() {
+        System.out.println("This is a regular mirror - parent class");
+    }
+}

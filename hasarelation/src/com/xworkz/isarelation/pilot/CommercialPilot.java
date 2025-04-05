@@ -1,29 +1,29 @@
 package com.xworkz.isarelation.pilot;
 
-    public class CommercialPilot extends Pilot {
-        public CommercialPilot() {
-            super();
-            System.out.println("CommercialPilot constructor is running");
-        }
+public class CommercialPilot extends Pilot {
 
-        public void manageCrew() {
-            System.out.println("CommercialPilot: Managing flight crew...");
-        }
-
-        public void handlePassengerRequests() {
-            System.out.println("CommercialPilot: Handling passenger requests...");
-        }
-
-        public void operateAutopilot() {
-            System.out.println("CommercialPilot: Operating the autopilot system...");
-        }
-
-        public void monitorWeather() {
-            System.out.println("CommercialPilot: Monitoring weather conditions...");
-        }
-
-        public void logFlightData() {
-            System.out.println("CommercialPilot: Logging flight data...");
-        }
+    public CommercialPilot() {
+        super();
+        System.out.println("CommercialPilot constructor is running - subclass");
     }
 
+    @Override
+    public void fly() {
+        System.out.println("CommercialPilot is flying a commercial aircraft - subclass");
+    }
+
+    @Override
+    public void land() {
+        System.out.println("CommercialPilot is landing at a busy airport - subclass");
+    }
+
+    @Override
+    public void communicate() {
+        System.out.println("CommercialPilot is using advanced communication systems - subclass");
+    }
+
+    @Override
+    public void performCheck() {
+        System.out.println("CommercialPilot is doing digital pre-flight checks - subclass");
+    }
+}

@@ -1,35 +1,26 @@
 package com.xworkz.isarelation.spacestation;
-
 public class Runner {
-        public static void main(String[] args) {
-            System.out.println("Creating an instance of SpaceStation");
-            SpaceStation spaceStation = new SpaceStation();
-            spaceStation.orbit();
-            spaceStation.research();
-            spaceStation.communicate();
-            spaceStation.generatePower();
-            spaceStation.supportCrew();
+    public static void main(String[] args) {
 
-            System.out.println("\nCreating an instance of ISS using SpaceStation reference");
-            SpaceStation spaceStationRef = new ISS();
-            spaceStationRef.orbit();
-            spaceStationRef.research();
-            spaceStationRef.communicate();
-            spaceStationRef.generatePower();
-            spaceStationRef.supportCrew();
+        System.out.println("\nCreating an instance of SpaceStation");
+        SpaceStation station = new SpaceStation();
+        station.launch();
+        station.orbit();
+        station.maintainSystems();
+        station.communicate();
 
-            System.out.println("\nCreating an instance of ISS using subclass reference");
-            ISS iss = new ISS();
-            iss.orbit();
-            iss.research();
-            iss.communicate();
-            iss.generatePower();
-            iss.supportCrew();
-            iss.microgravityResearch();
-            iss.docking();
-            iss.spaceWalk();
-            iss.waterRecycling();
-            iss.lifeSupport();
-        }
+        System.out.println("\nCreating an instance of ResearchSpaceStation using SpaceStation reference");
+        SpaceStation ref = new ResearchSpaceStation();
+        ref.launch();
+        ref.orbit();
+        ref.maintainSystems();
+        ref.communicate();
+
+        System.out.println("\nCreating an instance of ResearchSpaceStation using subclass reference");
+        ResearchSpaceStation researchStation = new ResearchSpaceStation();
+        researchStation.launch();
+        researchStation.orbit();
+        researchStation.maintainSystems();
+        researchStation.communicate();
     }
-
+}

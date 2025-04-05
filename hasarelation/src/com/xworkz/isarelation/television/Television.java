@@ -1,28 +1,24 @@
 package com.xworkz.isarelation.television;
 
 public class Television {
-        public Television() {
-            System.out.println("Television constructor is running");
-        }
 
-        public void powerOn() {
-            System.out.println("Television is turning on");
-        }
-
-        public void powerOff() {
-            System.out.println("Television is turning off");
-        }
-
-        public void changeChannel() {
-            System.out.println("Television is changing the channel");
-        }
-
-        public void increaseVolume() {
-            System.out.println("Television volume is increasing");
-        }
-
-        public void decreaseVolume() {
-            System.out.println("Television volume is decreasing");
-        }
+    public Television() {
+        System.out.println("Television constructor is running - parent class");
     }
 
+    public void turnOn() {
+        System.out.println("Television is turned on - parent class");
+    }
+
+    public void changeChannel() {
+        System.out.println("Television channel is changed - parent class");
+    }
+
+    public void adjustVolume() {
+        System.out.println("Television volume is adjusted - parent class");
+    }
+
+    public void turnOff() {
+        System.out.println("Television is turned off - parent class");
+    }
+}

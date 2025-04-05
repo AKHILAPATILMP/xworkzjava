@@ -1,35 +1,27 @@
 package com.xworkz.isarelation.screen;
 
 public class Runner {
-        public static void main(String[] args) {
-            System.out.println("Creating an instance of Screen");
-            Screen screen = new Screen();
-            screen.display();
-            screen.adjustBrightness();
-            screen.consumePower();
-            screen.reflectLight();
-            screen.protectEyes();
+    public static void main(String[] args) {
 
-            System.out.println("\nCreating an instance of TouchScreen using Screen reference");
-            Screen screenRef = new TouchScreen();
-            screenRef.display();
-            screenRef.adjustBrightness();
-            screenRef.consumePower();
-            screenRef.reflectLight();
-            screenRef.protectEyes();
+        System.out.println("\nCreating an instance of Screen");
+        Screen screen = new Screen();
+        screen.display();
+        screen.turnOn();
+        screen.turnOff();
+        screen.adjustBrightness();
 
-            System.out.println("\nCreating an instance of TouchScreen using subclass reference");
-            TouchScreen touchScreen = new TouchScreen();
-            touchScreen.display();
-            touchScreen.adjustBrightness();
-            touchScreen.consumePower();
-            touchScreen.reflectLight();
-            touchScreen.protectEyes();
-            touchScreen.detectTouch();
-            touchScreen.multiTouchSupport();
-            touchScreen.gestureControl();
-            touchScreen.stylusSupport();
-            touchScreen.fingerprintSensor();
-        }
+        System.out.println("\nCreating an instance of SmartScreen using Screen reference");
+        Screen screenRef = new SmartScreen();
+        screenRef.display();
+        screenRef.turnOn();
+        screenRef.turnOff();
+        screenRef.adjustBrightness();
+
+        System.out.println("\nCreating an instance of SmartScreen using subclass reference");
+        SmartScreen smartScreen = new SmartScreen();
+        smartScreen.display();
+        smartScreen.turnOn();
+        smartScreen.turnOff();
+        smartScreen.adjustBrightness();
     }
-
+}

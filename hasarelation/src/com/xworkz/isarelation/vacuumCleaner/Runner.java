@@ -1,28 +1,27 @@
 package com.xworkz.isarelation.vacuumCleaner;
-
 public class Runner {
+    public static void main(String[] args) {
 
-        public static void main(String[] args) {
-            System.out.println("\nCreating an instance of SmartVacuumCleaner using VacuumCleaner reference");
-            VacuumCleaner vacuumRef = new SmartCleaner();
-            vacuumRef.turnOn();
-            vacuumRef.turnOff();
-            vacuumRef.startSuction();
-            vacuumRef.stopSuction();
-            vacuumRef.emptyDustbin();
+        System.out.println("\nCreating an instance of VacuumCleaner");
+        VacuumCleaner cleaner = new VacuumCleaner();
+        cleaner.start();
+        cleaner.stop();
+        cleaner.cleanFloor();
+        cleaner.emptyDustBag();
 
-            System.out.println("\nCreating an instance of SmartVacuumCleaner using subclass reference");
-            SmartCleaner smartVacuum = new SmartCleaner();
-            smartVacuum.turnOn();
-            smartVacuum.turnOff();
-            smartVacuum.startSuction();
-            smartVacuum.stopSuction();
-            smartVacuum.emptyDustbin();
-            smartVacuum.connectToWiFi();
-            smartVacuum.controlWithApp();
-            smartVacuum.voiceControl();
-            smartVacuum.autoCleanMode();
-            smartVacuum.returnToDock();
-        }
+        System.out.println("\nCreating an instance of RobotVacuumCleaner using VacuumCleaner reference");
+        VacuumCleaner smartCleaner = new RobotVacuumCleaner();
+        smartCleaner.start();
+        smartCleaner.stop();
+        smartCleaner.cleanFloor();
+        smartCleaner.emptyDustBag();
+
+        System.out.println("\nCreating an instance of RobotVacuumCleaner using subclass reference");
+        RobotVacuumCleaner robot = new RobotVacuumCleaner();
+        robot.start();
+        robot.stop();
+        robot.cleanFloor();
+        robot.emptyDustBag();
     }
+}
 

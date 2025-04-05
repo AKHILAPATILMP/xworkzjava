@@ -1,28 +1,25 @@
 package com.xworkz.isarelation.toaster;
 
 public class Toaster {
-        public Toaster() {
-            System.out.println("Toaster constructor is running");
-        }
 
-        public void powerOn() {
-            System.out.println("Toaster is turning on");
-        }
-
-        public void powerOff() {
-            System.out.println("Toaster is turning off");
-        }
-
-        public void toastBread() {
-            System.out.println("Toaster is toasting bread");
-        }
-
-        public void setTimer() {
-            System.out.println("Toaster timer is set");
-        }
-
-        public void stopToasting() {
-            System.out.println("Toaster has stopped toasting");
-        }
+    public Toaster() {
+        System.out.println("Toaster constructor is running - parent class");
     }
+
+    public void turnOn() {
+        System.out.println("Turning on the toaster - parent class");
+    }
+
+    public void turnOff() {
+        System.out.println("Turning off the toaster - parent class");
+    }
+
+    public void toastBread() {
+        System.out.println("Toasting bread at basic setting - parent class");
+    }
+
+    public void eject() {
+        System.out.println("Ejecting toasted bread - parent class");
+    }
+}
 

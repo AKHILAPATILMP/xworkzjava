@@ -1,28 +1,24 @@
 package com.xworkz.isarelation.screen;
 
 public class Screen {
-        public Screen() {
-            System.out.println("Screen constructor is running");
-        }
 
-        public void display() {
-            System.out.println("Screen: Displaying visuals...");
-        }
-
-        public void adjustBrightness() {
-            System.out.println("Screen: Adjusting brightness...");
-        }
-
-        public void consumePower() {
-            System.out.println("Screen: Consuming power...");
-        }
-
-        public void reflectLight() {
-            System.out.println("Screen: Reflecting light...");
-        }
-
-        public void protectEyes() {
-            System.out.println("Screen: Protecting eyes with blue light filter...");
-        }
+    public Screen() {
+        System.out.println("Screen constructor is running - parent class");
     }
 
+    public void display() {
+        System.out.println("Screen is displaying content - parent class");
+    }
+
+    public void turnOn() {
+        System.out.println("Screen is turned on - parent class");
+    }
+
+    public void turnOff() {
+        System.out.println("Screen is turned off - parent class");
+    }
+
+    public void adjustBrightness() {
+        System.out.println("Adjusting screen brightness - parent class");
+    }
+}

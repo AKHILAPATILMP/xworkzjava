@@ -1,29 +1,31 @@
 package com.xworkz.isarelation.park;
 
-    public class ThemePark extends Park {
-        public ThemePark() {
-            super();
-            System.out.println("ThemePark constructor is running");
-        }
+public class ThemePark extends Park {
 
-        public void offerRollerCoaster() {
-            System.out.println("ThemePark offers a thrilling roller coaster ride");
-        }
-
-        public void provideWaterSlides() {
-            System.out.println("ThemePark provides exciting water slides");
-        }
-
-        public void organizeLiveShows() {
-            System.out.println("ThemePark organizes live entertainment shows");
-        }
-
-        public void offerFoodStalls() {
-            System.out.println("ThemePark has multiple food stalls and restaurants");
-        }
-
-        public void provideVirtualRealityGames() {
-            System.out.println("ThemePark offers virtual reality gaming experiences");
-        }
+    public ThemePark() {
+        super();
+        System.out.println("ThemePark constructor is running - subclass");
     }
+
+    @Override
+    public void open() {
+        System.out.println("ThemePark opens with exciting rides - subclass");
+    }
+
+    @Override
+    public void close() {
+        System.out.println("ThemePark closes after fireworks - subclass");
+    }
+
+    @Override
+    public void maintain() {
+        System.out.println("ThemePark rides and areas are being maintained - subclass");
+    }
+
+    @Override
+    public void provideSeating() {
+        System.out.println("ThemePark provides themed seating areas - subclass");
+    }
+}
+
 
