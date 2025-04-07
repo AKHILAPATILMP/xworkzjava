@@ -21,7 +21,9 @@ public class AC {
         public void enableCooling() {
             System.out.println("AC is in cooling mode parent class");
         }
-
+        public void enablepowersave(){
+            System.out.println("power save for Smart ac is enable");
+        }
 
     }
 

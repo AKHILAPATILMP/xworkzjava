@@ -26,4 +26,12 @@ public class AutoCarSystem extends AutoCar {
     public void brake() {
         System.out.println("AutoCarSystem is applying ABS brakes - subclass");
     }
+
+    @Override
+    public void motor() {
+        System.out.println("AutoCarsystem has motor-subclass");
+    }
+    public void autopilotmode(){
+        System.out.println("autopilot mode -subclass");
+    }
 }

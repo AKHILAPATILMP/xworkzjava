@@ -23,5 +23,11 @@ public class Runner {
         control.manageFlightPaths();
         control.handleCommunication();
         control.ensureSafety();
+
+        System.out.println("\ncasting runner");
+        ControlTower controlTower=new ControlTower();
+        controlTower.control(control);
+        controlTower.control(traffic);
+        controlTower.control(traffic1);
     }
 }

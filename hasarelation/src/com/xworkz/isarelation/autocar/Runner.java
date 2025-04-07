@@ -23,5 +23,11 @@ public class Runner {
         system.stopEngine();
         system.accelerate();
         system.brake();
+
+        System.out.println("\n casting the parent ref ");
+        Garage garage = new Garage();
+        garage.service(car);
+        garage.service(system);
+        garage.service(car1);
     }
 }

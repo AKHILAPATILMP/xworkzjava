@@ -21,4 +21,7 @@ public class AutoCar {
     public void brake() {
         System.out.println("Applying brake - parent class");
     }
+    public void motor(){
+        System.out.println("motor -parent class");
+    }
 }

@@ -22,5 +22,8 @@ public class AirTraffic {
     public void ensureSafety() {
         System.out.println("Ensuring safety of all flights - parent class");
     }
+    public void ensureclean(){
+        System.out.println("ensuring clean- parent class");
+    }
 }
 

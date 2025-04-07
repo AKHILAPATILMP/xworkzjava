@@ -24,6 +24,14 @@ package com.xworkz.isarelation.ac;
         public void enableCooling() {
             System.out.println("SmartAC is in advanced cooling mode subclass");
         }
+        @Override
+        public void enablepowersave(){
+            System.out.println("SmartAC is in enable power save mode subclass");
+
+ }
+        public void turnoffheating(){
+            System.out.println("SmartAC is off for the heating");
+        }
 
     }
 

@@ -27,7 +27,16 @@ public class AirTrafficControl extends AirTraffic {
     public void ensureSafety() {
         System.out.println("Ensuring safety with weather tracking and collision avoidance - subclass");
     }
+    @Override
+    public void ensureclean(){
+        System.out.println("enusuring clean of ac- subclass");
+    }
+ public void ensureweight(){
+     System.out.println("ensing weight");
+ }
+
 }
+
 
 
 

@@ -24,6 +24,13 @@ public class Runner {
             smartac.setTemperature();
             smartac.enableCooling();
 
+            System.out.println("creating casting");
+            EcoAC ecoac=new EcoAC();
+            ecoac.smart(ac);
+            ecoac.smart(smartac);
+            ecoac.smart(ac1);
+
+
         }
     }
 
