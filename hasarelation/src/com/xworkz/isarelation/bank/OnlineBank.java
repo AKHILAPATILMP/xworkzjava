@@ -9,23 +9,30 @@ public class OnlineBank extends Bank {
 
     @Override
     public void openAccount() {
-        System.out.println("OnlineBank opens account through mobile app - subclass");
+        System.out.println("Opening bank account online - subclass");
+    }
+
+    @Override
+    public void closeAccount() {
+        System.out.println("Closing account via mobile app - subclass");
     }
 
     @Override
     public void deposit() {
-        System.out.println("OnlineBank deposit via UPI or NetBanking - subclass");
+        System.out.println("Depositing via UPI - subclass");
     }
 
     @Override
     public void withdraw() {
-        System.out.println("OnlineBank withdraws using ATM or digital wallet - subclass");
+        System.out.println("Withdrawing using online transfer - subclass");
     }
 
     @Override
-    public void checkBalance() {
-        System.out.println("OnlineBank checks balance using app notification - subclass");
+    public void printStatement() {
+        System.out.println("Sending e-statement to email - subclass");
+    }
+
+    public void enableTwoFactorAuth() {
+        System.out.println("Two-factor authentication enabled - subclass");
     }
 }
-
-

@@ -9,6 +9,7 @@ public class Runner {
         traffic.manageFlightPaths();
         traffic.handleCommunication();
         traffic.ensureSafety();
+        traffic.ensureclean();
 
         System.out.println("\nCreating an instance of AirTrafficControl using AirTraffic reference");
         AirTraffic traffic1 = new AirTrafficControl();
@@ -16,6 +17,7 @@ public class Runner {
         traffic1.manageFlightPaths();
         traffic1.handleCommunication();
         traffic1.ensureSafety();
+        traffic1.ensureclean();
 
         System.out.println("\nCreating an instance of AirTrafficControl using subclass reference");
         AirTrafficControl control = new AirTrafficControl();
@@ -23,6 +25,7 @@ public class Runner {
         control.manageFlightPaths();
         control.handleCommunication();
         control.ensureSafety();
+        control.ensureclean();
 
         System.out.println("\ncasting runner");
         ControlTower controlTower=new ControlTower();

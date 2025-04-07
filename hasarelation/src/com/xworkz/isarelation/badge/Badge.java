@@ -21,4 +21,7 @@ public class Badge {
     public void displayBadgeInfo() {
         System.out.println("Displaying badge information - parent class");
     }
+    public void removeBadge(){
+        System.out.println("removing badge-parent class");
+    }
 }

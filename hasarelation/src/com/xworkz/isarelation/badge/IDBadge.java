@@ -25,4 +25,12 @@ public class IDBadge extends Badge {
     public void displayBadgeInfo() {
         System.out.println("IDBadge displays user data with QR code - subclass");
     }
+
+    @Override
+    public void removeBadge() {
+        System.out.println("IDBadge removing a badge-subclass");
+    }
+    public void wearBadge(){
+        System.out.println("IDBadge is wearing");
+    }
 }

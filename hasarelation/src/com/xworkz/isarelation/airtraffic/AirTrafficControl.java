@@ -32,7 +32,7 @@ public class AirTrafficControl extends AirTraffic {
         System.out.println("enusuring clean of ac- subclass");
     }
  public void ensureweight(){
-     System.out.println("ensing weight");
+     System.out.println("ensuring weight");
  }
 
 }
