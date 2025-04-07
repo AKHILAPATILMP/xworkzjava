@@ -1,24 +1,28 @@
 package com.xworkz.isarelation.blade;
-    public class Blade {
 
-        public Blade() {
-            System.out.println("Blade constructor is running - parent class");
-        }
+public class Blade {
 
-        public void cut() {
-            System.out.println("Blade is cutting - parent class");
-        }
-
-        public void sharpen() {
-            System.out.println("Blade is being sharpened - parent class");
-        }
-
-        public void clean() {
-            System.out.println("Cleaning the blade - parent class");
-        }
-
-        public void store() {
-            System.out.println("Storing the blade safely - parent class");
-        }
+    public Blade() {
+        System.out.println("Blade constructor is running - parent class");
     }
 
+    public void rotate() {
+        System.out.println("Blade is rotating - parent class");
+    }
+
+    public void sharpen() {
+        System.out.println("Blade is sharpening - parent class");
+    }
+
+    public void stop() {
+        System.out.println("Blade is stopping - parent class");
+    }
+
+    public void clean() {
+        System.out.println("Cleaning the blade - parent class");
+    }
+
+    public void polish() {
+        System.out.println("Polishing the blade - parent class");
+    }
+}

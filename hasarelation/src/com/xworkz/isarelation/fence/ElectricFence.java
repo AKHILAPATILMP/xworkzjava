@@ -9,23 +9,30 @@ public class ElectricFence extends Fence {
 
     @Override
     public void build() {
-        System.out.println("Building an electric fence with sensors - subclass");
+        System.out.println("Building an electric fence - subclass");
+    }
+
+    @Override
+    public void paint() {
+        System.out.println("Painting electric fence with weather-resistant paint - subclass");
+    }
+
+    @Override
+    public void repair() {
+        System.out.println("Repairing electric wiring in fence - subclass");
+    }
+
+    @Override
+    public void inspect() {
+        System.out.println("Inspecting electric current and connections - subclass");
     }
 
     @Override
     public void openGate() {
-        System.out.println("Opening electric gate remotely - subclass");
+        System.out.println("Opening electric gate with remote - subclass");
     }
 
-    @Override
-    public void closeGate() {
-        System.out.println("Closing electric gate with security lock - subclass");
-    }
-
-    @Override
-    public void checkSecurity() {
-        System.out.println("Checking electric fence voltage and alarms - subclass");
+    public void activateElectricity() {
+        System.out.println("Activating electric current in fence - subclass only");
     }
 }
-
-

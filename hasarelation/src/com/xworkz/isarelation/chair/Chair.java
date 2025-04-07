@@ -7,19 +7,22 @@ public class Chair {
     }
 
     public void sit() {
-        System.out.println("Sitting on a basic chair - parent class");
+        System.out.println("Sitting on a chair - parent class");
     }
 
-    public void move() {
-        System.out.println("Moving the chair - parent class");
+    public void adjustHeight() {
+        System.out.println("Adjusting height manually - parent class");
     }
 
-    public void fold() {
-        System.out.println("Folding the chair - parent class");
+    public void checkMaterial() {
+        System.out.println("Chair made of wood - parent class");
     }
 
-    public void supportBack() {
-        System.out.println("Chair provides basic back support - parent class");
+    public void moveChair() {
+        System.out.println("Chair is being moved - parent class");
+    }
+
+    public void cleanChair() {
+        System.out.println("Cleaning the chair - parent class");
     }
 }
-

@@ -1,4 +1,5 @@
 package com.xworkz.isarelation.laptop;
+
 public class Laptop {
 
     public Laptop() {
@@ -6,20 +7,22 @@ public class Laptop {
     }
 
     public void powerOn() {
-        System.out.println("Laptop is powering on - parent class");
+        System.out.println("Powering on the laptop - parent class");
     }
 
     public void powerOff() {
-        System.out.println("Laptop is shutting down - parent class");
+        System.out.println("Powering off the laptop - parent class");
     }
 
-    public void runApplication() {
-        System.out.println("Laptop is running an application - parent class");
+    public void openLid() {
+        System.out.println("Opening the laptop lid - parent class");
     }
 
-    public void connectToWiFi() {
-        System.out.println("Laptop is connecting to WiFi - parent class");
+    public void closeLid() {
+        System.out.println("Closing the laptop lid - parent class");
+    }
+
+    public void charge() {
+        System.out.println("Charging the laptop - parent class");
     }
 }
-
-

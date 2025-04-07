@@ -1,26 +1,37 @@
 package com.xworkz.isarelation.chips;
+
 public class Runner {
     public static void main(String[] args) {
 
-        System.out.println("\nCreating an instance of Chips");
-        Chips chips = new Chips();
-        chips.openPacket();
-        chips.eatChips();
-        chips.throwWrapper();
-        chips.shareChips();
+        System.out.println("\nCreating instance of Chips");
+        Chips basic = new Chips();
+        basic.openPacket();
+        basic.eat();
+        basic.crunch();
+        basic.smell();
+        basic.throwWrapper();
 
-        System.out.println("\nCreating an instance of MasalaChips using Chips reference");
-        Chips chipsRef = new MasalaChips();
-        chipsRef.openPacket();
-        chipsRef.eatChips();
-        chipsRef.throwWrapper();
-        chipsRef.shareChips();
+        System.out.println("\nCreating instance of PotatoChips using Chips reference");
+        Chips ref = new PotatoChips();
+        ref.openPacket();
+        ref.eat();
+        ref.crunch();
+        ref.smell();
+        ref.throwWrapper();
 
-        System.out.println("\nCreating an instance of MasalaChips using subclass reference");
-        MasalaChips masalaChips = new MasalaChips();
-        masalaChips.openPacket();
-        masalaChips.eatChips();
-        masalaChips.throwWrapper();
-        masalaChips.shareChips();
+        System.out.println("\nCreating instance of PotatoChips using subclass reference");
+        PotatoChips lays = new PotatoChips();
+        lays.openPacket();
+        lays.eat();
+        lays.crunch();
+        lays.smell();
+        lays.throwWrapper();
+        lays.shareChips();
+
+        System.out.println("\nCasting and calling from ChipsLover");
+        ChipsLover lover = new ChipsLover();
+        lover.enjoy(basic);
+        lover.enjoy(ref);
+        lover.enjoy(lays);
     }
 }

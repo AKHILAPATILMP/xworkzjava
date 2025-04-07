@@ -10,15 +10,19 @@ public class FoodDelivery {
         System.out.println("Placing food order - parent class");
     }
 
-    public void trackOrder() {
-        System.out.println("Tracking food order - parent class");
+    public void prepareFood() {
+        System.out.println("Preparing food - parent class");
     }
 
-    public void deliverOrder() {
-        System.out.println("Delivering food order - parent class");
+    public void packFood() {
+        System.out.println("Packing food - parent class");
     }
 
-    public void cancelOrder() {
-        System.out.println("Cancelling food order - parent class");
+    public void deliverFood() {
+        System.out.println("Delivering food - parent class");
+    }
+
+    public void collectPayment() {
+        System.out.println("Collecting payment in cash - parent class");
     }
 }

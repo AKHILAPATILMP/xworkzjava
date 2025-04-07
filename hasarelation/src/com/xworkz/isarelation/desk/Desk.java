@@ -6,19 +6,23 @@ public class Desk {
         System.out.println("Desk constructor is running - parent class");
     }
 
-    public void supportWork() {
-        System.out.println("Desk supports your working needs - parent class");
+    public void supportItems() {
+        System.out.println("Desk supports books and laptops - parent class");
+    }
+
+    public void provideSurface() {
+        System.out.println("Providing flat surface for work - parent class");
     }
 
     public void storeItems() {
-        System.out.println("Desk stores your essentials - parent class");
+        System.out.println("Storing items in drawers - parent class");
     }
 
     public void adjustHeight() {
-        System.out.println("Desk has fixed height - parent class");
+        System.out.println("Adjusting height manually - parent class");
     }
 
-    public void displayMaterial() {
-        System.out.println("Desk is made of wood - parent class");
+    public void cleanSurface() {
+        System.out.println("Cleaning desk surface - parent class");
     }
 }

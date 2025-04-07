@@ -4,24 +4,34 @@ public class Runner {
     public static void main(String[] args) {
 
         System.out.println("\nCreating an instance of FaceID");
-        FaceID faceID = new FaceID();
-        faceID.detectFace();
-        faceID.authenticate();
-        faceID.lockDevice();
-        faceID.unlockDevice();
+        FaceID basic = new FaceID();
+        basic.scanFace();
+        basic.authenticateUser();
+        basic.lockDevice();
+        basic.unlockDevice();
+        basic.disableFaceID();
 
         System.out.println("\nCreating an instance of AdvancedFaceID using FaceID reference");
-        FaceID faceIDRef = new AdvancedFaceID();
-        faceIDRef.detectFace();
-        faceIDRef.authenticate();
-        faceIDRef.lockDevice();
-        faceIDRef.unlockDevice();
+        FaceID reference = new AdvancedFaceID();
+        reference.scanFace();
+        reference.authenticateUser();
+        reference.lockDevice();
+        reference.unlockDevice();
+        reference.disableFaceID();
 
         System.out.println("\nCreating an instance of AdvancedFaceID using subclass reference");
-        AdvancedFaceID advFaceID = new AdvancedFaceID();
-        advFaceID.detectFace();
-        advFaceID.authenticate();
-        advFaceID.lockDevice();
-        advFaceID.unlockDevice();
+        AdvancedFaceID advanced = new AdvancedFaceID();
+        advanced.scanFace();
+        advanced.authenticateUser();
+        advanced.lockDevice();
+        advanced.unlockDevice();
+        advanced.disableFaceID();
+        advanced.detectMask();
+
+        System.out.println("\nUsing DeviceSecurity for casting check");
+        DeviceSecurity security = new DeviceSecurity();
+        security.verify(basic);
+        security.verify(reference);
+        security.verify(advanced);
     }
 }

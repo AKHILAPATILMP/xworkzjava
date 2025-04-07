@@ -8,23 +8,31 @@ public class ElectricDrum extends Drum {
     }
 
     @Override
-    public void play() {
-        System.out.println("Playing the electric drum with digital sound - subclass");
+    public void hit() {
+        System.out.println("ElectricDrum is hit electronically - subclass");
     }
 
     @Override
-    public void tune() {
-        System.out.println("Tuning the electric drum with settings - subclass");
+    public void adjustVolume() {
+        System.out.println("Adjusting volume with digital controls - subclass");
     }
 
     @Override
-    public void carry() {
-        System.out.println("Carrying the lightweight electric drum - subclass");
+    public void playRhythm() {
+        System.out.println("Playing rhythm with preset beats - subclass");
     }
 
     @Override
-    public void displayType() {
-        System.out.println("This is an electric drum - subclass");
+    public void changeDrumHead() {
+        System.out.println("ElectricDrum head is replaced digitally - subclass");
+    }
+
+    @Override
+    public void cleanDrum() {
+        System.out.println("ElectricDrum is auto-cleaning - subclass");
+    }
+
+    public void connectToAmp() {
+        System.out.println("ElectricDrum connected to amplifier - subclass only");
     }
 }
-

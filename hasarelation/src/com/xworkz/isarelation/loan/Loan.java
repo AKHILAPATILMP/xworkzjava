@@ -6,22 +6,23 @@ public class Loan {
         System.out.println("Loan constructor is running - parent class");
     }
 
-    public void applyLoan() {
-        System.out.println("Applying for a general loan - parent class");
+    public void approve() {
+        System.out.println("Approving a general loan - parent class");
     }
 
-    public void approveLoan() {
-        System.out.println("Loan approved - parent class");
+    public void calculateInterest() {
+        System.out.println("Calculating interest for loan - parent class");
     }
 
-    public void repayLoan() {
-        System.out.println("Repaying the loan - parent class");
+    public void repay() {
+        System.out.println("Repaying loan in EMIs - parent class");
     }
 
-    public void checkLoanStatus() {
-        System.out.println("Checking loan status - parent class");
+    public void checkEligibility() {
+        System.out.println("Checking loan eligibility - parent class");
+    }
+
+    public void disburse() {
+        System.out.println("Disbursing loan amount - parent class");
     }
 }
-
-
-

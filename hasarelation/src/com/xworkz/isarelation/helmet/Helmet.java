@@ -7,11 +7,15 @@ public class Helmet {
     }
 
     public void wear() {
-        System.out.println("Wearing a regular helmet - parent class");
+        System.out.println("Wearing helmet - parent class");
     }
 
     public void remove() {
-        System.out.println("Removing the helmet - parent class");
+        System.out.println("Removing helmet - parent class");
+    }
+
+    public void clean() {
+        System.out.println("Cleaning helmet - parent class");
     }
 
     public void adjustStrap() {
@@ -19,7 +23,6 @@ public class Helmet {
     }
 
     public void protectHead() {
-        System.out.println("Helmet provides head protection - parent class");
+        System.out.println("Protecting head during ride - parent class");
     }
 }
-

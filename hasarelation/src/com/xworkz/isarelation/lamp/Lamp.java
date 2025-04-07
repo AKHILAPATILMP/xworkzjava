@@ -19,8 +19,10 @@ public class Lamp {
     }
 
     public void replaceBulb() {
-        System.out.println("Replacing the lamp bulb - parent class");
+        System.out.println("Replacing the bulb - parent class");
+    }
+
+    public void cleanLamp() {
+        System.out.println("Cleaning the lamp - parent class");
     }
 }
-
-

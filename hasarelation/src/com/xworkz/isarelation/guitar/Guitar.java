@@ -1,4 +1,5 @@
 package com.xworkz.isarelation.guitar;
+
 public class Guitar {
 
     public Guitar() {
@@ -6,18 +7,22 @@ public class Guitar {
     }
 
     public void play() {
-        System.out.println("Playing an acoustic guitar - parent class");
+        System.out.println("Playing acoustic guitar - parent class");
     }
 
     public void tune() {
-        System.out.println("Tuning the guitar strings - parent class");
+        System.out.println("Tuning guitar manually - parent class");
+    }
+
+    public void changeStrings() {
+        System.out.println("Changing strings of the guitar - parent class");
+    }
+
+    public void carry() {
+        System.out.println("Carrying guitar in a bag - parent class");
     }
 
     public void clean() {
-        System.out.println("Cleaning the guitar - parent class");
-    }
-
-    public void displayType() {
-        System.out.println("This is a classical acoustic guitar - parent class");
+        System.out.println("Cleaning the guitar body - parent class");
     }
 }

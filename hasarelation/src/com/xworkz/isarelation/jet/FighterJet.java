@@ -8,22 +8,31 @@ public class FighterJet extends Jet {
     }
 
     @Override
-    public void startEngine() {
-        System.out.println("FighterJet engine started with afterburner - subclass");
-    }
-
-    @Override
-    public void takeOff() {
-        System.out.println("FighterJet is taking off vertically - subclass");
-    }
-
-    @Override
     public void fly() {
         System.out.println("FighterJet is flying at supersonic speed - subclass");
     }
 
     @Override
     public void land() {
-        System.out.println("FighterJet is landing with precision - subclass");
+        System.out.println("FighterJet landing with precision - subclass");
+    }
+
+    @Override
+    public void refuel() {
+        System.out.println("FighterJet is refueling mid-air - subclass");
+    }
+
+    @Override
+    public void checkSystems() {
+        System.out.println("FighterJet advanced system check - subclass");
+    }
+
+    @Override
+    public void communicate() {
+        System.out.println("FighterJet encrypted communication - subclass");
+    }
+
+    public void launchMissile() {
+        System.out.println("FighterJet launching missile - subclass only method");
     }
 }

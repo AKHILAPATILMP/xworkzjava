@@ -8,22 +8,31 @@ public class ElectricKettle extends Kettle {
     }
 
     @Override
-    public void fillWater() {
-        System.out.println("ElectricKettle filled with filtered water - subclass");
-    }
-
-    @Override
-    public void heatWater() {
-        System.out.println("ElectricKettle is heating water automatically - subclass");
+    public void boilWater() {
+        System.out.println("ElectricKettle boiling water automatically - subclass");
     }
 
     @Override
     public void pourWater() {
-        System.out.println("ElectricKettle pouring water with safety lid - subclass");
+        System.out.println("ElectricKettle pouring water through spout - subclass");
     }
 
     @Override
     public void cleanKettle() {
-        System.out.println("ElectricKettle is self-cleaning - subclass");
+        System.out.println("ElectricKettle self-cleaning enabled - subclass");
+    }
+
+    @Override
+    public void checkWaterLevel() {
+        System.out.println("ElectricKettle checking water level with sensor - subclass");
+    }
+
+    @Override
+    public void handleLid() {
+        System.out.println("ElectricKettle lid opens with button - subclass");
+    }
+
+    public void autoShutdown() {
+        System.out.println("ElectricKettle auto shuts off when water boils - subclass method");
     }
 }

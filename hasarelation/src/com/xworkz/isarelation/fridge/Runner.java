@@ -1,26 +1,37 @@
 package com.xworkz.isarelation.fridge;
+
 public class Runner {
     public static void main(String[] args) {
 
-        System.out.println("\nCreating an instance of Fridge");
+        System.out.println("\nCreating instance of Fridge:");
         Fridge fridge = new Fridge();
-        fridge.cool();
+        fridge.coolItems();
+        fridge.freeze();
+        fridge.storeFood();
         fridge.defrost();
-        fridge.storeItems();
-        fridge.showTemperature();
+        fridge.turnOn();
 
-        System.out.println("\nCreating an instance of DoubleDoorFridge using Fridge reference");
-        Fridge fridgeRef = new DoubleDoorFridge();
-        fridgeRef.cool();
-        fridgeRef.defrost();
-        fridgeRef.storeItems();
-        fridgeRef.showTemperature();
+        System.out.println("\nCreating instance of SmartFridge using Fridge reference:");
+        Fridge smartRef = new SmartFridge();
+        smartRef.coolItems();
+        smartRef.freeze();
+        smartRef.storeFood();
+        smartRef.defrost();
+        smartRef.turnOn();
 
-        System.out.println("\nCreating an instance of DoubleDoorFridge using subclass reference");
-        DoubleDoorFridge doubleDoor = new DoubleDoorFridge();
-        doubleDoor.cool();
-        doubleDoor.defrost();
-        doubleDoor.storeItems();
-        doubleDoor.showTemperature();
+        System.out.println("\nCreating instance of SmartFridge using subclass reference:");
+        SmartFridge smartFridge = new SmartFridge();
+        smartFridge.coolItems();
+        smartFridge.freeze();
+        smartFridge.storeFood();
+        smartFridge.defrost();
+        smartFridge.turnOn();
+        smartFridge.connectWifi();
+
+        System.out.println("\nUsing FridgeSystem to operate:");
+        FridgeSystem system = new FridgeSystem();
+        system.operate(fridge);
+        system.operate(smartRef);
+        system.operate(smartFridge);
     }
 }

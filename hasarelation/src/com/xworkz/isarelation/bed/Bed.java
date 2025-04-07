@@ -10,15 +10,19 @@ public class Bed {
         System.out.println("Sleeping on the bed - parent class");
     }
 
-    public void adjustPillow() {
-        System.out.println("Adjusting pillow - parent class");
-    }
-
     public void makeBed() {
         System.out.println("Making the bed - parent class");
     }
 
-    public void cleanBed() {
+    public void clean() {
         System.out.println("Cleaning the bed - parent class");
+    }
+
+    public void adjustPosition() {
+        System.out.println("Adjusting head and foot manually - parent class");
+    }
+
+    public void storeUnderbedItems() {
+        System.out.println("Storing items under the bed - parent class");
     }
 }

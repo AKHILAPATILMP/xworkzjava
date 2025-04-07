@@ -1,6 +1,5 @@
 package com.xworkz.isarelation.coffeemaker;
 
-
 public class SmartCoffeeMaker extends CoffeeMaker {
 
     public SmartCoffeeMaker() {
@@ -10,21 +9,30 @@ public class SmartCoffeeMaker extends CoffeeMaker {
 
     @Override
     public void addWater() {
-        System.out.println("SmartCoffeeMaker adds filtered water automatically - subclass");
+        System.out.println("SmartCoffeeMaker auto-fills water - subclass");
     }
 
     @Override
     public void addCoffeePowder() {
-        System.out.println("SmartCoffeeMaker uses pre-measured pods - subclass");
+        System.out.println("SmartCoffeeMaker adds premium coffee pods - subclass");
     }
 
     @Override
-    public void brewCoffee() {
-        System.out.println("SmartCoffeeMaker brews coffee with custom settings - subclass");
+    public void startBrewing() {
+        System.out.println("SmartCoffeeMaker starts brewing with voice command - subclass");
     }
 
     @Override
-    public void pourCoffee() {
-        System.out.println("SmartCoffeeMaker pours coffee directly into thermal mug - subclass");
+    public void stopBrewing() {
+        System.out.println("SmartCoffeeMaker stops brewing automatically - subclass");
+    }
+
+    @Override
+    public void clean() {
+        System.out.println("SmartCoffeeMaker performs auto-clean - subclass");
+    }
+
+    public void scheduleBrew() {
+        System.out.println("SmartCoffeeMaker scheduled brewing at 7:00 AM - subclass-only method");
     }
 }

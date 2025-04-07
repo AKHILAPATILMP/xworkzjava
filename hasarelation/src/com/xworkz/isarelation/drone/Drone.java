@@ -11,7 +11,7 @@ public class Drone {
     }
 
     public void fly() {
-        System.out.println("Drone is flying - parent class");
+        System.out.println("Drone is flying at medium altitude - parent class");
     }
 
     public void land() {
@@ -19,6 +19,10 @@ public class Drone {
     }
 
     public void captureImage() {
-        System.out.println("Drone is capturing image - parent class");
+        System.out.println("Drone capturing image - parent class");
+    }
+
+    public void checkBattery() {
+        System.out.println("Checking drone battery - parent class");
     }
 }

@@ -3,26 +3,35 @@ package com.xworkz.isarelation.blender;
 public class Runner {
     public static void main(String[] args) {
 
-        System.out.println("\nCreating an instance of Blender");
+        System.out.println("\nCreating instance of Blender");
         Blender blender = new Blender();
         blender.start();
+        blender.blend();
+        blender.adjustSpeed();
+        blender.clean();
         blender.stop();
-        blender.setSpeed(3);
-        blender.mixIngredients();
 
-        System.out.println("\nCreating an instance of ElectricBlender using Blender reference");
-        Blender blenderRef = new ElectricBlender();
+        System.out.println("\nCreating instance of JuicerBlender using Blender reference");
+        Blender blenderRef = new JuicerBlender();
         blenderRef.start();
+        blenderRef.blend();
+        blenderRef.adjustSpeed();
+        blenderRef.clean();
         blenderRef.stop();
-        blenderRef.setSpeed(5);
-        blenderRef.mixIngredients();
 
-        System.out.println("\nCreating an instance of ElectricBlender using subclass reference");
-        ElectricBlender electricBlender = new ElectricBlender();
-        electricBlender.start();
-        electricBlender.stop();
-        electricBlender.setSpeed(7);
-        electricBlender.mixIngredients();
-        electricBlender.selfClean();
+        System.out.println("\nCreating instance of JuicerBlender using subclass reference");
+        JuicerBlender juicer = new JuicerBlender();
+        juicer.start();
+        juicer.blend();
+        juicer.adjustSpeed();
+        juicer.clean();
+        juicer.stop();
+        juicer.separatePulp();
+
+        System.out.println("\nRunning BlenderMachine controller:");
+        BlenderMachine machine = new BlenderMachine();
+        machine.operate(blender);
+        machine.operate(blenderRef);
+        machine.operate(juicer);
     }
 }

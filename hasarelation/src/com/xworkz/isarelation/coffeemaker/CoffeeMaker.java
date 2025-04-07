@@ -7,19 +7,22 @@ public class CoffeeMaker {
     }
 
     public void addWater() {
-        System.out.println("Adding water - parent class");
+        System.out.println("Adding water to coffee maker - parent class");
     }
 
     public void addCoffeePowder() {
         System.out.println("Adding regular coffee powder - parent class");
     }
 
-    public void brewCoffee() {
-        System.out.println("Brewing coffee manually - parent class");
+    public void startBrewing() {
+        System.out.println("Starting brewing manually - parent class");
     }
 
-    public void pourCoffee() {
-        System.out.println("Pouring coffee into the cup - parent class");
+    public void stopBrewing() {
+        System.out.println("Stopping brewing process - parent class");
+    }
+
+    public void clean() {
+        System.out.println("Cleaning coffee maker manually - parent class");
     }
 }
-

@@ -7,19 +7,22 @@ public class Chips {
     }
 
     public void openPacket() {
-        System.out.println("Opening a plain chips packet - parent class");
+        System.out.println("Opening a packet of chips - parent class");
     }
 
-    public void eatChips() {
-        System.out.println("Eating classic salted chips - parent class");
+    public void eat() {
+        System.out.println("Eating chips - parent class");
+    }
+
+    public void crunch() {
+        System.out.println("Crunching sound from chips - parent class");
+    }
+
+    public void smell() {
+        System.out.println("Smelling chips aroma - parent class");
     }
 
     public void throwWrapper() {
-        System.out.println("Throwing chips wrapper in dustbin - parent class");
-    }
-
-    public void shareChips() {
-        System.out.println("Sharing chips with friends - parent class");
+        System.out.println("Throwing wrapper in dustbin - parent class");
     }
 }
-

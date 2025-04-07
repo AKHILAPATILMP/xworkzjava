@@ -8,22 +8,31 @@ public class SmartGlass extends Glass {
     }
 
     @Override
-    public void fill() {
-        System.out.println("SmartGlass detects when water is filled - subclass");
+    public void reflectLight() {
+        System.out.println("SmartGlass reflects light intelligently - subclass");
     }
 
     @Override
-    public void drink() {
-        System.out.println("SmartGlass tracks hydration levels - subclass");
+    public void transmitLight() {
+        System.out.println("SmartGlass adjusts light transmission automatically - subclass");
     }
 
     @Override
-    public void clean() {
-        System.out.println("SmartGlass has self-cleaning surface - subclass");
+    public void breakGlass() {
+        System.out.println("SmartGlass resists breaking - subclass");
     }
 
     @Override
-    public void displayMaterial() {
-        System.out.println("SmartGlass is made of durable and intelligent material - subclass");
+    public void cleanGlass() {
+        System.out.println("SmartGlass cleans using self-cleaning tech - subclass");
+    }
+
+    @Override
+    public void supportFrame() {
+        System.out.println("SmartGlass supports with smart sensors - subclass");
+    }
+
+    public void adjustTint() {
+        System.out.println("SmartGlass adjusts tint with mobile app - subclass");
     }
 }

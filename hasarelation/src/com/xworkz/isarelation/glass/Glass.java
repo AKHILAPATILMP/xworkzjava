@@ -6,19 +6,23 @@ public class Glass {
         System.out.println("Glass constructor is running - parent class");
     }
 
-    public void fill() {
-        System.out.println("Filling water in the glass - parent class");
+    public void reflectLight() {
+        System.out.println("Reflecting light - parent class");
     }
 
-    public void drink() {
-        System.out.println("Drinking from the glass - parent class");
+    public void transmitLight() {
+        System.out.println("Transmitting light - parent class");
     }
 
-    public void clean() {
+    public void breakGlass() {
+        System.out.println("Breaking the glass - parent class");
+    }
+
+    public void cleanGlass() {
         System.out.println("Cleaning the glass - parent class");
     }
 
-    public void displayMaterial() {
-        System.out.println("Glass is made of transparent material - parent class");
+    public void supportFrame() {
+        System.out.println("Supporting window or door frame - parent class");
     }
 }

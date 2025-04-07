@@ -1,4 +1,5 @@
 package com.xworkz.isarelation.loan;
+
 public class HomeLoan extends Loan {
 
     public HomeLoan() {
@@ -7,22 +8,31 @@ public class HomeLoan extends Loan {
     }
 
     @Override
-    public void applyLoan() {
-        System.out.println("Applying for a home loan - subclass");
+    public void approve() {
+        System.out.println("Approving home loan with property verification - subclass");
     }
 
     @Override
-    public void approveLoan() {
-        System.out.println("Home loan approved after property verification - subclass");
+    public void calculateInterest() {
+        System.out.println("Calculating interest with fixed home loan rate - subclass");
     }
 
     @Override
-    public void repayLoan() {
-        System.out.println("Repaying home loan in EMIs - subclass");
+    public void repay() {
+        System.out.println("Repaying home loan in long-term EMIs - subclass");
     }
 
     @Override
-    public void checkLoanStatus() {
-        System.out.println("Checking home loan application status - subclass");
+    public void checkEligibility() {
+        System.out.println("Checking credit score and income for home loan - subclass");
+    }
+
+    @Override
+    public void disburse() {
+        System.out.println("Disbursing home loan directly to seller - subclass");
+    }
+
+    public void showPropertyDetails() {
+        System.out.println("Showing property documents for home loan - subclass only");
     }
 }

@@ -7,7 +7,7 @@ public class Flute {
     }
 
     public void play() {
-        System.out.println("Playing a basic flute sound - parent class");
+        System.out.println("Playing traditional flute melody - parent class");
     }
 
     public void clean() {
@@ -19,8 +19,10 @@ public class Flute {
     }
 
     public void store() {
-        System.out.println("Storing the flute in its case - parent class");
+        System.out.println("Storing the flute in a case - parent class");
+    }
+
+    public void transport() {
+        System.out.println("Transporting the flute safely - parent class");
     }
 }
-
-

@@ -5,23 +5,33 @@ public class Runner {
 
         System.out.println("\nCreating an instance of Cyber");
         Cyber cyber = new Cyber();
-        cyber.monitorActivity();
-        cyber.detectThreats();
-        cyber.analyzeData();
+        cyber.scanNetwork();
+        cyber.monitorTraffic();
+        cyber.detectThreat();
         cyber.reportIncident();
+        cyber.updateSystem();
 
         System.out.println("\nCreating an instance of CyberSecurity using Cyber reference");
         Cyber cyberRef = new CyberSecurity();
-        cyberRef.monitorActivity();
-        cyberRef.detectThreats();
-        cyberRef.analyzeData();
+        cyberRef.scanNetwork();
+        cyberRef.monitorTraffic();
+        cyberRef.detectThreat();
         cyberRef.reportIncident();
+        cyberRef.updateSystem();
 
         System.out.println("\nCreating an instance of CyberSecurity using subclass reference");
-        CyberSecurity cyberSec = new CyberSecurity();
-        cyberSec.monitorActivity();
-        cyberSec.detectThreats();
-        cyberSec.analyzeData();
-        cyberSec.reportIncident();
+        CyberSecurity security = new CyberSecurity();
+        security.scanNetwork();
+        security.monitorTraffic();
+        security.detectThreat();
+        security.reportIncident();
+        security.updateSystem();
+        security.encryptData();
+
+        System.out.println("\nUsing SecurityDept for casting:");
+        SecurityDept dept = new SecurityDept();
+        dept.check(cyber);
+        dept.check(cyberRef);
+        dept.check(security);
     }
 }

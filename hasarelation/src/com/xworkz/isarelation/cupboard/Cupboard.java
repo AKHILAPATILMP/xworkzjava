@@ -7,18 +7,22 @@ public class Cupboard {
     }
 
     public void open() {
-        System.out.println("Opening the cupboard - parent class");
+        System.out.println("Opening cupboard - parent class");
     }
 
     public void close() {
-        System.out.println("Closing the cupboard - parent class");
-    }
-
-    public void storeItems() {
-        System.out.println("Storing items in the cupboard - parent class");
+        System.out.println("Closing cupboard - parent class");
     }
 
     public void lock() {
-        System.out.println("Locking the cupboard - parent class");
+        System.out.println("Locking cupboard - parent class");
+    }
+
+    public void unlock() {
+        System.out.println("Unlocking cupboard - parent class");
+    }
+
+    public void checkCapacity() {
+        System.out.println("Checking cupboard capacity - parent class");
     }
 }

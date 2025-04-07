@@ -8,25 +8,31 @@ public class OrganicFarm extends Farm {
     }
 
     @Override
-    public void ploughLand() {
-        System.out.println("OrganicFarm is ploughing using eco-friendly tools - subclass");
+    public void plow() {
+        System.out.println("OrganicFarm plowing with oxen - subclass");
     }
 
     @Override
-    public void growCrops() {
-        System.out.println("OrganicFarm is growing organic crops - subclass");
+    public void sowSeeds() {
+        System.out.println("OrganicFarm sowing non-GMO seeds - subclass");
     }
 
     @Override
     public void irrigate() {
-        System.out.println("OrganicFarm is irrigated with drip system - subclass");
+        System.out.println("OrganicFarm using drip irrigation - subclass");
     }
 
     @Override
     public void harvest() {
-        System.out.println("OrganicFarm crops are harvested manually - subclass");
+        System.out.println("OrganicFarm harvesting by hand - subclass");
+    }
+
+    @Override
+    public void storeProduce() {
+        System.out.println("OrganicFarm storing in cool storage units - subclass");
+    }
+
+    public void compost() {
+        System.out.println("OrganicFarm using natural compost - subclass only");
     }
 }
-
-
-

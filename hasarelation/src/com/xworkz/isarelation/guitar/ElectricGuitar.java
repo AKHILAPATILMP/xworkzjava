@@ -1,4 +1,5 @@
 package com.xworkz.isarelation.guitar;
+
 public class ElectricGuitar extends Guitar {
 
     public ElectricGuitar() {
@@ -8,21 +9,30 @@ public class ElectricGuitar extends Guitar {
 
     @Override
     public void play() {
-        System.out.println("Playing an electric guitar with amplifier - subclass");
+        System.out.println("Playing electric guitar with amplifier - subclass");
     }
 
     @Override
     public void tune() {
-        System.out.println("Auto-tuning electric guitar - subclass");
+        System.out.println("Tuning electric guitar with digital tuner - subclass");
+    }
+
+    @Override
+    public void changeStrings() {
+        System.out.println("Changing strings of electric guitar - subclass");
+    }
+
+    @Override
+    public void carry() {
+        System.out.println("Carrying electric guitar with padded case - subclass");
     }
 
     @Override
     public void clean() {
-        System.out.println("Cleaning electric guitar with care - subclass");
+        System.out.println("Polishing electric guitar with cleaner - subclass");
     }
 
-    @Override
-    public void displayType() {
-        System.out.println("This is a modern electric guitar - subclass");
+    public void plugInAmp() {
+        System.out.println("Plugging electric guitar into amplifier - subclass");
     }
 }

@@ -3,25 +3,35 @@ package com.xworkz.isarelation.cream;
 public class Runner {
     public static void main(String[] args) {
 
-        System.out.println("\nCreating an instance of Cream");
+        System.out.println("\nCreating instance of Cream");
         Cream cream = new Cream();
         cream.apply();
-        cream.getIngredients();
+        cream.openLid();
         cream.checkExpiry();
-        cream.remove();
+        cream.smell();
+        cream.closeLid();
 
-        System.out.println("\nCreating an instance of FaceCream using Cream reference");
+        System.out.println("\nCreating instance of FaceCream using Cream reference");
         Cream creamRef = new FaceCream();
         creamRef.apply();
-        creamRef.getIngredients();
+        creamRef.openLid();
         creamRef.checkExpiry();
-        creamRef.remove();
+        creamRef.smell();
+        creamRef.closeLid();
 
-        System.out.println("\nCreating an instance of FaceCream using subclass reference");
+        System.out.println("\nCreating instance of FaceCream using subclass reference");
         FaceCream faceCream = new FaceCream();
         faceCream.apply();
-        faceCream.getIngredients();
+        faceCream.openLid();
         faceCream.checkExpiry();
-        faceCream.remove();
+        faceCream.smell();
+        faceCream.closeLid();
+        faceCream.applySunscreenLayer();
+
+        System.out.println("\nUsing SkinCareCenter:");
+        SkinCareCenter center = new SkinCareCenter();
+        center.useCream(cream);
+        center.useCream(creamRef);
+        center.useCream(faceCream);
     }
 }

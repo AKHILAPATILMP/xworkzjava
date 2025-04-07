@@ -1,4 +1,5 @@
 package com.xworkz.isarelation.car;
+
 public class Car {
 
     public Car() {
@@ -6,18 +7,22 @@ public class Car {
     }
 
     public void start() {
-        System.out.println("Car is starting - parent class");
+        System.out.println("Starting the car - parent class");
     }
 
-    public void stop() {
-        System.out.println("Car is stopping - parent class");
+    public void drive() {
+        System.out.println("Driving the car - parent class");
     }
 
-    public void accelerate() {
-        System.out.println("Car is accelerating - parent class");
+    public void brake() {
+        System.out.println("Applying brakes - parent class");
     }
 
-    public void applyBrakes() {
-        System.out.println("Car brakes applied - parent class");
+    public void honk() {
+        System.out.println("Honking the horn - parent class");
+    }
+
+    public void refuel() {
+        System.out.println("Refueling with petrol or diesel - parent class");
     }
 }

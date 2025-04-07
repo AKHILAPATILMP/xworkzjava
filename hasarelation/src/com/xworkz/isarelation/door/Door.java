@@ -7,20 +7,22 @@ public class Door {
     }
 
     public void open() {
-        System.out.println("Door is opened manually - parent class");
+        System.out.println("Opening the door manually - parent class");
     }
 
     public void close() {
-        System.out.println("Door is closed manually - parent class");
+        System.out.println("Closing the door manually - parent class");
     }
 
     public void lock() {
-        System.out.println("Door is locked with a key - parent class");
+        System.out.println("Locking the door with key - parent class");
     }
 
     public void unlock() {
-        System.out.println("Door is unlocked with a key - parent class");
+        System.out.println("Unlocking the door with key - parent class");
+    }
+
+    public void knock() {
+        System.out.println("Knocking on the door - parent class");
     }
 }
-
-

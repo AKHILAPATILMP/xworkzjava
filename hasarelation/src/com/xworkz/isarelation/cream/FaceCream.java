@@ -1,4 +1,5 @@
 package com.xworkz.isarelation.cream;
+
 public class FaceCream extends Cream {
 
     public FaceCream() {
@@ -8,21 +9,30 @@ public class FaceCream extends Cream {
 
     @Override
     public void apply() {
-        System.out.println("Applying face cream gently - subclass");
+        System.out.println("Applying face cream on cheeks and forehead - subclass");
     }
 
     @Override
-    public void getIngredients() {
-        System.out.println("FaceCream contains aloe vera and vitamin E - subclass");
+    public void openLid() {
+        System.out.println("Opening face cream lid with seal - subclass");
+    }
+
+    @Override
+    public void closeLid() {
+        System.out.println("Closing face cream lid tightly - subclass");
     }
 
     @Override
     public void checkExpiry() {
-        System.out.println("FaceCream expires in 12 months - subclass");
+        System.out.println("Checking expiry for face cream - subclass");
     }
 
     @Override
-    public void remove() {
-        System.out.println("Removing face cream with cotton pad - subclass");
+    public void smell() {
+        System.out.println("Smelling fresh aloe vera face cream - subclass");
+    }
+
+    public void applySunscreenLayer() {
+        System.out.println("Applying sunscreen layer - only in FaceCream");
     }
 }

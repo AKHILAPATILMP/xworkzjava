@@ -1,4 +1,5 @@
 package com.xworkz.isarelation.bed;
+
 public class SmartBed extends Bed {
 
     public SmartBed() {
@@ -8,21 +9,30 @@ public class SmartBed extends Bed {
 
     @Override
     public void sleep() {
-        System.out.println("SmartBed auto-adjusts comfort while sleeping - subclass");
-    }
-
-    @Override
-    public void adjustPillow() {
-        System.out.println("SmartBed automatically adjusts the pillow height - subclass");
+        System.out.println("SmartBed automatically adjusts firmness - subclass");
     }
 
     @Override
     public void makeBed() {
-        System.out.println("SmartBed self-makes the bed - subclass");
+        System.out.println("SmartBed self-makes with built-in motors - subclass");
     }
 
     @Override
-    public void cleanBed() {
-        System.out.println("SmartBed has auto-cleaning function - subclass");
+    public void clean() {
+        System.out.println("SmartBed uses auto-cleaning tech - subclass");
+    }
+
+    @Override
+    public void adjustPosition() {
+        System.out.println("SmartBed adjusts via voice control - subclass");
+    }
+
+    @Override
+    public void storeUnderbedItems() {
+        System.out.println("SmartBed uses sliding drawers for storage - subclass");
+    }
+
+    public void trackSleepPatterns() {
+        System.out.println("SmartBed is tracking sleep patterns - subclass method");
     }
 }

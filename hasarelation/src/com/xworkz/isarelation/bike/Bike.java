@@ -10,15 +10,19 @@ public class Bike {
         System.out.println("Starting the bike - parent class");
     }
 
+    public void stop() {
+        System.out.println("Stopping the bike - parent class");
+    }
+
     public void accelerate() {
         System.out.println("Accelerating the bike - parent class");
     }
 
-    public void applyBrakes() {
-        System.out.println("Applying brakes - parent class");
+    public void applyBrake() {
+        System.out.println("Applying brake - parent class");
     }
 
-    public void fuelCapacity() {
-        System.out.println("Checking fuel capacity - parent class");
+    public void honk() {
+        System.out.println("Honking - parent class");
     }
 }

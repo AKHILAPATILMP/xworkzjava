@@ -1,4 +1,5 @@
 package com.xworkz.isarelation.football;
+
 public class Football {
 
     public Football() {
@@ -13,12 +14,15 @@ public class Football {
         System.out.println("Passing the football - parent class");
     }
 
-    public void scoreGoal() {
-        System.out.println("Scoring a goal - parent class");
+    public void bounce() {
+        System.out.println("Bouncing the football - parent class");
     }
 
-    public void showTeam() {
-        System.out.println("Showing local football team - parent class");
+    public void inflate() {
+        System.out.println("Inflating the football - parent class");
+    }
+
+    public void deflate() {
+        System.out.println("Deflating the football - parent class");
     }
 }
-

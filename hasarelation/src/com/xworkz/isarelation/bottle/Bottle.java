@@ -1,4 +1,5 @@
 package com.xworkz.isarelation.bottle;
+
 public class Bottle {
 
     public Bottle() {
@@ -20,6 +21,8 @@ public class Bottle {
     public void empty() {
         System.out.println("Emptying the bottle - parent class");
     }
+
+    public void clean() {
+        System.out.println("Cleaning the bottle - parent class");
+    }
 }
-
-

@@ -1,4 +1,5 @@
 package com.xworkz.isarelation.fabric;
+
 public class Fabric {
 
     public Fabric() {
@@ -6,20 +7,22 @@ public class Fabric {
     }
 
     public void weave() {
-        System.out.println("Weaving the fabric - parent class");
+        System.out.println("Weaving fabric - parent class");
     }
 
     public void dye() {
-        System.out.println("Dyeing the fabric - parent class");
+        System.out.println("Dyeing fabric - parent class");
+    }
+
+    public void print() {
+        System.out.println("Printing design on fabric - parent class");
     }
 
     public void fold() {
-        System.out.println("Folding the fabric - parent class");
+        System.out.println("Folding fabric - parent class");
     }
 
     public void pack() {
-        System.out.println("Packing the fabric - parent class");
+        System.out.println("Packing fabric - parent class");
     }
 }
-
-

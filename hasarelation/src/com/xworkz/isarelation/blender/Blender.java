@@ -7,18 +7,22 @@ public class Blender {
     }
 
     public void start() {
-        System.out.println("Starting the manual blender - parent class");
+        System.out.println("Blender is starting - parent class");
     }
 
     public void stop() {
-        System.out.println("Stopping the manual blender - parent class");
+        System.out.println("Blender is stopping - parent class");
     }
 
-    public void setSpeed(int speed) {
-        System.out.println("Setting speed to " + speed + " - parent class");
+    public void blend() {
+        System.out.println("Blender is blending ingredients - parent class");
     }
 
-    public void mixIngredients() {
-        System.out.println("Mixing ingredients manually - parent");
+    public void clean() {
+        System.out.println("Cleaning the blender - parent class");
+    }
+
+    public void adjustSpeed() {
+        System.out.println("Adjusting speed of blender - parent class");
     }
 }

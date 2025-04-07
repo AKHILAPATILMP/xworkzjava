@@ -7,21 +7,22 @@ public class Cream {
     }
 
     public void apply() {
-        System.out.println("Applying general cream - parent class");
+        System.out.println("Applying cream - parent class");
     }
 
-    public void getIngredients() {
-        System.out.println("Getting ingredients of the cream - parent class");
+    public void openLid() {
+        System.out.println("Opening cream lid - parent class");
+    }
+
+    public void closeLid() {
+        System.out.println("Closing cream lid - parent class");
     }
 
     public void checkExpiry() {
-        System.out.println("Checking expiry date - parent class");
+        System.out.println("Checking expiry date of cream - parent class");
     }
 
-    public void remove() {
-        System.out.println("Removing cream - parent class");
+    public void smell() {
+        System.out.println("Smelling the cream - parent class");
     }
 }
-
-
-

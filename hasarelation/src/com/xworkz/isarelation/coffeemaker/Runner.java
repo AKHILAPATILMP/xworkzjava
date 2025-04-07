@@ -3,27 +3,35 @@ package com.xworkz.isarelation.coffeemaker;
 public class Runner {
     public static void main(String[] args) {
 
-        System.out.println("\nCreating an instance of CoffeeMaker");
-        CoffeeMaker maker = new CoffeeMaker();
-        maker.addWater();
-        maker.addCoffeePowder();
-        maker.brewCoffee();
-        maker.pourCoffee();
+        System.out.println("\nCreating instance of CoffeeMaker");
+        CoffeeMaker basic = new CoffeeMaker();
+        basic.addWater();
+        basic.addCoffeePowder();
+        basic.startBrewing();
+        basic.stopBrewing();
+        basic.clean();
 
-        System.out.println("\nCreating an instance of SmartCoffeeMaker using CoffeeMaker reference");
+        System.out.println("\nCreating instance of SmartCoffeeMaker using CoffeeMaker reference");
         CoffeeMaker smartRef = new SmartCoffeeMaker();
         smartRef.addWater();
         smartRef.addCoffeePowder();
-        smartRef.brewCoffee();
-        smartRef.pourCoffee();
+        smartRef.startBrewing();
+        smartRef.stopBrewing();
+        smartRef.clean();
 
-        System.out.println("\nCreating an instance of SmartCoffeeMaker using subclass reference");
+        System.out.println("\nCreating instance of SmartCoffeeMaker using subclass reference");
         SmartCoffeeMaker smart = new SmartCoffeeMaker();
         smart.addWater();
         smart.addCoffeePowder();
-        smart.brewCoffee();
-        smart.pourCoffee();
+        smart.startBrewing();
+        smart.stopBrewing();
+        smart.clean();
+        smart.scheduleBrew();
+
+        System.out.println("\nCalling CoffeeStation with casting");
+        CoffeeStation station = new CoffeeStation();
+        station.operate(basic);
+        station.operate(smartRef);
+        station.operate(smart);
     }
 }
-
-

@@ -1,4 +1,5 @@
 package com.xworkz.isarelation.bulb;
+
 public class Bulb {
 
     public Bulb() {
@@ -6,15 +7,22 @@ public class Bulb {
     }
 
     public void turnOn() {
-        System.out.println("Bulb is turned on - parent class");
+        System.out.println("Turning on the bulb - parent class");
     }
 
     public void turnOff() {
-        System.out.println("Bulb is turned off - parent class");
+        System.out.println("Turning off the bulb - parent class");
     }
 
     public void glow() {
         System.out.println("Bulb is glowing - parent class");
     }
-}
 
+    public void setVoltage() {
+        System.out.println("Setting voltage for the bulb - parent class");
+    }
+
+    public void checkWattage() {
+        System.out.println("Checking bulb wattage - parent class");
+    }
+}

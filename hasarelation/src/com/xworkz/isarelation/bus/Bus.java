@@ -1,4 +1,5 @@
 package com.xworkz.isarelation.bus;
+
 public class Bus {
 
     public Bus() {
@@ -6,18 +7,22 @@ public class Bus {
     }
 
     public void start() {
-        System.out.println("Bus is starting - parent class");
+        System.out.println("Starting the bus - parent class");
     }
 
     public void stop() {
-        System.out.println("Bus is stopping - parent class");
+        System.out.println("Stopping the bus - parent class");
     }
 
     public void accelerate() {
-        System.out.println("Bus is accelerating - parent class");
+        System.out.println("Accelerating the bus - parent class");
     }
 
-    public void openDoors() {
-        System.out.println("Bus doors are opening - parent class");
+    public void openDoor() {
+        System.out.println("Opening bus door - parent class");
+    }
+
+    public void checkFuel() {
+        System.out.println("Checking diesel level - parent class");
     }
 }

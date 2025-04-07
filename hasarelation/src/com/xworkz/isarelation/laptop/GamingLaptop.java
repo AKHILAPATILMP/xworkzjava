@@ -9,22 +9,30 @@ public class GamingLaptop extends Laptop {
 
     @Override
     public void powerOn() {
-        System.out.println("GamingLaptop powers on with RGB lighting - subclass");
+        System.out.println("Powering on with RGB lights - subclass");
     }
 
     @Override
     public void powerOff() {
-        System.out.println("GamingLaptop is shutting down with system clean-up - subclass");
+        System.out.println("Shutting down with system cooling - subclass");
     }
 
     @Override
-    public void runApplication() {
-        System.out.println("GamingLaptop is running high-performance games - subclass");
+    public void openLid() {
+        System.out.println("Opening gaming lid with logo light - subclass");
     }
 
     @Override
-    public void connectToWiFi() {
-        System.out.println("GamingLaptop is connecting to high-speed gaming network - subclass");
+    public void closeLid() {
+        System.out.println("Closing lid and saving game state - subclass");
+    }
+
+    @Override
+    public void charge() {
+        System.out.println("Fast charging with performance mode - subclass");
+    }
+
+    public void activateTurboMode() {
+        System.out.println("Turbo mode activated for high performance gaming - subclass only");
     }
 }
-

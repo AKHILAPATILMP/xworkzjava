@@ -1,4 +1,5 @@
 package com.xworkz.isarelation.fan;
+
 public class Fan {
 
     public Fan() {
@@ -6,20 +7,22 @@ public class Fan {
     }
 
     public void turnOn() {
-        System.out.println("Fan is turned on - parent class");
+        System.out.println("Turning on the fan - parent class");
     }
 
     public void turnOff() {
-        System.out.println("Fan is turned off - parent class");
+        System.out.println("Turning off the fan - parent class");
     }
 
-    public void setSpeed() {
-        System.out.println("Fan speed is set - parent class");
+    public void changeSpeed() {
+        System.out.println("Changing fan speed - parent class");
     }
 
     public void rotate() {
-        System.out.println("Fan is rotating - parent class");
+        System.out.println("Rotating the fan - parent class");
+    }
+
+    public void stopRotation() {
+        System.out.println("Stopping fan rotation - parent class");
     }
 }
-
-

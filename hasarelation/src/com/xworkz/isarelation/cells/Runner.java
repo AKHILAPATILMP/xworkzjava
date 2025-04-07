@@ -3,25 +3,35 @@ package com.xworkz.isarelation.cells;
 public class Runner {
     public static void main(String[] args) {
 
-        System.out.println("\nCreating an instance of Cell");
-        Cell cell = new Cell();
-        cell.provideEnergy();
-        cell.checkCharge();
+        System.out.println("\nCreating an instance of Cells");
+        Cells cell = new Cells();
         cell.storeEnergy();
-        cell.dispose();
+        cell.dischargeEnergy();
+        cell.checkVoltage();
+        cell.checkCapacity();
+        cell.recycle();
 
-        System.out.println("\nCreating an instance of BatteryCell using Cell reference");
-        Cell cellRef = new BatteryCell();
-        cellRef.provideEnergy();
-        cellRef.checkCharge();
+        System.out.println("\nCreating an instance of BatteryCell using Cells reference");
+        Cells cellRef = new BatteryCell();
         cellRef.storeEnergy();
-        cellRef.dispose();
+        cellRef.dischargeEnergy();
+        cellRef.checkVoltage();
+        cellRef.checkCapacity();
+        cellRef.recycle();
 
         System.out.println("\nCreating an instance of BatteryCell using subclass reference");
-        BatteryCell batteryCell = new BatteryCell();
-        batteryCell.provideEnergy();
-        batteryCell.checkCharge();
-        batteryCell.storeEnergy();
-        batteryCell.dispose();
+        BatteryCell battery = new BatteryCell();
+        battery.storeEnergy();
+        battery.dischargeEnergy();
+        battery.checkVoltage();
+        battery.checkCapacity();
+        battery.recycle();
+        battery.chargeCell();
+
+        System.out.println("\nCasting and executing through EnergySystem");
+        EnergySystem system = new EnergySystem();
+        system.manage(cell);      // Normal
+        system.manage(cellRef);   // Will trigger cast
+        system.manage(battery);   // Will trigger cast
     }
 }

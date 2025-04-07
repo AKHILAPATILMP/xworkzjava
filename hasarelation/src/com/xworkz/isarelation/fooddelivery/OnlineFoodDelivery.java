@@ -9,21 +9,30 @@ public class OnlineFoodDelivery extends FoodDelivery {
 
     @Override
     public void placeOrder() {
-        System.out.println("Placing food order via mobile app - subclass");
+        System.out.println("Placing food order via app - subclass");
     }
 
     @Override
-    public void trackOrder() {
-        System.out.println("Tracking food order in real-time - subclass");
+    public void prepareFood() {
+        System.out.println("Restaurant preparing food - subclass");
     }
 
     @Override
-    public void deliverOrder() {
-        System.out.println("Delivering food via GPS-enabled delivery partner - subclass");
+    public void packFood() {
+        System.out.println("Packing food in eco-friendly containers - subclass");
     }
 
     @Override
-    public void cancelOrder() {
-        System.out.println("Order cancelled with refund policy - subclass");
+    public void deliverFood() {
+        System.out.println("Delivering food with live tracking - subclass");
+    }
+
+    @Override
+    public void collectPayment() {
+        System.out.println("Collecting payment via online transaction - subclass");
+    }
+
+    public void applyCoupon() {
+        System.out.println("Applying discount coupon - subclass method only");
     }
 }

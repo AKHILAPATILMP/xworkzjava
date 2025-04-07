@@ -1,26 +1,37 @@
 package com.xworkz.isarelation.fan;
+
 public class Runner {
     public static void main(String[] args) {
 
-        System.out.println("\nCreating an instance of Fan");
+        System.out.println("\nCreating Fan instance:");
         Fan fan = new Fan();
         fan.turnOn();
-        fan.turnOff();
-        fan.setSpeed();
+        fan.changeSpeed();
         fan.rotate();
+        fan.stopRotation();
+        fan.turnOff();
 
-        System.out.println("\nCreating an instance of CeilingFan using Fan reference");
-        Fan fanRef = new CeilingFan();
-        fanRef.turnOn();
-        fanRef.turnOff();
-        fanRef.setSpeed();
-        fanRef.rotate();
+        System.out.println("\nCreating SmartFan instance with Fan reference:");
+        Fan smartRef = new SmartFan();
+        smartRef.turnOn();
+        smartRef.changeSpeed();
+        smartRef.rotate();
+        smartRef.stopRotation();
+        smartRef.turnOff();
 
-        System.out.println("\nCreating an instance of CeilingFan using subclass reference");
-        CeilingFan ceilingFan = new CeilingFan();
-        ceilingFan.turnOn();
-        ceilingFan.turnOff();
-        ceilingFan.setSpeed();
-        ceilingFan.rotate();
+        System.out.println("\nCreating SmartFan instance with subclass reference:");
+        SmartFan smartFan = new SmartFan();
+        smartFan.turnOn();
+        smartFan.changeSpeed();
+        smartFan.rotate();
+        smartFan.stopRotation();
+        smartFan.turnOff();
+        smartFan.voiceControl();
+
+        System.out.println("\nRunning ApplianceController for casting:");
+        ApplianceController controller = new ApplianceController();
+        controller.operate(fan);
+        controller.operate(smartRef);
+        controller.operate(smartFan);
     }
 }

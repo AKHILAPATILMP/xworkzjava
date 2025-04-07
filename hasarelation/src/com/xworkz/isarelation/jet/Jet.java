@@ -6,14 +6,6 @@ public class Jet {
         System.out.println("Jet constructor is running - parent class");
     }
 
-    public void startEngine() {
-        System.out.println("Jet engine started - parent class");
-    }
-
-    public void takeOff() {
-        System.out.println("Jet is taking off - parent class");
-    }
-
     public void fly() {
         System.out.println("Jet is flying - parent class");
     }
@@ -21,5 +13,16 @@ public class Jet {
     public void land() {
         System.out.println("Jet is landing - parent class");
     }
-}
 
+    public void refuel() {
+        System.out.println("Jet is refueling - parent class");
+    }
+
+    public void checkSystems() {
+        System.out.println("Jet system check - parent class");
+    }
+
+    public void communicate() {
+        System.out.println("Jet communicating with control tower - parent class");
+    }
+}

@@ -7,21 +7,22 @@ public class Fence {
     }
 
     public void build() {
-        System.out.println("Building a regular fence - parent class");
+        System.out.println("Building a wooden fence - parent class");
+    }
+
+    public void paint() {
+        System.out.println("Painting the fence - parent class");
+    }
+
+    public void repair() {
+        System.out.println("Repairing the fence - parent class");
+    }
+
+    public void inspect() {
+        System.out.println("Inspecting the fence for damages - parent class");
     }
 
     public void openGate() {
-        System.out.println("Opening the gate in the fence - parent class");
-    }
-
-    public void closeGate() {
-        System.out.println("Closing the gate in the fence - parent class");
-    }
-
-    public void checkSecurity() {
-        System.out.println("Checking fence for security - parent class");
+        System.out.println("Opening the fence gate - parent class");
     }
 }
-
-
-

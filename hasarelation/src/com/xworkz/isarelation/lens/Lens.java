@@ -1,4 +1,5 @@
 package com.xworkz.isarelation.lens;
+
 public class Lens {
 
     public Lens() {
@@ -6,19 +7,22 @@ public class Lens {
     }
 
     public void focus() {
-        System.out.println("Lens is focusing manually - parent class");
+        System.out.println("Focusing the lens - parent class");
     }
 
-    public void capture() {
-        System.out.println("Lens is capturing the image - parent class");
+    public void zoom() {
+        System.out.println("Zooming with manual control - parent class");
     }
 
-    public void adjustAperture() {
-        System.out.println("Adjusting aperture in Lens - parent class");
+    public void clean() {
+        System.out.println("Cleaning the lens surface - parent class");
     }
 
-    public void cleanLens() {
-        System.out.println("Cleaning the Lens - parent class");
+    public void store() {
+        System.out.println("Storing the lens in a case - parent class");
+    }
+
+    public void adjust() {
+        System.out.println("Adjusting lens position - parent class");
     }
 }
-

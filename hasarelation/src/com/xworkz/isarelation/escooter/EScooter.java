@@ -1,4 +1,5 @@
 package com.xworkz.isarelation.escooter;
+
 public class EScooter {
 
     public EScooter() {
@@ -6,18 +7,22 @@ public class EScooter {
     }
 
     public void start() {
-        System.out.println("EScooter is starting - parent class");
+        System.out.println("Starting e-scooter - parent class");
     }
 
     public void stop() {
-        System.out.println("EScooter is stopping - parent class");
+        System.out.println("Stopping e-scooter - parent class");
     }
 
-    public void chargeBattery() {
-        System.out.println("Charging EScooter battery - parent class");
+    public void charge() {
+        System.out.println("Charging e-scooter - parent class");
     }
 
-    public void displayStatus() {
-        System.out.println("Displaying EScooter status - parent class");
+    public void ride() {
+        System.out.println("Riding e-scooter - parent class");
+    }
+
+    public void checkBattery() {
+        System.out.println("Checking battery level - parent class");
     }
 }

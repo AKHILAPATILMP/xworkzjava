@@ -8,22 +8,31 @@ public class CyberSecurity extends Cyber {
     }
 
     @Override
-    public void monitorActivity() {
-        System.out.println("Monitoring suspicious logins - subclass");
+    public void scanNetwork() {
+        System.out.println("CyberSecurity scans with AI-based tools - subclass");
     }
 
     @Override
-    public void detectThreats() {
-        System.out.println("Detecting malware and intrusions - subclass");
+    public void monitorTraffic() {
+        System.out.println("CyberSecurity uses firewall for traffic monitoring - subclass");
     }
 
     @Override
-    public void analyzeData() {
-        System.out.println("Analyzing encrypted traffic - subclass");
+    public void detectThreat() {
+        System.out.println("CyberSecurity performs advanced threat detection - subclass");
     }
 
     @Override
     public void reportIncident() {
-        System.out.println("Reporting breach to security team - subclass");
+        System.out.println("CyberSecurity sends incident reports to SOC - subclass");
+    }
+
+    @Override
+    public void updateSystem() {
+        System.out.println("CyberSecurity updates patches automatically - subclass");
+    }
+
+    public void encryptData() {
+        System.out.println("CyberSecurity encrypts sensitive data - subclass specific");
     }
 }

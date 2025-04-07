@@ -1,4 +1,5 @@
 package com.xworkz.isarelation.chatbot;
+
 public class ChatBot {
 
     public ChatBot() {
@@ -9,18 +10,19 @@ public class ChatBot {
         System.out.println("Hello! How can I help you today? - parent class");
     }
 
-    public void answerQuery() {
-        System.out.println("Answering user's question - parent class");
+    public void answerQuestion() {
+        System.out.println("Answering a basic question - parent class");
     }
 
-    public void logInteraction() {
-        System.out.println("Logging interaction for analysis - parent class");
+    public void processCommand() {
+        System.out.println("Processing a command - parent class");
     }
 
-    public void endChat() {
-        System.out.println("Thank you! Have a great day! - parent class");
+    public void speak() {
+        System.out.println("ChatBot is speaking in basic voice - parent class");
+    }
+
+    public void shutdown() {
+        System.out.println("ChatBot is shutting down - parent class");
     }
 }
-
-
-

@@ -8,22 +8,31 @@ public class AdvancedFaceID extends FaceID {
     }
 
     @Override
-    public void detectFace() {
-        System.out.println("Detecting face using depth sensors and infrared - subclass");
+    public void scanFace() {
+        System.out.println("Scanning face with 3D sensors - subclass");
     }
 
     @Override
-    public void authenticate() {
-        System.out.println("Authenticating with advanced AI-based facial recognition - subclass");
+    public void authenticateUser() {
+        System.out.println("Authenticating with AI model - subclass");
     }
 
     @Override
     public void lockDevice() {
-        System.out.println("Device locked securely using FaceID - subclass");
+        System.out.println("Locking device with voice alert - subclass");
     }
 
     @Override
     public void unlockDevice() {
-        System.out.println("Device unlocked with secure FaceID - subclass");
+        System.out.println("Unlocking using retina + face match - subclass");
+    }
+
+    @Override
+    public void disableFaceID() {
+        System.out.println("AdvancedFaceID disabled with admin rights - subclass");
+    }
+
+    public void detectMask() {
+        System.out.println("Detecting mask on user's face - subclass only");
     }
 }

@@ -5,25 +5,33 @@ public class Runner {
 
         System.out.println("\nCreating an instance of Desk");
         Desk desk = new Desk();
-        desk.supportWork();
+        desk.supportItems();
+        desk.provideSurface();
         desk.storeItems();
         desk.adjustHeight();
-        desk.displayMaterial();
+        desk.cleanSurface();
 
-        System.out.println("\nCreating an instance of OfficeDesk using Desk reference");
-        Desk deskRef = new OfficeDesk();
-        deskRef.supportWork();
+        System.out.println("\nCreating an instance of SmartDesk using Desk reference");
+        Desk deskRef = new SmartDesk();
+        deskRef.supportItems();
+        deskRef.provideSurface();
         deskRef.storeItems();
         deskRef.adjustHeight();
-        deskRef.displayMaterial();
+        deskRef.cleanSurface();
 
-        System.out.println("\nCreating an instance of OfficeDesk using subclass reference");
-        OfficeDesk officeDesk = new OfficeDesk();
-        officeDesk.supportWork();
-        officeDesk.storeItems();
-        officeDesk.adjustHeight();
-        officeDesk.displayMaterial();
+        System.out.println("\nCreating an instance of SmartDesk using subclass reference");
+        SmartDesk smart = new SmartDesk();
+        smart.supportItems();
+        smart.provideSurface();
+        smart.storeItems();
+        smart.adjustHeight();
+        smart.cleanSurface();
+        smart.connectBluetooth();
+
+        System.out.println("\nCasting check via DeskControl");
+        DeskControl control = new DeskControl();
+        control.operate(desk);
+        control.operate(deskRef);
+        control.operate(smart);
     }
 }
-
-
