@@ -1,4 +1,4 @@
-package com.xworkz.runner.external;
+package com.xworkz.runner.internal;
 
 public class Laptop {
 

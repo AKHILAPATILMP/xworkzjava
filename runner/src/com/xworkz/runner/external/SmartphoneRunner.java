@@ -1,6 +1,6 @@
-package com.xworkz.runner.internal;
+package com.xworkz.runner.external;
 
-import com.xworkz.runner.external.Smartphone;
+import com.xworkz.runner.internal.Smartphone;
 
 public class SmartphoneRunner {
 

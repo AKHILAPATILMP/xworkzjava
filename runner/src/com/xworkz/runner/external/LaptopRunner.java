@@ -1,6 +1,6 @@
-package com.xworkz.runner.internal;
+package com.xworkz.runner.external;
 
-import com.xworkz.runner.external.Laptop;
+import com.xworkz.runner.internal.Laptop;
 
 public class LaptopRunner {
     public static void main(String[] args) {
