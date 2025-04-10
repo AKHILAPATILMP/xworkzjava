@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Truck {
-    private String brand;
-    private int loadCapacity; // in tons
-    private double price;
+    private String model;
+    private double loadCapacity;
+    private String fuelType;
 
-    public Truck(String brand, int loadCapacity, double price) {
-        this.brand = brand;
+    public Truck(String model, double loadCapacity, String fuelType) {
+        this.model = model;
         this.loadCapacity = loadCapacity;
-        this.price = price;
+        this.fuelType = fuelType;
     }
 
     @Override
     public String toString() {
-        return "[brand=" + brand + ", loadCapacity=" + loadCapacity + " tons, price=" + price + "]";
+        return "[model=" + model + ", loadCapacity=" + loadCapacity + ", fuelType=" + fuelType + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 7744;
     }
 }

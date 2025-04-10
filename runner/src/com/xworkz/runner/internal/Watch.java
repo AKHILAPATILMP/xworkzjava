@@ -2,7 +2,7 @@ package com.xworkz.runner.internal;
 
 public class Watch {
     private String brand;
-    private String type; // e.g., Analog, Digital, Smart
+    private String type;
     private double price;
 
     public Watch(String brand, String type, double price) {
@@ -14,5 +14,11 @@ public class Watch {
     @Override
     public String toString() {
         return "[brand=" + brand + ", type=" + type + ", price=" + price + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 3003;
     }
 }

@@ -2,18 +2,23 @@ package com.xworkz.runner.internal;
 
 public class Taste {
     private String flavor;
-    private int intensityLevel;
     private boolean isSweet;
+    private int intensityLevel;
 
-    public Taste(String flavor, int intensityLevel, boolean isSweet) {
+    public Taste(String flavor, boolean isSweet, int intensityLevel) {
         this.flavor = flavor;
-        this.intensityLevel = intensityLevel;
         this.isSweet = isSweet;
+        this.intensityLevel = intensityLevel;
     }
 
     @Override
     public String toString() {
-        return "[flavor=" + flavor + ", intensityLevel=" + intensityLevel + ", isSweet=" + isSweet + "]";
+        return "[flavor=" + flavor + ", isSweet=" + isSweet + ", intensityLevel=" + intensityLevel + "]";
     }
 
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 1101;
+    }
 }

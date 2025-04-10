@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Wonder {
-    private String meaning;
-    private String symbolism;
-    private double intensity;
+    private String name;
+    private String location;
+    private boolean isNatural;
 
-    public Wonder(String meaning, String symbolism, double intensity) {
-        this.meaning = meaning;
-        this.symbolism = symbolism;
-        this.intensity = intensity;
+    public Wonder(String name, String location, boolean isNatural) {
+        this.name = name;
+        this.location = location;
+        this.isNatural = isNatural;
     }
 
     @Override
     public String toString() {
-        return "[meaning=" + meaning + ", symbolism=" + symbolism + ", intensity=" + intensity + "]";
+        return "[name=" + name + ", location=" + location + ", isNatural=" + isNatural + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 3006;
     }
 }

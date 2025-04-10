@@ -2,17 +2,23 @@ package com.xworkz.runner.internal;
 
 public class Couch {
     private String material;
-    private String color;
+    private int seatingCapacity;
     private double price;
 
-    public Couch(String material, String color, double price) {
+    public Couch(String material, int seatingCapacity, double price) {
         this.material = material;
-        this.color = color;
+        this.seatingCapacity = seatingCapacity;
         this.price = price;
     }
 
     @Override
     public String toString() {
-        return "[material=" + material + ", color=" + color + ", price=" + price + "]";
+        return "[material=" + material + ", seatingCapacity=" + seatingCapacity + ", price=" + price + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 943;
     }
 }

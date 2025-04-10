@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Thunder {
-    private String meaning;
-    private String symbolism;
-    private double intensity;
+    private int intensity;
+    private String time;
+    private boolean isRainAssociated;
 
-    public Thunder(String meaning, String symbolism, double intensity) {
-        this.meaning = meaning;
-        this.symbolism = symbolism;
+    public Thunder(int intensity, String time, boolean isRainAssociated) {
         this.intensity = intensity;
+        this.time = time;
+        this.isRainAssociated = isRainAssociated;
     }
 
     @Override
     public String toString() {
-        return "[meaning=" + meaning + ", symbolism=" + symbolism + ", intensity=" + intensity + "]";
+        return "[intensity=" + intensity + ", time=" + time + ", isRainAssociated=" + isRainAssociated + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 1809;
     }
 }

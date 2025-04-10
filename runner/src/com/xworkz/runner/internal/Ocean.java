@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Ocean {
-    private String meaning;
-    private String symbolism;
-    private double intensity;
+    private String name;
+    private double depth;
+    private double area;
 
-    public Ocean(String meaning, String symbolism, double intensity) {
-        this.meaning = meaning;
-        this.symbolism = symbolism;
-        this.intensity = intensity;
+    public Ocean(String name, double depth, double area) {
+        this.name = name;
+        this.depth = depth;
+        this.area = area;
     }
 
     @Override
     public String toString() {
-        return "[meaning=" + meaning + ", symbolism=" + symbolism + ", intensity=" + intensity + "]";
+        return "[name=" + name + ", depth=" + depth + "m, area=" + area + " sq km]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 888;
     }
 }

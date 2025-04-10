@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Dream {
-    private String meaning;
-    private String symbolism;
-    private double intensity;
+    private String theme;
+    private boolean isLucid;
+    private double duration;
 
-    public Dream(String meaning, String symbolism, double intensity) {
-        this.meaning = meaning;
-        this.symbolism = symbolism;
-        this.intensity = intensity;
+    public Dream(String theme, boolean isLucid, double duration) {
+        this.theme = theme;
+        this.isLucid = isLucid;
+        this.duration = duration;
     }
 
     @Override
     public String toString() {
-        return "[meaning=" + meaning + ", symbolism=" + symbolism + ", intensity=" + intensity + "]";
+        return "[theme=" + theme + ", isLucid=" + isLucid + ", duration=" + duration + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 777;
     }
 }

@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Metro {
-    private String lineName;
-    private int coaches;
-    private double fare;
+    private String city;
+    private int numberOfStations;
+    private double ticketFare;
 
-    public Metro(String lineName, int coaches, double fare) {
-        this.lineName = lineName;
-        this.coaches = coaches;
-        this.fare = fare;
+    public Metro(String city, int numberOfStations, double ticketFare) {
+        this.city = city;
+        this.numberOfStations = numberOfStations;
+        this.ticketFare = ticketFare;
     }
 
     @Override
     public String toString() {
-        return "[lineName=" + lineName + ", coaches=" + coaches + ", fare=" + fare + "]";
+        return "[city=" + city + ", numberOfStations=" + numberOfStations + ", ticketFare=" + ticketFare + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 432;
     }
 }

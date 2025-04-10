@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Destiny {
-    private String meaning;
-    private String symbolism;
-    private double intensity;
+    private String belief;
+    private String origin;
+    private boolean predetermined;
 
-    public Destiny(String meaning, String symbolism, double intensity) {
-        this.meaning = meaning;
-        this.symbolism = symbolism;
-        this.intensity = intensity;
+    public Destiny(String belief, String origin, boolean predetermined) {
+        this.belief = belief;
+        this.origin = origin;
+        this.predetermined = predetermined;
     }
 
     @Override
     public String toString() {
-        return "[meaning=" + meaning + ", symbolism=" + symbolism + ", intensity=" + intensity + "]";
+        return "[belief=" + belief + ", origin=" + origin + ", predetermined=" + predetermined + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 444;
     }
 }

@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Truth {
-    private String meaning;
-    private String symbolism;
-    private double intensity;
+    private String belief;
+    private boolean isUniversal;
+    private int depth;
 
-    public Truth(String meaning, String symbolism, double intensity) {
-        this.meaning = meaning;
-        this.symbolism = symbolism;
-        this.intensity = intensity;
+    public Truth(String belief, boolean isUniversal, int depth) {
+        this.belief = belief;
+        this.isUniversal = isUniversal;
+        this.depth = depth;
     }
 
     @Override
     public String toString() {
-        return "[meaning=" + meaning + ", symbolism=" + symbolism + ", intensity=" + intensity + "]";
+        return "[belief=" + belief + ", isUniversal=" + isUniversal + ", depth=" + depth + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 9001;
     }
 }

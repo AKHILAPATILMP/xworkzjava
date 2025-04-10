@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Light {
-    private String meaning;
-    private String symbolism;
-    private double intensity;
+    private String type;
+    private String color;
+    private int brightness;
 
-    public Light(String meaning, String symbolism, double intensity) {
-        this.meaning = meaning;
-        this.symbolism = symbolism;
-        this.intensity = intensity;
+    public Light(String type, String color, int brightness) {
+        this.type = type;
+        this.color = color;
+        this.brightness = brightness;
     }
 
     @Override
     public String toString() {
-        return "[meaning=" + meaning + ", symbolism=" + symbolism + ", intensity=" + intensity + "]";
+        return "[type=" + type + ", color=" + color + ", brightness=" + brightness + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 789;
     }
 }

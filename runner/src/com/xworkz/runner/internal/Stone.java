@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Stone {
-    private String type;
+    private String color;
     private double weight;
-    private String origin;
+    private String type;
 
-    public Stone(String type, double weight, String origin) {
-        this.type = type;
+    public Stone(String color, double weight, String type) {
+        this.color = color;
         this.weight = weight;
-        this.origin = origin;
+        this.type = type;
     }
 
     @Override
     public String toString() {
-        return "[type=" + type + ", weight=" + weight + " kg, origin=" + origin + "]";
+        return "[color=" + color + ", weight=" + weight + ", type=" + type + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 822;
     }
 }

@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Whisper {
-    private String meaning;
-    private String symbolism;
-    private double intensity;
+    private String tone;
+    private boolean isSecret;
+    private int volumeLevel;
 
-    public Whisper(String meaning, String symbolism, double intensity) {
-        this.meaning = meaning;
-        this.symbolism = symbolism;
-        this.intensity = intensity;
+    public Whisper(String tone, boolean isSecret, int volumeLevel) {
+        this.tone = tone;
+        this.isSecret = isSecret;
+        this.volumeLevel = volumeLevel;
     }
 
     @Override
     public String toString() {
-        return "[meaning=" + meaning + ", symbolism=" + symbolism + ", intensity=" + intensity + "]";
+        return "[tone=" + tone + ", isSecret=" + isSecret + ", volumeLevel=" + volumeLevel + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 3004;
     }
 }

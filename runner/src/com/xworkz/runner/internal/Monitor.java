@@ -2,7 +2,7 @@ package com.xworkz.runner.internal;
 
 public class Monitor {
     private String brand;
-    private int size; // in inches
+    private int size;
     private double price;
 
     public Monitor(String brand, int size, double price) {
@@ -13,6 +13,12 @@ public class Monitor {
 
     @Override
     public String toString() {
-        return "[brand=" + brand + ", size=" + size + " inches, price=" + price + "]";
+        return "[brand=" + brand + ", size=" + size + " inch, price=" + price + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 678;
     }
 }

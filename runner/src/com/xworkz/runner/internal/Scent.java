@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Scent {
-    private String note;
-    private String source;
-    private int longevityHours;
+    private String name;
+    private String category;
+    private double concentration;
 
-    public Scent(String note, String source, int longevityHours) {
-        this.note = note;
-        this.source = source;
-        this.longevityHours = longevityHours;
+    public Scent(String name, String category, double concentration) {
+        this.name = name;
+        this.category = category;
+        this.concentration = concentration;
     }
 
     @Override
     public String toString() {
-        return "[note=" + note + ", source=" + source + ", longevityHours=" + longevityHours + "]";
+        return "[name=" + name + ", category=" + category + ", concentration=" + concentration + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 506;
     }
 }

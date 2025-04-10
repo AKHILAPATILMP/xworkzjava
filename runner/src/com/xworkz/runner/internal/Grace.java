@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Grace {
-    private String meaning;
-    private String symbolism;
-    private double intensity;
+    private String style;
+    private String expression;
+    private double eleganceLevel;
 
-    public Grace(String meaning, String symbolism, double intensity) {
-        this.meaning = meaning;
-        this.symbolism = symbolism;
-        this.intensity = intensity;
+    public Grace(String style, String expression, double eleganceLevel) {
+        this.style = style;
+        this.expression = expression;
+        this.eleganceLevel = eleganceLevel;
     }
 
     @Override
     public String toString() {
-        return "[meaning=" + meaning + ", symbolism=" + symbolism + ", intensity=" + intensity + "]";
+        return "[style=" + style + ", expression=" + expression + ", eleganceLevel=" + eleganceLevel + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 888;
     }
 }

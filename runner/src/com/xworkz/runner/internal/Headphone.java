@@ -2,7 +2,7 @@ package com.xworkz.runner.internal;
 
 public class Headphone {
     private String brand;
-    private String type; // e.g., Over-ear, In-ear, Wireless
+    private String type;
     private double price;
 
     public Headphone(String brand, String type, double price) {
@@ -14,5 +14,11 @@ public class Headphone {
     @Override
     public String toString() {
         return "[brand=" + brand + ", type=" + type + ", price=" + price + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 567;
     }
 }

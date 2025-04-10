@@ -2,17 +2,23 @@ package com.xworkz.runner.internal;
 
 public class Steel {
     private String grade;
-    private int tensileStrength;
-    private double carbonContent;
+    private double thickness;
+    private double cost;
 
-    public Steel(String grade, int tensileStrength, double carbonContent) {
+    public Steel(String grade, double thickness, double cost) {
         this.grade = grade;
-        this.tensileStrength = tensileStrength;
-        this.carbonContent = carbonContent;
+        this.thickness = thickness;
+        this.cost = cost;
     }
 
     @Override
     public String toString() {
-        return "[grade=" + grade + ", tensileStrength=" + tensileStrength + " MPa, carbonContent=" + carbonContent + "%]";
+        return "[grade=" + grade + ", thickness=" + thickness + ", cost=" + cost + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 651;
     }
 }

@@ -2,17 +2,23 @@ package com.xworkz.runner.internal;
 
 public class Desk {
     private String material;
-    private String color;
-    private double price;
+    private String shape;
+    private double height;
 
-    public Desk(String material, String color, double price) {
+    public Desk(String material, String shape, double height) {
         this.material = material;
-        this.color = color;
-        this.price = price;
+        this.shape = shape;
+        this.height = height;
     }
 
     @Override
     public String toString() {
-        return "[material=" + material + ", color=" + color + ", price=" + price + "]";
+        return "[material=" + material + ", shape=" + shape + ", height=" + height + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 333;
     }
 }

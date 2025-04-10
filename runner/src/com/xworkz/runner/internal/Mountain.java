@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Mountain {
-    private String meaning;
-    private String symbolism;
-    private double intensity;
+    private String name;
+    private double height;
+    private String location;
 
-    public Mountain(String meaning, String symbolism, double intensity) {
-        this.meaning = meaning;
-        this.symbolism = symbolism;
-        this.intensity = intensity;
+    public Mountain(String name, double height, String location) {
+        this.name = name;
+        this.height = height;
+        this.location = location;
     }
 
     @Override
     public String toString() {
-        return "[meaning=" + meaning + ", symbolism=" + symbolism + ", intensity=" + intensity + "]";
+        return "[name=" + name + ", height=" + height + " m, location=" + location + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 847;
     }
 }

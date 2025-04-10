@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Vanity {
-    private String material;
+    private String design;
+    private int drawers;
     private String color;
-    private double price;
 
-    public Vanity(String material, String color, double price) {
-        this.material = material;
+    public Vanity(String design, int drawers, String color) {
+        this.design = design;
+        this.drawers = drawers;
         this.color = color;
-        this.price = price;
     }
 
     @Override
     public String toString() {
-        return "[material=" + material + ", color=" + color + ", price=" + price + "]";
+        return "[design=" + design + ", drawers=" + drawers + ", color=" + color + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 4567;
     }
 }

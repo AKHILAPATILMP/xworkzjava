@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Strength {
-    private String physicalAbility;
-    private String mentalToughness;
-    private int enduranceScore;
+    private String type;
+    private int level;
+    private boolean isMental;
 
-    public Strength(String physicalAbility, String mentalToughness, int enduranceScore) {
-        this.physicalAbility = physicalAbility;
-        this.mentalToughness = mentalToughness;
-        this.enduranceScore = enduranceScore;
+    public Strength(String type, int level, boolean isMental) {
+        this.type = type;
+        this.level = level;
+        this.isMental = isMental;
     }
 
     @Override
     public String toString() {
-        return "[physicalAbility=" + physicalAbility + ", mentalToughness=" + mentalToughness + ", enduranceScore=" + enduranceScore + "]";
+        return "[type=" + type + ", level=" + level + ", isMental=" + isMental + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 712;
     }
 }

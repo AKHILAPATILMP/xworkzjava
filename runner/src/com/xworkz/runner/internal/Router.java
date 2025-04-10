@@ -2,17 +2,23 @@ package com.xworkz.runner.internal;
 
 public class Router {
     private String brand;
-    private int speedMbps; // speed in Mbps
-    private double price;
+    private int range;
+    private boolean dualBand;
 
-    public Router(String brand, int speedMbps, double price) {
+    public Router(String brand, int range, boolean dualBand) {
         this.brand = brand;
-        this.speedMbps = speedMbps;
-        this.price = price;
+        this.range = range;
+        this.dualBand = dualBand;
     }
 
     @Override
     public String toString() {
-        return "[brand=" + brand + ", speed=" + speedMbps + " Mbps, price=" + price + "]";
+        return "[brand=" + brand + ", range=" + range + ", dualBand=" + dualBand + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 505;
     }
 }

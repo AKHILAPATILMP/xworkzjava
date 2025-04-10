@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Shadow {
-    private String meaning;
-    private String symbolism;
-    private double intensity;
+    private String shape;
+    private double length;
+    private boolean visible;
 
-    public Shadow(String meaning, String symbolism, double intensity) {
-        this.meaning = meaning;
-        this.symbolism = symbolism;
-        this.intensity = intensity;
+    public Shadow(String shape, double length, boolean visible) {
+        this.shape = shape;
+        this.length = length;
+        this.visible = visible;
     }
 
     @Override
     public String toString() {
-        return "[meaning=" + meaning + ", symbolism=" + symbolism + ", intensity=" + intensity + "]";
+        return "[shape=" + shape + ", length=" + length + ", visible=" + visible + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 508;
     }
 }

@@ -1,20 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Laptop {
+    private String brand;
+    private String processor;
+    private double price;
 
-        private String brand;
-        private int ramSize;
-        private double price;
-
-        public Laptop(String brand, int ramSize, double price) {
-            this.brand = brand;
-            this.ramSize = ramSize;
-            this.price = price;
-        }
-
-        @Override
-        public String toString() {
-            return "[brand=" + brand + ", ramSize=" + ramSize + "GB, price=" + price + "]";
-        }
+    public Laptop(String brand, String processor, double price) {
+        this.brand = brand;
+        this.processor = processor;
+        this.price = price;
     }
 
+    @Override
+    public String toString() {
+        return "[brand=" + brand + ", processor=" + processor + ", price=" + price + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 707;
+    }
+}

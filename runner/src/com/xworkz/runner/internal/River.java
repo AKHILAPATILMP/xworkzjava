@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class River {
-    private String meaning;
-    private String symbolism;
-    private double intensity;
+    private String name;
+    private String continent;
+    private double length;
 
-    public River(String meaning, String symbolism, double intensity) {
-        this.meaning = meaning;
-        this.symbolism = symbolism;
-        this.intensity = intensity;
+    public River(String name, String continent, double length) {
+        this.name = name;
+        this.continent = continent;
+        this.length = length;
     }
 
     @Override
     public String toString() {
-        return "[meaning=" + meaning + ", symbolism=" + symbolism + ", intensity=" + intensity + "]";
+        return "[name=" + name + ", continent=" + continent + ", length=" + length + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 502;
     }
 }

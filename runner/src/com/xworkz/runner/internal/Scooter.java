@@ -2,17 +2,23 @@ package com.xworkz.runner.internal;
 
 public class Scooter {
     private String brand;
-    private String fuelType; // Petrol or Electric
-    private double price;
+    private String color;
+    private double mileage;
 
-    public Scooter(String brand, String fuelType, double price) {
+    public Scooter(String brand, String color, double mileage) {
         this.brand = brand;
-        this.fuelType = fuelType;
-        this.price = price;
+        this.color = color;
+        this.mileage = mileage;
     }
 
     @Override
     public String toString() {
-        return "[brand=" + brand + ", fuelType=" + fuelType + ", price=" + price + "]";
+        return "[brand=" + brand + ", color=" + color + ", mileage=" + mileage + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 507;
     }
 }

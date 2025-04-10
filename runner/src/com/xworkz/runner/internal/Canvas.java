@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Canvas {
+    private String material;
     private String size;
-    private String mediumUsed;
-    private boolean isFramed;
+    private double cost;
 
-    public Canvas(String size, String mediumUsed, boolean isFramed) {
+    public Canvas(String material, String size, double cost) {
+        this.material = material;
         this.size = size;
-        this.mediumUsed = mediumUsed;
-        this.isFramed = isFramed;
+        this.cost = cost;
     }
 
     @Override
     public String toString() {
-        return "[size=" + size + ", mediumUsed=" + mediumUsed + ", isFramed=" + isFramed + "]";
+        return "[material=" + material + ", size=" + size + ", cost=" + cost + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 777;
     }
 }

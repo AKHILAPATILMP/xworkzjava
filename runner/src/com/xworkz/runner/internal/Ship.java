@@ -1,19 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Ship {
+    private String name;
+    private double length;
+    private String purpose;
 
-        private String name;
-        private String type; // e.g., Cargo, Cruise
-        private double cost;
+    public Ship(String name, double length, String purpose) {
+        this.name = name;
+        this.length = length;
+        this.purpose = purpose;
+    }
 
-    public Ship(String name, String type, double cost) {
-            this.name = name;
-            this.type = type;
-            this.cost = cost;
-        }
+    @Override
+    public String toString() {
+        return "[name=" + name + ", length=" + length + ", purpose=" + purpose + "]";
+    }
 
-        @Override
-        public String toString() {
-            return "[name=" + name + ", type=" + type + ", cost=" + cost + "]";
-        }
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 510;
+    }
 }

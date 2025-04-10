@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Recliner {
+    private String brand;
     private String material;
-    private String color;
-    private double price;
+    private double cost;
 
-    public Recliner(String material, String color, double price) {
+    public Recliner(String brand, String material, double cost) {
+        this.brand = brand;
         this.material = material;
-        this.color = color;
-        this.price = price;
+        this.cost = cost;
     }
 
     @Override
     public String toString() {
-        return "[material=" + material + ", color=" + color + ", price=" + price + "]";
+        return "[brand=" + brand + ", material=" + material + ", cost=" + cost + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 888;
     }
 }

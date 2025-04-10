@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
-public class Touch { private String surface;
-    private double pressure;
-    private boolean isWarm;
+public class Touch {
+    private String type;
+    private boolean soft;
+    private double duration;
 
-    public Touch(String surface, double pressure, boolean isWarm) {
-        this.surface = surface;
-        this.pressure = pressure;
-        this.isWarm = isWarm;
+    public Touch(String type, boolean soft, double duration) {
+        this.type = type;
+        this.soft = soft;
+        this.duration = duration;
     }
 
     @Override
     public String toString() {
-        return "[surface=" + surface + ", pressure=" + pressure + "N, isWarm=" + isWarm + "]";
+        return "[type=" + type + ", soft=" + soft + ", duration=" + duration + "]";
     }
 
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 6875;
+    }
 }

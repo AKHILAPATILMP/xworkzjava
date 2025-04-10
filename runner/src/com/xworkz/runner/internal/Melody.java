@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Melody {
-    private String scale;
-    private String mood;
-    private int lengthInBars;
+    private String genre;
+    private String composer;
+    private double duration;
 
-    public Melody(String scale, String mood, int lengthInBars) {
-        this.scale = scale;
-        this.mood = mood;
-        this.lengthInBars = lengthInBars;
+    public Melody(String genre, String composer, double duration) {
+        this.genre = genre;
+        this.composer = composer;
+        this.duration = duration;
     }
 
     @Override
     public String toString() {
-        return "[scale=" + scale + ", mood=" + mood + ", lengthInBars=" + lengthInBars + "]";
+        return "[genre=" + genre + ", composer=" + composer + ", duration=" + duration + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 543;
     }
 }

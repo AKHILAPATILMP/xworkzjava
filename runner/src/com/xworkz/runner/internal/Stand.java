@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Stand {
+    private String type;
     private String material;
-    private String color;
-    private double price;
+    private double height;
 
-    public Stand(String material, String color, double price) {
+    public Stand(String type, String material, double height) {
+        this.type = type;
         this.material = material;
-        this.color = color;
-        this.price = price;
+        this.height = height;
     }
 
     @Override
     public String toString() {
-        return "[material=" + material + ", color=" + color + ", price=" + price + "]";
+        return "[type=" + type + ", material=" + material + ", height=" + height + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 560;
     }
 }

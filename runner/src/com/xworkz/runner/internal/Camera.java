@@ -13,6 +13,12 @@ public class Camera {
 
     @Override
     public String toString() {
-        return "[brand=" + brand + ", megapixels=" + megapixels + "MP, price=" + price + "]";
+        return "[brand=" + brand + ", megapixels=" + megapixels + ", price=" + price + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 654;
     }
 }

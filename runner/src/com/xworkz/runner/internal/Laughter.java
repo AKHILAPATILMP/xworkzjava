@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Laughter {
-    private String source;
-    private int durationInSeconds;
-    private boolean contagious;
+    private String type;
+    private String cause;
+    private double decibelLevel;
 
-    public Laughter(String source, int durationInSeconds, boolean contagious) {
-        this.source = source;
-        this.durationInSeconds = durationInSeconds;
-        this.contagious = contagious;
+    public Laughter(String type, String cause, double decibelLevel) {
+        this.type = type;
+        this.cause = cause;
+        this.decibelLevel = decibelLevel;
     }
 
     @Override
     public String toString() {
-        return "[source=" + source + ", durationInSeconds=" + durationInSeconds + ", contagious=" + contagious + "]";
+        return "[type=" + type + ", cause=" + cause + ", decibelLevel=" + decibelLevel + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 888;
     }
 }

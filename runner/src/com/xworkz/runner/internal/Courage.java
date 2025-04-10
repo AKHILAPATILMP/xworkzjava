@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Courage {
-    private String challengeFaced;
-    private String sourceOfStrength;
-    private int riskLevel;
+    private String source;
+    private String expression;
+    private double intensity;
 
-    public Courage(String challengeFaced, String sourceOfStrength, int riskLevel) {
-        this.challengeFaced = challengeFaced;
-        this.sourceOfStrength = sourceOfStrength;
-        this.riskLevel = riskLevel;
+    public Courage(String source, String expression, double intensity) {
+        this.source = source;
+        this.expression = expression;
+        this.intensity = intensity;
     }
 
     @Override
     public String toString() {
-        return "[challengeFaced=" + challengeFaced + ", sourceOfStrength=" + sourceOfStrength + ", riskLevel=" + riskLevel + "]";
+        return "[source=" + source + ", expression=" + expression + ", intensity=" + intensity + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 784;
     }
 }

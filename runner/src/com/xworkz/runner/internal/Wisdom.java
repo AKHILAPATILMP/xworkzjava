@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Wisdom {
-    private int yearsOfExperience;
-    private String lessonLearned;
-    private String guidingPrinciple;
+    private String source;
+    private int age;
+    private boolean isTimeless;
 
-    public Wisdom(int yearsOfExperience, String lessonLearned, String guidingPrinciple) {
-        this.yearsOfExperience = yearsOfExperience;
-        this.lessonLearned = lessonLearned;
-        this.guidingPrinciple = guidingPrinciple;
+    public Wisdom(String source, int age, boolean isTimeless) {
+        this.source = source;
+        this.age = age;
+        this.isTimeless = isTimeless;
     }
 
     @Override
     public String toString() {
-        return "[yearsOfExperience=" + yearsOfExperience + ", lessonLearned=" + lessonLearned + ", guidingPrinciple=" + guidingPrinciple + "]";
+        return "[source=" + source + ", age=" + age + ", isTimeless=" + isTimeless + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 3005;
     }
 }

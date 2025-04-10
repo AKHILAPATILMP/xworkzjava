@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Flame {
-    private String meaning;
-    private String symbolism;
-    private double intensity;
+    private String color;
+    private int temperature;
+    private String fuelSource;
 
-    public Flame(String meaning, String symbolism, double intensity) {
-        this.meaning = meaning;
-        this.symbolism = symbolism;
-        this.intensity = intensity;
+    public Flame(String color, int temperature, String fuelSource) {
+        this.color = color;
+        this.temperature = temperature;
+        this.fuelSource = fuelSource;
     }
 
     @Override
     public String toString() {
-        return "[meaning=" + meaning + ", symbolism=" + symbolism + ", intensity=" + intensity + "]";
+        return "[color=" + color + ", temperature=" + temperature + ", fuelSource=" + fuelSource + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 606;
     }
 }

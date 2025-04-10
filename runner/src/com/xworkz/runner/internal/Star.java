@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Star {
-    private String constellation;
+    private String name;
     private double brightness;
-    private int distanceInLightYears;
+    private String constellation;
 
-    public Star(String constellation, double brightness, int distanceInLightYears) {
-        this.constellation = constellation;
+    public Star(String name, double brightness, String constellation) {
+        this.name = name;
         this.brightness = brightness;
-        this.distanceInLightYears = distanceInLightYears;
+        this.constellation = constellation;
     }
 
     @Override
     public String toString() {
-        return "[constellation=" + constellation + ", brightness=" + brightness + ", distanceInLightYears=" + distanceInLightYears + "]";
+        return "[name=" + name + ", brightness=" + brightness + ", constellation=" + constellation + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 580;
     }
 }

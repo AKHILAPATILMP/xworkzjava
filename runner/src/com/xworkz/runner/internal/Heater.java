@@ -2,17 +2,23 @@ package com.xworkz.runner.internal;
 
 public class Heater {
     private String brand;
-    private String type; // e.g., Water, Room
-    private double price;
+    private String type;
+    private double powerRating;
 
-    public Heater(String brand, String type, double price) {
+    public Heater(String brand, String type, double powerRating) {
         this.brand = brand;
         this.type = type;
-        this.price = price;
+        this.powerRating = powerRating;
     }
 
     @Override
     public String toString() {
-        return "[brand=" + brand + ", type=" + type + ", price=" + price + "]";
+        return "[brand=" + brand + ", type=" + type + ", powerRating=" + powerRating + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 432;
     }
 }

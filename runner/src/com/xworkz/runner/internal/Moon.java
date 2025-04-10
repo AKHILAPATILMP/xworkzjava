@@ -2,17 +2,23 @@ package com.xworkz.runner.internal;
 
 public class Moon {
     private String phase;
-    private boolean visible;
-    private double surfaceTemperature;
+    private double distanceFromEarth;
+    private boolean visibleAtNight;
 
-    public Moon(String phase, boolean visible, double surfaceTemperature) {
+    public Moon(String phase, double distanceFromEarth, boolean visibleAtNight) {
         this.phase = phase;
-        this.visible = visible;
-        this.surfaceTemperature = surfaceTemperature;
+        this.distanceFromEarth = distanceFromEarth;
+        this.visibleAtNight = visibleAtNight;
     }
 
     @Override
     public String toString() {
-        return "[phase=" + phase + ", visible=" + visible + ", surfaceTemperature=" + surfaceTemperature + "]";
+        return "[phase=" + phase + ", distanceFromEarth=" + distanceFromEarth + " km, visibleAtNight=" + visibleAtNight + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 932;
     }
 }

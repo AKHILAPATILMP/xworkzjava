@@ -15,4 +15,10 @@ public class Train {
     public String toString() {
         return "[name=" + name + ", coaches=" + coaches + ", fare=" + fare + "]";
     }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 4467;
+    }
 }

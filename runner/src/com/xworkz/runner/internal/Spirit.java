@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Spirit {
-    private String meaning;
-    private String symbolism;
+    private String type;
+    private String origin;
     private double intensity;
 
-    public Spirit(String meaning, String symbolism, double intensity) {
-        this.meaning = meaning;
-        this.symbolism = symbolism;
+    public Spirit(String type, String origin, double intensity) {
+        this.type = type;
+        this.origin = origin;
         this.intensity = intensity;
     }
 
     @Override
     public String toString() {
-        return "[meaning=" + meaning + ", symbolism=" + symbolism + ", intensity=" + intensity + "]";
+        return "[type=" + type + ", origin=" + origin + ", intensity=" + intensity + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 550;
     }
 }

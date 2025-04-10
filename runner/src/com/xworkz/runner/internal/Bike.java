@@ -2,17 +2,23 @@ package com.xworkz.runner.internal;
 
 public class Bike {
     private String brand;
-    private int engineCC;
+    private String model;
     private double price;
 
-    public Bike(String brand, int engineCC, double price) {
+    public Bike(String brand, String model, double price) {
         this.brand = brand;
-        this.engineCC = engineCC;
+        this.model = model;
         this.price = price;
     }
 
     @Override
     public String toString() {
-        return "[brand=" + brand + ", engineCC=" + engineCC + "cc, price=" + price + "]";
+        return "[brand=" + brand + ", model=" + model + ", price=" + price + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 789;
     }
 }

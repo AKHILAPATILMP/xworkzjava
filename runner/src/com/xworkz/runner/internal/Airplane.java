@@ -15,4 +15,9 @@ public class Airplane {
     public String toString() {
         return "[airline=" + airline + ", capacity=" + capacity + ", ticketPrice=" + ticketPrice + "]";
     }
+    @Override
+    public int hashCode(){
+        System.out.println("value "+super.hashCode());
+        return 150;
+    }
 }

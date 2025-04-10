@@ -2,7 +2,7 @@ package com.xworkz.runner.internal;
 
 public class Printer {
     private String brand;
-    private String type; // e.g., Inkjet, Laser
+    private String type;
     private double price;
 
     public Printer(String brand, String type, double price) {
@@ -14,5 +14,11 @@ public class Printer {
     @Override
     public String toString() {
         return "[brand=" + brand + ", type=" + type + ", price=" + price + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 920;
     }
 }

@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Branch {
-    private int numberOfLeaves;
+    private String type;
     private double length;
-    private String positionOnTree;
+    private String treeName;
 
-    public Branch(int numberOfLeaves, double length, String positionOnTree) {
-        this.numberOfLeaves = numberOfLeaves;
+    public Branch(String type, double length, String treeName) {
+        this.type = type;
         this.length = length;
-        this.positionOnTree = positionOnTree;
+        this.treeName = treeName;
     }
 
     @Override
     public String toString() {
-        return "[numberOfLeaves=" + numberOfLeaves + ", length=" + length + " cm, positionOnTree=" + positionOnTree + "]";
+        return "[type=" + type + ", length=" + length + ", treeName=" + treeName + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 246;
     }
 }

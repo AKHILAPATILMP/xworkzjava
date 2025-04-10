@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Cleaner {
-    private String brand;
-    private String type; // e.g., Vacuum, Liquid
-    private double price;
+    private String name;
+    private String type;
+    private double efficiency;
 
-    public Cleaner(String brand, String type, double price) {
-        this.brand = brand;
+    public Cleaner(String name, String type, double efficiency) {
+        this.name = name;
         this.type = type;
-        this.price = price;
+        this.efficiency = efficiency;
     }
 
     @Override
     public String toString() {
-        return "[brand=" + brand + ", type=" + type + ", price=" + price + "]";
+        return "[name=" + name + ", type=" + type + ", efficiency=" + efficiency + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 555;
     }
 }

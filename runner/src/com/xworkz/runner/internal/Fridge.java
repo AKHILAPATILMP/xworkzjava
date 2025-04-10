@@ -2,7 +2,7 @@ package com.xworkz.runner.internal;
 
 public class Fridge {
     private String brand;
-    private int capacity; // in liters
+    private int capacity;
     private double price;
 
     public Fridge(String brand, int capacity, double price) {
@@ -13,6 +13,12 @@ public class Fridge {
 
     @Override
     public String toString() {
-        return "[brand=" + brand + ", capacity=" + capacity + "L, price=" + price + "]";
+        return "[brand=" + brand + ", capacity=" + capacity + ", price=" + price + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 707;
     }
 }

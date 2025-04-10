@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Rhythm {
-    private String pattern;
-    private int bpm; // beats per minute
-    private boolean isSyncopated;
+    private String type;
+    private int tempo;
+    private String origin;
 
-    public Rhythm(String pattern, int bpm, boolean isSyncopated) {
-        this.pattern = pattern;
-        this.bpm = bpm;
-        this.isSyncopated = isSyncopated;
+    public Rhythm(String type, int tempo, String origin) {
+        this.type = type;
+        this.tempo = tempo;
+        this.origin = origin;
     }
 
     @Override
     public String toString() {
-        return "[pattern=" + pattern + ", bpm=" + bpm + ", isSyncopated=" + isSyncopated + "]";
+        return "[type=" + type + ", tempo=" + tempo + ", origin=" + origin + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 501;
     }
 }

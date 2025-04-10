@@ -1,18 +1,24 @@
 package com.xworkz.runner.internal;
 
 public class Fear {
-    private String meaning;
-    private String symbolism;
-    private double intensity;
+    private String type;
+    private int intensity;
+    private String trigger;
 
-    public Fear(String meaning, String symbolism, double intensity) {
-        this.meaning = meaning;
-        this.symbolism = symbolism;
+    public Fear(String type, int intensity, String trigger) {
+        this.type = type;
         this.intensity = intensity;
+        this.trigger = trigger;
     }
 
     @Override
     public String toString() {
-        return "[meaning=" + meaning + ", symbolism=" + symbolism + ", intensity=" + intensity + "]";
+        return "[type=" + type + ", intensity=" + intensity + ", trigger=" + trigger + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        System.out.println("value: " + super.hashCode());
+        return 505;
     }
 }
