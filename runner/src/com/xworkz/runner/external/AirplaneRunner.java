@@ -20,5 +20,7 @@ public class AirplaneRunner {
         System.out.println("griha "+value3.hashCode());
 
         System.out.println("original "+System.identityHashCode(airplane));
+
+
     }
 }

@@ -1,11 +1,11 @@
 package com.xworkz.runner.internal;
 
 public class Branch {
-    private String type;
+    private int type;
     private double length;
     private String treeName;
 
-    public Branch(String type, double length, String treeName) {
+    public Branch(int type, double length, String treeName) {
         this.type = type;
         this.length = length;
         this.treeName = treeName;
