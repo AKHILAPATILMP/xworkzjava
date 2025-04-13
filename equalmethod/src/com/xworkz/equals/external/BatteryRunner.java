@@ -9,7 +9,7 @@ public class BatteryRunner {
         battery1.setType("Lithium-Ion");
         battery1.setCapacity(3000);
         battery1.setVoltage(3.7);
-        battery1.setUsage("Mobile");
+        battery1.setUsage("Mobile ");
 
         Battery battery2 = new Battery();
         battery2.setType("Lithium-Ion");  // same type

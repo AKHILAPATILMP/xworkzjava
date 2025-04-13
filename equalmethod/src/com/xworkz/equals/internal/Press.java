@@ -35,7 +35,7 @@ public class Press {
                 Press p2 = (Press) obj;
 
                 if (p1.type.equals(p2.type)) {
-                    System.out.println("Both presses have the same type");
+                    System.out.println("Both presses  have the same type");
                     return true;
                 }
             }

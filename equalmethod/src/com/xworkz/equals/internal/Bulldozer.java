@@ -35,7 +35,7 @@ public class Bulldozer {
                 Bulldozer b2 = (Bulldozer) obj;
 
                 if (b1.model.equals(b2.model)) {
-                    System.out.println("Both bulldozers have the same model");
+                    System.out.println("Both bulldozer have the same model");
                     return true;
                 }
             }

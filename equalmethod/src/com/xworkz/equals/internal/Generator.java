@@ -35,7 +35,7 @@ public class Generator {
                 Generator g2 = (Generator) obj;
 
                 if (g1.model.equals(g2.model)) {
-                    System.out.println("Both generators have the same model");
+                    System.out.println("Both  generators have the same model");
                     return true;
                 }
             }

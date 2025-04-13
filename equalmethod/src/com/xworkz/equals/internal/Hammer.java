@@ -30,7 +30,7 @@ public class Hammer {
             System.out.println("Ref is not null");
 
             if (obj instanceof Hammer) {
-                System.out.println("Hammer ref will compare");
+                System.out.println("Hammer  ref will compare");
                 Hammer hammer1 = this;
                 Hammer hammer2 = (Hammer) obj;
 

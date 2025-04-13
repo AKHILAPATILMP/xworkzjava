@@ -9,7 +9,7 @@ public class LatheMachineRunner {
         lathe1.setModel("XW-100");
         lathe1.setPower(5.5);
         lathe1.setManufacturer("Machinex");
-        lathe1.setYear(2020);
+        lathe1.setYear(2020 );
 
         LatheMachine lathe2 = new LatheMachine();
         lathe2.setModel("XW-100"); // same model

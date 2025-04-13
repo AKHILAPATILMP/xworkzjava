@@ -8,7 +8,7 @@ public class PressRunner {
         Press press1 = new Press();
         press1.setType("Hydraulic");
         press1.setMaterial("Steel");
-        press1.setPressure(5000);
+        press1.setPressure(5000 );
         press1.setPurpose("Molding");
 
         Press press2 = new Press();

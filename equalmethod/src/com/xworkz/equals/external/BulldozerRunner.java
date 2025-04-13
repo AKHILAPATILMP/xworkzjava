@@ -6,7 +6,7 @@ public class BulldozerRunner {
     public static void main(String[] args) {
 
         Bulldozer bulldozer1 = new Bulldozer();
-        bulldozer1.setModel("BDZ-X1");
+        bulldozer1.setModel("BDZ-X1 ");
         bulldozer1.setWeight(15000);
         bulldozer1.setManufacturer("CAT");
         bulldozer1.setHorsepower(400);

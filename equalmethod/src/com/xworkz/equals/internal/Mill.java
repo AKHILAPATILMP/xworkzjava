@@ -35,7 +35,7 @@ public class Mill {
                 Mill mill2 = (Mill) obj;
 
                 if (mill1.type.equals(mill2.type)) {
-                    System.out.println("Both mills are of the same type");
+                    System.out.println("Both mills  are of the same type");
                     return true;
                 }
             }

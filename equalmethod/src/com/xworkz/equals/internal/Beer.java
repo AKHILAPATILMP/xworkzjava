@@ -35,7 +35,7 @@ public class Beer {
 
 
                 if (beer1.brand.equals(beer2.brand)) {
-                    System.out.println("Both beers are the same");
+                    System.out.println("Both  beers are the same");
                     return true;
                 }
             }

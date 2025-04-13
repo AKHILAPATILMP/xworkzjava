@@ -35,7 +35,7 @@ public class SonarPanel {
                 SonarPanel s2 = (SonarPanel) obj;
 
                 if (s1.type.equals(s2.type)) {
-                    System.out.println("Both sonar panels have the same type");
+                    System.out.println("Both sonar  panels have the same type");
                     return true;
                 }
             }

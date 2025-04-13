@@ -7,7 +7,7 @@ public class PowerRunner {
 
         Power power1 = new Power();
         power1.setSource("Electricity");
-        power1.setVoltage(220);
+        power1.setVoltage(220 );
         power1.setCurrent(15.5);
         power1.setApplication("Industrial");
 

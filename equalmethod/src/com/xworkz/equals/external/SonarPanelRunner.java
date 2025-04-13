@@ -9,7 +9,7 @@ public class SonarPanelRunner {
         panel1.setType("Active");
         panel1.setFrequency(50.5);
         panel1.setManufacturer("Raytheon");
-        panel1.setRange(1200);
+        panel1.setRange(1200 );
 
         SonarPanel panel2 = new SonarPanel();
         panel2.setType("Active"); // same type

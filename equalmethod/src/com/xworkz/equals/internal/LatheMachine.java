@@ -35,7 +35,7 @@ public class LatheMachine {
                 LatheMachine lathe2 = (LatheMachine) obj;
 
                 if (lathe1.model.equals(lathe2.model)) {
-                    System.out.println("Both lathe machines have the same model");
+                    System.out.println("Both lathe  machines have the same model");
                     return true;
                 }
             }

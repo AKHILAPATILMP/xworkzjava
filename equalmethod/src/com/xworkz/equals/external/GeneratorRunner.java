@@ -6,7 +6,7 @@ public class GeneratorRunner {
     public static void main(String[] args) {
 
         Generator generator1 = new Generator();
-        generator1.setModel("HondaGX390");
+        generator1.setModel("HondaGX390 ");
         generator1.setPowerOutput(5000);
         generator1.setFuelType("Petrol");
         generator1.setWeight(70.5);

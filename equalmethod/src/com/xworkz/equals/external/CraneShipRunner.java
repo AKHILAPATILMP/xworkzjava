@@ -6,7 +6,7 @@ public class CraneShipRunner {
     public static void main(String[] args) {
 
         CraneShip ship1 = new CraneShip();
-        ship1.setModel("CS-9000");
+        ship1.setModel("CS-9000 ");
         ship1.setCapacity(1500);
         ship1.setCompany("OceanLifters");
         ship1.setHeight(45.5);

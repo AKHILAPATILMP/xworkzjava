@@ -30,7 +30,7 @@ public class CraneShip {
             System.out.println("Ref is not null");
 
             if (obj instanceof CraneShip) {
-                System.out.println("CraneShip ref will compare");
+                System.out.println("CraneShip  ref will compare");
                 CraneShip ship1 = this;
                 CraneShip ship2 = (CraneShip) obj;
 

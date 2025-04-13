@@ -35,7 +35,7 @@ public class Power {
                 Power p2 = (Power) obj;
 
                 if (p1.source.equals(p2.source)) {
-                    System.out.println("Both powers have the same source");
+                    System.out.println("Both powers  have the same source");
                     return true;
                 }
             }

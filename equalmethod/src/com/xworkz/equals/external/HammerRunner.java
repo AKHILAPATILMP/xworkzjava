@@ -9,7 +9,7 @@ public class HammerRunner {
         hammer1.setType("Claw");
         hammer1.setWeight(1.2);
         hammer1.setMaterial("Steel");
-        hammer1.setLength(13);
+        hammer1.setLength(13 );
 
         Hammer hammer2 = new Hammer();
         hammer2.setType("Claw"); // same type

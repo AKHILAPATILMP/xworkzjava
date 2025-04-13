@@ -27,7 +27,7 @@ public class Battery {
     @Override
     public boolean equals(Object obj) {
         if (obj != null) {
-            System.out.println("Ref is not null");
+            System.out.println("Ref is  not null");
 
             if (obj instanceof Battery) {
                 System.out.println("Battery ref will compare");

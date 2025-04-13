@@ -7,7 +7,7 @@ public class MillRunner {
 
         Mill mill1 = new Mill();
         mill1.setType("Textile");
-        mill1.setCapacity(1000.5);
+        mill1.setCapacity(1000.5 );
         mill1.setLocation("Bangalore");
         mill1.setWorkers(150);
 
