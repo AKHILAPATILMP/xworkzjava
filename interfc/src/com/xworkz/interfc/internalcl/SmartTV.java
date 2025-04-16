@@ -2,7 +2,7 @@ package com.xworkz.interfc.internalcl;
 
 import com.xworkz.interfc.externali.TV;
 
-public class SmartTV implements TV {
+public abstract class SmartTV implements TV {
 
 
     @Override
@@ -20,4 +20,9 @@ public class SmartTV implements TV {
         System.out.println("Changing the channel...");
     }
 
+    public abstract void streamContent();
+
+    public abstract void adjustSettings();
+
+    public abstract void castToTV();
 }

@@ -15,6 +15,11 @@ public class HeavyTruck implements Truck {
     }
 
     @Override
+    public void startEngine() {
+
+    }
+
+    @Override
     public void drive() {
         System.out.println("Driving the truck on the road...");
     }

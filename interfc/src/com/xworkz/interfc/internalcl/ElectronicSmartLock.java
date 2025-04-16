@@ -15,7 +15,8 @@ public class ElectronicSmartLock implements SmartLock {
     }
 
     @Override
-    public void setPasscode() {
-        System.out.println("Setting the passcode for secure entry...");
+    public void autoLock() {
+
     }
+
 }
