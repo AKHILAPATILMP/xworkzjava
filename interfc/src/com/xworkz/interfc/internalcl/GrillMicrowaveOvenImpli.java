@@ -18,4 +18,9 @@ public class GrillMicrowaveOvenImpli implements MicrowaveOven {
     public void grill() {
         System.out.println("Grill microwave oven grilling");
     }
+
+    @Override
+    public void oven() {
+        System.out.println("oven");
+    }
 }

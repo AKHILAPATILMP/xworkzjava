@@ -62,4 +62,18 @@ public class Tray implements Phone, PopcornMachine, POSSystem, Printer, PrinterS
     public void copy() {
         System.out.println("running a method");
     }
+
+    @Override
+    public void corn() {
+        System.out.println("corn");
+    }
+
+    @Override
+    public void sys() {
+        System.out.println("sys");
+    }
+    @Override
+    public void scnr() {
+        System.out.println("scan the reading of content");
+    }
 }

@@ -2,7 +2,12 @@ package com.xworkz.interfc.runner;
 
 import com.xworkz.interfc.externali.*;
 import com.xworkz.interfc.internalcl.EspressoMachine;
+import com.xworkz.interfc.internalcl.GrillMicrowaveOvenImpli;
+import com.xworkz.interfc.internalcl.MicrowaveImpli;
 import com.xworkz.interfc.intfc1.*;
+import com.xworkz.interfc.intfc2.Cane;
+import com.xworkz.interfc.intfc2.Tray;
+import com.xworkz.interfc.intfc2.Tube;
 
 public class Main {
     public static void main(String[] args) {
@@ -71,18 +76,43 @@ public class Main {
         hairDryer.hair();
 
         HomeSecuritySystem homeSecuritySystem=new Invoice();
+        homeSecuritySystem.home();
         Helicopter helicopter=new Invoice();
 
         Humidifier humidifier=new Library();
+        humidifier.humid();
         HybridCar hybridCar=new Library();
+        hybridCar.hybrid();
 
         Iron iron=new Movie();
+        iron.melt();
         Lamp lamp=new Movie();
+        lamp.light();
+        LampPost lampPost=new Tube();
+        lampPost.post();
+
+        Microwave microwave=new MicrowaveImpli();
+        microwave.wave();
+        MicrowaveOven microwaveOven=new GrillMicrowaveOvenImpli();
+        microwaveOven.oven();
+
+        Mixer mixer=new Tube();
+        mixer.grind();
+        MotionSensor motionSensor=new Cane();
+        motionSensor.sense();
+
+        Motorcycle motorcycle=new Cane();
+        motorcycle.cyc();
 
         Oven oven=new Music();
+        oven.heat();
         Phone phone=new Music();
+        phone.scream();
 
         Printer printer=new Order();
+        printer.read();
+        PrinterScanner printerScanner=new Tray();
+        printerScanner.scnr();
         Refrigerator refrigerator=new Order();
 
         SmartSpeaker smartSpeaker=new Player();

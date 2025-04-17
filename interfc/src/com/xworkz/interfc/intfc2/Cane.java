@@ -77,4 +77,23 @@ public class Cane implements Mixer, MotionSensor, Motorcycle, MotorcycleHelmet, 
     public void preheat() {
         System.out.println("running a method");
     }
+
+    @Override
+    public void grind() {
+        System.out.println("grind");
+    }
+
+    @Override
+    public void sense() {
+        System.out.println("sense");
+    }
+    @Override
+    public void cyc() {
+        System.out.println("cyc");
+
+    }
+@Override
+public void helmet() {
+    System.out.println("helmet");
+}
 }

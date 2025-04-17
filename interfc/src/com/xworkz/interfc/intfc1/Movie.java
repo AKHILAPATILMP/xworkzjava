@@ -33,4 +33,19 @@ public class Movie implements Iron, Lamp {
     public void steam() {
         System.out.println("");
     }
+
+    @Override
+    public void melt() {
+        System.out.println("iron melts");
+    }
+
+    @Override
+    public void light() {
+        System.out.println("lamp light");
+    }
+
+    @Override
+    public void post() {
+        System.out.println("post");
+    }
 }

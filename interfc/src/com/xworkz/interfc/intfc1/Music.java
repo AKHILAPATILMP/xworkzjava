@@ -33,4 +33,9 @@ public class Music implements Oven, Phone {
     public void browse() {
         System.out.println("");
     }
+
+    @Override
+    public void heat() {
+        System.out.println("heat");
+    }
 }

@@ -33,4 +33,12 @@ public class Library implements Humidifier, HybridCar {
     public void drive() {
         System.out.println("");
     }
+    @Override
+    public void humid (){
+        System.out.println("humid");
+    }
+    @Override
+    public void hybrid (){
+        System.out.println("hybrid car");
+    }
 }

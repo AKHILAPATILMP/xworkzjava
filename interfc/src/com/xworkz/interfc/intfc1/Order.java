@@ -33,4 +33,8 @@ public class Order implements Printer, Refrigerator {
     public void defrost() {
         System.out.println("");
     }
+    @Override
+    public void read() {
+        System.out.println("read");
+    }
 }

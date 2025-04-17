@@ -79,4 +79,9 @@ public abstract class Lamp implements Oven, Phone, Mixer, Printer, Router {
     public void reset() {
         System.out.println("running a method");
     }
+
+    @Override
+    public void scream() {
+        System.out.println("scream");
+    }
 }

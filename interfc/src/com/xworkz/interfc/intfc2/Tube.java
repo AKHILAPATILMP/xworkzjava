@@ -29,6 +29,11 @@ public class Tube extends Lamp implements Iron, LampPost, Microwave, MicrowaveOv
     }
 
     @Override
+    public void post() {
+
+    }
+
+    @Override
     public void turnOn() {
         System.out.println("running a method");
     }
@@ -61,5 +66,10 @@ public class Tube extends Lamp implements Iron, LampPost, Microwave, MicrowaveOv
     @Override
     public void grill() {
         System.out.println("running a method");
+    }
+
+    @Override
+    public void wave() {
+        System.out.println("wave");
     }
 }
