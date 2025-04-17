@@ -33,4 +33,12 @@ public class Customer implements ElectricKettle, Elevator {
     public void openDoors() {
         System.out.println("");
     }
+    @Override
+    public void kettle(){
+        System.out.println("kettle is electric");
+    }
+    @Override
+    public void closedoor (){
+        System.out.println("close the door");
+    }
 }

@@ -34,6 +34,11 @@ public class Glue implements CarCharger, Chair, CoffeeMaker, Computer, Curtain {
     }
 
     @Override
+    public void pull() {
+        Chair.super.pull();
+    }
+
+    @Override
     public void brew() {
         System.out.println("running a method");
     }
@@ -49,6 +54,11 @@ public class Glue implements CarCharger, Chair, CoffeeMaker, Computer, Curtain {
     }
 
     @Override
+    public void makes() {
+        CoffeeMaker.super.makes();
+    }
+
+    @Override
     public void start() {
         System.out.println("running a method");
     }
@@ -61,6 +71,11 @@ public class Glue implements CarCharger, Chair, CoffeeMaker, Computer, Curtain {
     @Override
     public void restart() {
         System.out.println("running a method");
+    }
+
+    @Override
+    public void operate() {
+        Computer.super.operate();
     }
 
     @Override

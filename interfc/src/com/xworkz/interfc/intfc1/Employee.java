@@ -28,4 +28,12 @@ public class Employee implements FanCooler, FanHeater {
     public void oscillate() {
         System.out.println("");
     }
+    @Override
+    public void fanrotate (){
+        System.out.println("fan rotate");
+    }
+    @Override
+    public void low(){
+        System.out.println("cool is low");
+    }
 }

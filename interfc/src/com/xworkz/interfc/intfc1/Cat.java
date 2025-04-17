@@ -33,4 +33,12 @@ public class Cat implements Drone, ElectricCar {
     public void monitorBattery() {
         System.out.println("");
     }
+    @Override
+    public void highfly(){
+        System.out.println("highfly");
+    }
+    @Override
+    public  void automate (){
+        System.out.println("automate");
+    }
 }

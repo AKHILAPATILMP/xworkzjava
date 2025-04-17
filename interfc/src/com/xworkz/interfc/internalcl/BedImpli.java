@@ -17,4 +17,9 @@ public class BedImpli implements Bed {
     public void adjustHeadrest() {
         System.out.println("Headrest adjusted");
     }
+
+    @Override
+    public void gotup() {
+        System.out.println("got up from bed");
+    }
 }

@@ -18,4 +18,9 @@ public class HandheldBarcodeScanner implements BarcodeScanner {
     public void reset() {
         System.out.println("Resetting the barcode scanner to default settings...");
     }
+
+    @Override
+    public void scan() {
+        System.out.println("scan the barcode");
+    }
 }

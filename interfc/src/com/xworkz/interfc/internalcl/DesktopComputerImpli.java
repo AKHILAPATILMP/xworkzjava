@@ -18,4 +18,9 @@ public class DesktopComputerImpli implements Computer {
     public void restart() {
         System.out.println("Desktop computer restarted");
     }
+
+    @Override
+    public void operate(){
+        System.out.println("operate");
+    }
 }

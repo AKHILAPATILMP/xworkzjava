@@ -33,4 +33,12 @@ public class Hotel implements GPSNavigator, HairDryer {
     public void coolDown() {
         System.out.println("");
     }
+    @Override
+    public void app (){
+        System.out.println("app has navigate");
+    }
+    @Override
+    public void hiar(){
+        System.out.println("hair");
+    }
 }

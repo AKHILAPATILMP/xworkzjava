@@ -33,4 +33,8 @@ public class Bike implements CarCharger, Chair {
     public void rotate() {
         System.out.println("rotate");
     }
+    @Override
+    public void movecar(){
+        System.out.println("move the car");
+    }
 }

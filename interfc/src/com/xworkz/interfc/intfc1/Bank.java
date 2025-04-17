@@ -33,4 +33,8 @@ public class Bank implements BusStop, Camera {
     public void zoom() {
         System.out.println("zoom");
     }
+    @Override
+    public void large(){
+        System.out.println("bs is large");
+    }
 }

@@ -17,6 +17,10 @@ public class EspressoMachine implements CoffeeMaker {
     public void keepWarm() {
         System.out.println("warm");
     }
+    @Override
+    public void makes(){
+        System.out.println("coffee maker");
+    }
 }
 
 

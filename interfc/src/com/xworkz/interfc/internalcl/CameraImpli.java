@@ -17,4 +17,8 @@ public class CameraImpli implements Camera {
     public void zoom() {
         System.out.println("Camera zooming");
     }
+    @Override
+    public void lens(){
+        System.out.println("cam has lens");
+    }
 }

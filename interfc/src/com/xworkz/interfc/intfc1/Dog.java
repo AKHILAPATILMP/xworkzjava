@@ -33,4 +33,9 @@ public class Dog implements Elevator, Fan {
     public void adjustSpeed() {
         System.out.println("");
     }
+
+    @Override
+    public void regulator(){
+        System.out.println("regulator is on");
+    }
 }

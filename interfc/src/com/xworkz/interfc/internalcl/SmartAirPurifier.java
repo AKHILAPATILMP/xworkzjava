@@ -16,6 +16,11 @@ public class SmartAirPurifier implements AirPurifier {
 
     @Override
     public void adjustSpeed() {
-        System.out.println("Adjusting the fan speed based on air quality...");
+        System.out.println("Adjusting the fan speed based on air quality...");}
+
+    @Override
+    public void clean(){
+            System.out.println("cean the filter");
+        }
     }
-}
+

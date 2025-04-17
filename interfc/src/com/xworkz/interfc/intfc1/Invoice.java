@@ -33,4 +33,8 @@ public class Invoice implements HomeSecuritySystem, Helicopter {
     public void alertIntrusion() {
         System.out.println("");
     }
+    @Override
+    public void move(){
+        System.out.println("helicopter moves");
+    }
 }

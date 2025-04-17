@@ -18,4 +18,9 @@ public class Jet implements Airplane {
     public void fly() {
         System.out.println("Jet is flying at high altitude...");
     }
+
+    @Override
+    public void landon(){
+        System.out.println("landing the airplane");
+    }
 }

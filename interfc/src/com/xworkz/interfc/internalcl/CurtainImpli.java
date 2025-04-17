@@ -17,4 +17,9 @@ public class CurtainImpli implements Curtain {
     public void wash() {
         System.out.println("Curtain washed");
     }
+
+    @Override
+    public void operate() {
+        System.out.println("operate");
+    }
 }

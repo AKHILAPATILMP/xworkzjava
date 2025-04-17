@@ -33,4 +33,12 @@ public class Game implements Fridge, Generator {
     public void adjustPower() {
         System.out.println("");
     }
+    @Override
+    public void close(){
+        System.out.println("");
+    }
+    @Override
+   public void off(){
+        System.out.println("off the fridge");
+    }
 }

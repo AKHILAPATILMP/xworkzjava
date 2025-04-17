@@ -33,4 +33,12 @@ public class Flight implements FireExtinguisher, FoodProcessor {
     public void knead() {
         System.out.println("");
     }
+    @Override
+            public void fireexit(){
+        System.out.println("fire exit");
+    }
+    @Override
+    public void food(){
+        System.out.println("food is clean");
+    }
 }

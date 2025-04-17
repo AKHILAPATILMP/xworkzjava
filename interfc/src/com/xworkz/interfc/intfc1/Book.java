@@ -20,6 +20,11 @@ public class Book implements Computer, Curtain {
     }
 
     @Override
+    public void operate() {
+        Computer.super.operate();
+    }
+
+    @Override
     public void open() {
         System.out.println("open it");
     }

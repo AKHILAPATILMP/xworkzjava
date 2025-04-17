@@ -33,4 +33,8 @@ public class Car implements Dehumidifier, Dishwasher {
     public void dryDishes() {
         System.out.println("dry them");
     }
+    @Override
+    public void dish(){
+        System.out.println("dish");
+    }
 }

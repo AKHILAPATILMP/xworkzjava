@@ -33,4 +33,8 @@ public class Account implements Bed, Bicycle {
     public void ringBell() {
         System.out.println("ring");
     }
+    @Override
+   public void ride(){
+        System.out.println("ride the bicycle");
+    }
 }

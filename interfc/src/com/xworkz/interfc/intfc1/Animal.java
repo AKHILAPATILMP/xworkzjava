@@ -33,4 +33,8 @@ public class Animal implements Blender, Boat {
     public void pulse() {
         System.out.println("pulse");
     }
+    @Override
+    public void move(){
+        System.out.println("boat moves");
+    }
 }

@@ -18,4 +18,9 @@ public class OfficeChairImpli implements Chair {
     public void rotate() {
         System.out.println("Office chair rotated");
     }
+
+    @Override
+    public void pull() {
+        System.out.println("Office chair pulled");
+    }
 }

@@ -18,4 +18,9 @@ public class WindowCurtainImpli implements Curtain {
     public void wash() {
         System.out.println("Window curtain washed");
     }
+
+    @Override
+    public void operate(){
+        System.out.println("operate the computer");
+    }
 }

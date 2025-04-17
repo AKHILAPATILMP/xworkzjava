@@ -33,4 +33,12 @@ public class Album implements BicycleHelmet, Blender {
     public void pulse() {
         System.out.println("pulse");
     }
+    @Override
+    public void tanprotect(){
+        System.out.println("tan protection");
+    }
+    @Override
+    public void rotate(){
+        System.out.println("rotate");
+    }
 }

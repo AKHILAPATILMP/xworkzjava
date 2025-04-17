@@ -18,4 +18,9 @@ public class SplitACImpli implements AC {
     public void adjustTemperature() {
         System.out.println("Split AC temperature adjusted");
     }
+
+    @Override
+    public void energySaverMode() {
+        System.out.println("AC is in energy saver mode (default method).");
+    }
 }
