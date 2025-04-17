@@ -49,6 +49,11 @@ public class Bolt implements FoodProcessor, Fridge, Generator, GPSNavigator, Hai
     }
 
     @Override
+    public void hiar() {
+
+    }
+
+    @Override
     public void start() {
         System.out.println("running a method");
     }

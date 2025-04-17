@@ -77,4 +77,8 @@ public class Beam implements Blender, Boat, Camera, Bed, Router {
     public void reset() {
         System.out.println("running a method");
     }
+    @Override
+    public void route() {
+        System.out.println("route");
+    }
 }

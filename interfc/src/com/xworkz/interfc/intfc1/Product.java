@@ -33,4 +33,12 @@ public class Product implements SmokeDetector, SnowConeMachine {
     public void cleanMachine() {
         System.out.println("");
     }
+    @Override
+    public void smoke() {
+        System.out.println("smoke");
+    }
+    @Override
+    public void snow() {
+        System.out.println("snow");
+    }
 }

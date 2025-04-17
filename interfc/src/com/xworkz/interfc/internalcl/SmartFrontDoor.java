@@ -18,4 +18,9 @@ public class SmartFrontDoor implements SmartDoor {
     public void monitorEntry() {
         System.out.println("Monitoring entry through the front door...");
     }
+
+    @Override
+    public void thermo() {
+
+    }
 }

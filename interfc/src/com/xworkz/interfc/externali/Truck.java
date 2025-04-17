@@ -7,4 +7,7 @@ public interface Truck {
     void startEngine();
 
     void drive();
+    default public void trucks() {
+        System.out.println("trucks");
+    }
 }

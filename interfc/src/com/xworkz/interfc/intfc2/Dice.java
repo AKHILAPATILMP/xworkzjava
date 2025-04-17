@@ -82,4 +82,16 @@ public class Dice implements Refrigerator, Router, Satellite, Scooter, SmartBulb
     public void changeColor() {
         System.out.println("running a method");
     }
+    @Override
+    public void stlt() {
+        System.out.println("stlt");
+    }
+    @Override
+    public void scooty() {
+        System.out.println("scooty");
+    }
+    @Override
+    public void smart() {
+        System.out.println("smart");
+    }
 }

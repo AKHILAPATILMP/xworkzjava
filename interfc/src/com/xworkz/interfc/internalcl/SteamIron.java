@@ -17,4 +17,9 @@ public class SteamIron implements Iron {
     public void steam() {
         System.out.println("steam");
     }
+
+    @Override
+    public void post() {
+
+    }
 }

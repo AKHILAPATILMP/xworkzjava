@@ -77,4 +77,8 @@ public class Crate implements VacuumCleaner, WaterPump, Sofa, Speaker, Table {
     public void adjustPressure() {
         System.out.println("running a method");
     }
+    @Override
+    public void cleaner() {
+        System.out.println("sys");
+    }
 }

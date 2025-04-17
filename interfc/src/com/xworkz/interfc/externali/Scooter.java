@@ -6,4 +6,7 @@ public interface Scooter {
     void startEngine();
     void accelerate();
     void stop();
+    default void scooty() {
+        System.out.println("scooty");
+    }
 }

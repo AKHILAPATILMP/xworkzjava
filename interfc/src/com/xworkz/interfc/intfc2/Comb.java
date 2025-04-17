@@ -67,4 +67,16 @@ public class Comb implements SmartDoor, SmartFridge, SmartLock, SmartSpeaker,Sma
     public void monitorEnergyUsage() {
         System.out.println("running a method");
     }
+    @Override
+    public void door() {
+        System.out.println("door");
+    }
+    @Override
+    public void fridge() {
+        System.out.println("fridge");
+    }
+    @Override
+    public void thermo() {
+        System.out.println("thermo");
+    }
 }

@@ -38,4 +38,13 @@ public class Ticket implements Train, Truck {
     public void drive() {
         System.out.println("");
     }
+    @Override
+    public void trains() {
+        System.out.println("trains");
+    }
+
+    @Override
+    public void trucks() {
+
+    }
 }

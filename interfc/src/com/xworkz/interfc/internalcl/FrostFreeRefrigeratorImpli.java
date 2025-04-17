@@ -18,4 +18,8 @@ public class FrostFreeRefrigeratorImpli implements Refrigerator {
     public void defrost() {
         System.out.println("Frost-free refrigerator defrosting");
     }
+    @Override
+    public void system() {
+        System.out.println("system");
+    }
 }

@@ -77,4 +77,12 @@ public class Trap implements Mixer, SmartSpeaker, SmartTV, SmartFridge, SmartLoc
     public void castToTV() {
         System.out.println("running a method");
     }
+    @Override
+    public void lock1() {
+        System.out.println("lock1");
+    }
+    @Override
+    public void tv() {
+        System.out.println("tv");
+    }
 }

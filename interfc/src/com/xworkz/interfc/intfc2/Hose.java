@@ -77,4 +77,12 @@ public class Hose implements VacuumCleaner, WaterPump, WashingMachine, FoodProce
     public void adjustPressure() {
         System.out.println("running a method");
     }
+    @Override
+    public void washes() {
+        System.out.println("washes");
+    }
+    @Override
+    public void pump() {
+        System.out.println("pump");
+    }
 }

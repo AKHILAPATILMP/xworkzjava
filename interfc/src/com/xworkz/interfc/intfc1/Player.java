@@ -33,4 +33,9 @@ public class Player implements SmartSpeaker, Speaker {
     public void decreaseVolume() {
         System.out.println("");
     }
+    @Override
+    public void speaker() {
+        System.out.println("speaker");
+    }
+
 }

@@ -33,4 +33,12 @@ public class Room implements Sofa, Table {
     public void foldTable() {
         System.out.println("");
     }
+    @Override
+    public void sofa() {
+        System.out.println("sofa");
+    }
+    @Override
+    public void onthetable() {
+        System.out.println("on the table");
+    }
 }

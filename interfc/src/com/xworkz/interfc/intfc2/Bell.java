@@ -77,4 +77,20 @@ public class Bell implements Subway, Table, Taxi, Thermometer, Toaster {
     public void cancelToast() {
         System.out.println("running a method");
     }
+    @Override
+    public void sub() {
+        System.out.println("sub");
+    }
+    @Override
+    public void olataxi() {
+        System.out.println("ola taxi");
+    }
+    @Override
+    public void meter() {
+        System.out.println("meter ");
+    }
+    @Override
+    public void toast1() {
+        System.out.println("toast1");
+    }
 }

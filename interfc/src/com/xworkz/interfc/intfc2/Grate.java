@@ -82,4 +82,12 @@ public class Grate implements Train, Truck, TV, VacuumCleaner, WashingMachine {
     public void spinDry() {
         System.out.println("running a method");
     }
+    @Override
+    public void trucks() {
+        System.out.println("trucks");
+    }
+    @Override
+    public void television() {
+        System.out.println("sys");
+    }
 }
