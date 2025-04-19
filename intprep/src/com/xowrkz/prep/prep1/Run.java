@@ -21,11 +21,14 @@ addition.add(7,8,9);
         Student student=new Student();
         student.setName("akanksha");
         student.setAge(20);
+        System.out.println("hash "+student.hashCode());
+        System.out.println(student);
         System.out.println("getname "+student.getAge());
         System.out.println("getage "+student.getName());
 
         Color color=new Slipper();
         color.yellow();
+
         }
 
     }
