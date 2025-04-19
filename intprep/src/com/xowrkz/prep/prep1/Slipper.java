@@ -9,4 +9,8 @@ public class Slipper extends Shirt{//entends keyword used for overriding of shir
             System.out.println("");
         }
 
+    @Override
+    public void yellow() {
+
     }
+}
