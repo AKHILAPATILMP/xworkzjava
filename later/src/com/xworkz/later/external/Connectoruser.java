@@ -14,6 +14,7 @@ public class Connectoruser {
         if (this.connector != null) {
             this.connector.run();
         } else {
+            System.out.println("execute in connect user");
         }
 
     }
