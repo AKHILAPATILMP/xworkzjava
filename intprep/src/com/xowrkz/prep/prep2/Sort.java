@@ -7,7 +7,7 @@ public class Sort {
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         int[] n = new int[10];
-        System.out.println("Enter 10 numbers (space-separated):");
+        System.out.println("Enter only 10 numbers (space-separated):");
         for (int i = 0; i < 10; i++) {
             if (s.hasNextInt()) {
                 n[i] = s.nextInt();
