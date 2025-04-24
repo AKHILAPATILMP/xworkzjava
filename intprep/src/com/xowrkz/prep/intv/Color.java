@@ -2,7 +2,7 @@ package com.xowrkz.prep.intv;
 
 public interface Color  {
 
-    public void usedress(){
+    public default void usedress(){
         System.out.println("use dress");
     }
 }
