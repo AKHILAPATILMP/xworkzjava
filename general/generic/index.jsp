@@ -57,7 +57,7 @@
 <!-- Welcome Section -->
 <div class="container mt-5">
     <h2>Welcome to the General Application Portal</h2>
-    <p>Select an application from the navigation bar above to proceed.</p>
+
 </div>
 
 <!-- Bootstrap JS (for navbar collapse) -->
